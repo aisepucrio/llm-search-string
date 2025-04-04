@@ -1,5 +1,5 @@
 prompts = {
-    'prompt0': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, academic search string to retrieve relevant articles on the same topic. Don't give me any  additional information.
+    'prompt0': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, academic search string to retrieve relevant articles on the same topic. I want just and only a search string. Don't give me any additional information.
     ''',
     'prompt1': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, search string to retrieve relevant articles on the same topic. Don't give me any  additional information.
 To do this, follow these steps:
@@ -12,27 +12,27 @@ Ensure that the clusters contain coherently related terms, where each cluster sh
 Search String Assembly:
 Connect the terms within each cluster using OR.
 Connect the clusters with each other using AND.
-Generate the final search string following this format. Also return the extracted keywords and the formed clusters.
+Expected Output: Generate the final search string based on the reasoning. I want just and only the search string. Don't give me any additional information.
     ''',
     'prompt2': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, search string to retrieve relevant articles on the same topic. Don't give me any  additional information.
 To ensure a fair comparison, follow the same process as a traditional Machine Learning-based method, which involves the following steps:
 Use the provided title and abstract of the article to identify the most important terms.
 Keyword Identification:
 Identify words that are closely related to the central theme of the text, considering bigrams and trigrams, to select the most relevant expressions.
-Clustering:
+Clustering reasoning:
 Group the keywords into clusters using a semantic proximity criterion.
 Ensure that the clusters contain coherently related terms, where each cluster should represent a specific topic.
 Search String Assembly:
 Connect the terms within each cluster using OR.
 Connect the clusters with each other using AND.
-Simulated Refinement:
+Simulated Refinement. Here there is the steps of the suggested reasoning:
 Imagine that the extracted terms were used to search for relevant articles.
 Generate a new list of keywords based on how the terms could be expanded to capture more relevant articles.
 Build a second version of the search string, expanded with suggested terms.
 Final Adjustment:
 Present the generated string and the identified clusters.
 Expected Output:
-Present the final search string in boolean format.
+Present the final search string in boolean format. I want just and only the search string. Don't give me any additional information.
     '''
 }
 

@@ -7,24 +7,22 @@ import time
 from pdf_reader.pdf_reader_service import extract_data
 from ollama import chat
 from ollama import ChatResponse
-
+import re
 ollama_client = ollama.Client(timeout=60)
 print("iniciamos cliente")
 
-models = ['deepseek-r1:14b']
-
-#inicioExtraction = time.time()
-#data = extract_data("pdf_reader/article")          
-#fimExtraction = time.time()
-#print(f"Tempo de execução llama: {fimExtraction - inicioExtraction:.2f} segundos")
-
-#titulo = data[0][1]
-#resumo = data[0][2]
+models = ['deepseek-r1:8b', 'llama3.1:8b']
 
 def salvar_em_txt(nome_arquivo, conteudo):
-    with open(nome_arquivo, 'a', encoding='utf-8') as arquivo:
-        arquivo.write(conteudo + '\n')  # adiciona uma quebra de linha no final
-    print(f'Conteúdo adicionado ao arquivo "{nome_arquivo}".')
+    with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:  # 'w' para sobrescrever e salvar o JSON
+        json.dump(conteudo, arquivo, indent=4, ensure_ascii=False)
+    print(f'Conteúdo salvo no arquivo "{nome_arquivo}".')
+
+def limpar_resposta(resposta):
+    # Remove o conteúdo dentro das tags <think> e as próprias tags
+    resposta_limpa = re.sub(r'<think>.*?</think>', '', resposta, flags=re.DOTALL)
+    # Remove espaços extras e quebras de linha
+    return resposta_limpa.strip()
 
 def run_llm(model, prompt_content, articleData):
     print("Iniciando o llm")
@@ -32,31 +30,48 @@ def run_llm(model, prompt_content, articleData):
     print(f'''{prompt_content}\n{articleData}''')
     print("\n")
     response: ChatResponse = chat(model=model, messages=[
-    {
-        'role': 'user',
-        'content': f'''{prompt_content}\n{articleData}''',
-    },
+        {
+            'role': 'user',
+            'content': f'''{prompt_content}\n{articleData}''',
+        },
     ])
     print(response['message']['content'])
-    print(response.message.content)
     return response.message.content
 
-
 def main(models):
+    resultados = {}
+
     for model in models:
-        for prompt, prompt_content in prompts.items():
+        resultados[model] = []
+
+        for prompt_name, prompt_content in prompts.items():
             for article in articles:
                 inicio = time.time()
                 answer = run_llm(model, prompt_content, article)
                 fim = time.time()
-                print(f"Tempo de execução llama: {fim - inicio:.2f} segundos")
-                save = prompt_content + '\n' + article + '\n' + "Answer:" + answer + '\n' + f"Tempo de execução llama: {fim - inicio:.2f} segundos" + "\n"
-                salvar_em_txt("log_deepseek14b.txt", save)
-                
+
+                tempo_execucao = round(fim - inicio, 2)
+
+                if model == 'deepseek-r1:8b':
+                    print("Limpando resposta")
+                    answer = limpar_resposta(answer)
+
+                resultado = {
+                    'prompt_name': prompt_name,
+                    'prompt_content': prompt_content,
+                    'article': article,
+                    'answer': answer,
+                    'execution_time': tempo_execucao
+                }
+
+                resultados[model].append(resultado)
+
+    salvar_em_txt("resultados_llm.json", resultados)
+            
 
     print("Classification completed.")
-    winsound.Beep(500, 5000)  
+    winsound.Beep(500, 5000)
 
 if __name__ == '__main__':
-    winsound.Beep(500, 1000)  
+    winsound.Beep(500, 1000)
     main(models)
