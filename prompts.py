@@ -1,40 +1,59 @@
 prompts = {
-    'prompt0': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, academic search string to retrieve relevant articles on the same topic. I want just and only a search string. Don't give me any additional information.
+    'prompt0': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, academic search string to retrieve relevant articles on the same topic. 
+    One suggested approach is to take the keywords from the provided article and augment them with related words.
+    I want just and only a search string. Don't give me any additional information.
+    An exemple of expected output format: ("nutritional intervention" OR "dietary intervention") AND ("type 2 diabetes" OR "T2DM") AND (randomized OR "clinical trial")
     ''',
     'prompt1': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, search string to retrieve relevant articles on the same topic. Don't give me any  additional information.
-To do this, follow these steps:
+To do this, you can follow these steps:
 Use the provided title and abstract of the article to identify the most important terms.
-Keyword Identification:
 Identify words that are closely related to the central theme of the text, considering bigrams and trigrams, to select the most relevant expressions.
-Clustering:
 Group the keywords into clusters using a semantic proximity criterion.
-Ensure that the clusters contain coherently related terms, where each cluster should represent a specific topic.
-Search String Assembly:
 Connect the terms within each cluster using OR.
 Connect the clusters with each other using AND.
-Expected Output: Generate the final search string based on the reasoning. I want just and only the search string. Don't give me any additional information.
+The final answer is the search string based on the reasoning. I want just and only the search string. Don't give me any additional information.
+An exemple of expected format output: : ("nutritional intervention" OR "dietary intervention") AND ("type 2 diabetes" OR "T2DM") AND (randomized OR "clinical trial")
     ''',
     'prompt2': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, search string to retrieve relevant articles on the same topic. Don't give me any  additional information.
-To ensure a fair comparison, follow the same process as a traditional Machine Learning-based method, which involves the following steps:
+The approach suggestion:
 Use the provided title and abstract of the article to identify the most important terms.
-Keyword Identification:
 Identify words that are closely related to the central theme of the text, considering bigrams and trigrams, to select the most relevant expressions.
-Clustering reasoning:
 Group the keywords into clusters using a semantic proximity criterion.
 Ensure that the clusters contain coherently related terms, where each cluster should represent a specific topic.
-Search String Assembly:
 Connect the terms within each cluster using OR.
 Connect the clusters with each other using AND.
-Simulated Refinement. Here there is the steps of the suggested reasoning:
-Imagine that the extracted terms were used to search for relevant articles.
+With that, you will have the search string. Now the approach suggestion for improve that one search string.
+Imagine that the extracted terms were used to search for relevant articles and you take 10 of then. 
 Generate a new list of keywords based on how the terms could be expanded to capture more relevant articles.
 Build a second version of the search string, expanded with suggested terms.
-Final Adjustment:
-Present the generated string and the identified clusters.
-Expected Output:
-Present the final search string in boolean format. I want just and only the search string. Don't give me any additional information.
+Present the final search string result. I want just and only the search string. Don't give me any additional information.
+An exemple of expected output format: ("nutritional intervention" OR "dietary intervention") AND ("type 2 diabetes" OR "T2DM") AND (randomized OR "clinical trial")
     '''
 }
+
+new_articles = [
+
+    f'''title: SPL Conqueror: Toward optimization of non-functional properties in software product lines\n
+        abstract: A software product line (SPL) is a family of related programs of a domain. The programs of an SPL are distinguished in terms of features, which are end-user visible characteristics of programs. Based on a selection of features, stakeholders can derive tailor-made programs that satisfy functional requirements. Besides functional requirements, different application scenarios raise the need for optimizing non-functional properties of a variant. The diversity of application scenarios leads to heterogeneous optimization goals with respect to non-functional properties (e. g., performance vs. footprint vs. energy optimized variants). Hence, an SPL has to satisfy different and sometimes contradicting requirements regarding non-functional properties. Usually, the actually required non-functional properties are not known before product derivation and can vary for each application scenario and customer. Allowing stakeholders to derive optimized variants requires us to measure non-functional properties after the SPL is developed. Unfortunately, the high variability provided by SPLs complicates measurement and optimization of non-functional properties due to a large variant space. With SPL Conqueror, we provide a holistic approach to optimize non-functional properties in SPL engineering. We show how non-functional properties can be qualitatively specified and quantitatively measured in the context of SPLs. Furthermore, we discuss the variant-derivation process in SPL Conqueror that reduces the effort of computing an optimal variant. We demonstrate the applicability of our approach by means of nine case studies of a broad range of application domains (e. g., database management and operating systems). Moreover, we show that SPL Conqueror is implementation and language independent by using SPLs that are implemented with different mechanisms, such as conditional compilation and feature-oriented programming. 
+    ''',
+
+    f'''title: Measuring non-functional properties in software product lines for product derivation\n
+        abstract: A software product line (SPL) enables stakeholders to derive different software products for a domain while providing a high degree of reuse of their code units. Software products are derived in a configuration process by composing different code units. The configuration process becomes complex if SPLs contain hundreds of features. In many cases, a stakeholder is not only interested in functional but also in non-functional properties of a desired product. Because SPLs can be used in different application scenarios alternative implementations of already existing functionality are developed to meet special non-functional requirements, like restricted binary size and performance guarantees. To enable these complex configurations we discuss and present techniques to measure non-functional properties of software modules and use these values to compute SPL configurations optimized to the users needs.
+    ''',
+
+    f'''title: Machine learning techniques to predict software defect\n
+        abstract: The past 10 years have seen the prediction of software defects proposed by many researchers using various metrics based on measurable aspects of source code entities (e.g. methods, classes, files or modules) and the social structure of software project in an effort to predict the software defects. However, these metrics could not predict very high accuracies in terms of sensitivity, specificity and accuracy. In this chapter, we propose the use of machine learning techniques to predict software defects. The effectiveness of all these techniques is demonstrated on ten datasets taken from literature. Based on an experiment, it is observed that PNN outperformed all other techniques in terms of accuracy and sensitivity in all the software defects datasets followed by CART and Group Method of data handling. We also performed feature selection by t-statistics based approach for selecting feature subsets across different folds for a given technique and followed by the feature subset selection. By taking the most important variables, we invoked the classifiers again and observed that PNN outperformed other classifiers in terms of sensitivity and accuracy. Moreover, the set of 'if- then rules yielded by J48 and CART can be used as an expert system for prediction of software defects. 
+    ''',
+
+    f'''title: Using machine learning to infer constraints for product lines\n
+        abstract: Variability intensive systems may include several thousand features allowing for an enormous number of possible configurations, including wrong ones (e.g. the derived product does not compile). For years, engineers have been using constraints to a priori restrict the space of possible configurations, i.e. to exclude configurations that would violate these constraints. The challenge is to find the set of constraints that would be both precise (allow all correct configurations) and complete (never allow a wrong configuration with respect to some oracle). In this paper, we propose the use of a machine learning approach to infer such product-line constraints from an oracle that is able to assess whether a given product is correct. We propose to randomly generate products from the product line, keeping for each of them its resolution model. Then we classify these products according to the oracle, and use their resolution models to infer cross-tree constraints over the product-line. We validate our approach on a product-line video generator, using a simple computer vision algorithm as an oracle. We show that an interesting set of cross-tree constraint can be generated, with reasonable precision and recall.
+    ''',
+
+    f'''title: Cost-efficient sampling for performance prediction of configurable systems\n
+        abstract: A key challenge of the development and maintenanceof configurable systems is to predict the performance ofindividual system variants based on the features selected. It isusually infeasible to measure the performance of all possible variants, due to feature combinatorics. Previous approaches predictperformance based on small samples of measured variants, butit is still open how to dynamically determine an ideal samplethat balances prediction accuracy and measurement effort. Inthis paper, we adapt two widely-used sampling strategies forperformance prediction to the domain of configurable systemsand evaluate them in terms of sampling cost, which considersprediction accuracy and measurement effort simultaneously. Togenerate an initial sample, we introduce a new heuristic based onfeature frequencies and compare it to a traditional method basedon t-way feature coverage. We conduct experiments on six realworldsystems and provide guidelines for stakeholders to predictperformance by sampling.
+    '''
+]
+
 
 articles = [
     f'''

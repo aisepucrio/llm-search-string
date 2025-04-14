@@ -1,0 +1,673 @@
+DOI,Title
+10.1007/s00521-018-3698-4,Augmented sentiment representation by learning context information
+10.1155/2017/3876906,Semantic Labeling of User Location Context Based on Phone Usage Features
+10.32604/cmc.2023.034741,Classifying Misinformation of User Credibility in Social Media Using Supervised Learning
+10.1109/ICACI.2017.7974487,Transformation of discriminative single-task classification into generative multi-task classification in machine learning context
+10.1007/978-3-319-70169-1_5,Smartphone data analysis for human activity recognition
+10.1007/978-981-15-4992-2_24,Spectral Graph Theory-Based Spatio-spectral Filters for Motor Imagery Brain–Computer Interface
+,Machine learning models for automatic labeling: A systematic literature review
+10.1016/j.bspc.2024.107127,Semi-supervised spatial-temporal calibration and semantic refinement network for video polyp segmentation
+10.1109/ICSET51301.2020.9265370,Empirical mode decomposition coupled with fast fourier transform based feature extraction method for motor imagery tasks classification
+10.1016/j.bspc.2023.105626,Motor imagery EEG task recognition using a nonlinear Granger causality feature extraction and an improved Salp swarm feature selection
+10.1007/978-3-319-97919-9_2,Data mining tasks and paradigms
+10.1186/s12938-016-0178-x,Classification of motor imagery tasks for BCI with multiresolution analysis and multiobjective feature selection
+10.3758/s13414-019-01741-4,Semi-supervised learning of a nonnative phonetic contrast: How much feedback is enough?
+10.1109/MAIS.2016.7761899,Learning from demonstration with Gaussian processes
+10.1109/TLA.2018.8362164,Learning from demonstration with Gaussian process approach for an omni-directional mobile robot
+10.1016/j.neunet.2025.107140,Context Sensitive Network for weakly-supervised fine-grained temporal action localization
+10.1109/SIU.2018.8404569,Human activity recognition with mobile phone sensors: Impact of sensors and window size; [Akilli telefon algilayicilari ile aktivite tanima: algilayicilarin ve pencere boyunun etkisi]
+10.1109/ICNLP60986.2024.10692659,A Comparative Study on Pre-Trained Models Based on BERT
+10.1016/j.specom.2024.103039,AVID: A speech database for machine learning studies on vocal intensity
+10.1007/978-3-642-30220-6_36,Relevant feature selection from EEG signal for mental task classification
+10.1109/CERA59325.2023.10455596,Enhancing ASD Cognitive Assessment with P300 Classification using EMD-based qEEG Wavelet Features
+10.1016/j.neucom.2022.05.048,MICQ-IPSO: An effective two-stage hybrid feature selection algorithm for high-dimensional data
+10.1109/ICT-DM62768.2024.10798958,Enhancing Face Detection: A Dual Model Approach with Modified VGG16 Layer
+10.1109/CCNC.2011.5766642,An adaptive user interface based on Spatiotemporal Structure Learning
+10.1109/LA-CCI.2016.7885731,Feature Selection methods applied to Motor Imagery task classification
+10.1016/j.neunet.2019.01.008,Contrastive Hebbian learning with random feedback weights
+10.1109/ICSCC62041.2024.10690626,Contrastive Self-Supervised Learning for Cocoa Disease Classification
+10.3389/fnhum.2023.1223307,Statistically significant features improve binary and multiple Motor Imagery task predictions from EEGs
+10.1007/s42600-025-00409-3,Renal calculus composition assessment from radiographic images using machine learning technique
+10.1109/HEALTHCOM49281.2021.9398993,A deep learning based ternary task classification system using gramian angular summation field in fNIRS neuroimaging data
+10.1002/hbm.26423,High-accuracy machine learning techniques for functional connectome fingerprinting and cognitive state decoding
+10.32604/cmc.2022.024043,Metaheuristic Optimization Algorithm for Signals Classification of Electroencephalography Channels
+10.1109/TII.2023.3348838,Autonomous Localization of X-Ray Baggage Threats via Weakly Supervised Learning
+10.3778/j.issn.1673-9418.2210035,Survey of Few-Shot Image Classification Research
+10.1016/j.ijpsycho.2015.10.004,Towards an effective cross-task mental workload recognition model using electroencephalography based on feature selection and support vector machine regression
+10.17341/gazimmfd.1241334,Classification of finger movements using statistically significant time-domain EEG features; [İstatistiksel anlamlı zaman alanı EEG özniteliklerinden el parmak hareketlerinin sınıflandırılması]
+10.1109/UPINLBS.2014.7033715,Semantic labeling of places based on phone usage features using supervised learning
+10.1016/j.asoc.2022.109942,AutoML technologies for the identification of sparse classification and outlier detection models
+10.1016/j.mehy.2020.109603,Early diagnosis of Parkinson's disease using machine learning algorithms
+10.1016/j.patcog.2024.111242,Stain-adaptive self-supervised learning for histopathology image analysis
+10.1108/IJWIS-08-2021-0085,An automated mobile app labeling framework based on primary motivations for smartphone use
+10.7544/issn1000-1239.2019.20170809,Mental Stress Assessment Approach Based on Smartphone Sensing Data; [基于智能手机感知数据的心理压力评估方法]
+10.14569/ijacsa.2020.0110141,The multi-class classification for the first six surats of the Holy Quran
+10.1007/s41066-017-0065-2,Multi-task learning for intelligent data processing in granular computing context
+10.1145/3670653.3670657,Multimodal Detection of External and Internal Attention in Virtual Reality using EEG and Eye Tracking Features
+10.1016/j.eswa.2024.126246,Self-supervised contrastive learning for itinerary recommendation
+10.1117/12.2512507,"Effect of diversity of patient population and acquisition systems on the use of radiomics and machine learning for classification of 2,397 breast lesions"
+10.1109/ICDIM.2008.4746809,Analysis of machine learning techniques for context extraction
+10.1039/d2dd00066k,Semi-supervised machine learning workflow for analysis of nanowire morphologies from transmission electron microscopy images
+10.3389/fnhum.2024.1525139,EEG channel and feature investigation in binary and multiple motor imagery task predictions
+10.5220/0008073102500256,Microblog sentiment prediction based on user past content
+10.1109/ICCAKM50778.2021.9357742,Efficient feature selection technique based on fast fourier transform with PSO-GA for functional magnetic resonance imaging
+10.1007/s10462-017-9597-8,A survey on sentiment analysis of scientific citations
+10.1016/j.procs.2023.10.068,A Word Sense Disambiguatin Approach For Romanian Language
+10.1109/ICMLA61862.2024.00190,Contrastive Learning with Auxiliary User Detection for Identifying Activities
+10.3390/math11081921,Investigating Feature Selection Techniques to Enhance the Performance of EEG-Based Motor Imagery Tasks Classification
+10.1007/978-3-030-30244-3_17,Automatic Switching Between Video and Audio According to User’s Context
+10.1145/3616901,FAIML '23: Proceedings of the 2023 International Conference on Frontiers of Artificial Intelligence and Machine Learning
+10.1145/3688671,SETN '24: Proceedings of the 13th Hellenic Conference on Artificial Intelligence
+10.1145/3712623,AAIA '24: Proceedings of the 2024 2nd International Conference on Advances in Artificial Intelligence and Applications
+10.1145/3669754,ICCAI '24: Proceedings of the 2024 10th International Conference on Computing and Artificial Intelligence
+10.1145/3594536,ICAIL '23: Proceedings of the Nineteenth International Conference on Artificial Intelligence and Law
+10.1145/3706890,ISAIMS '24: Proceedings of the 2024 5th International Symposium on Artificial Intelligence for Medicine Science
+10.1145/3616901.3616926,Self-supervised Learning on Graphs at Node and Graph Level
+10.1145/3638209.3638229,Image Scenario classification using Machine learning
+10.1145/3432291.3432309,Feature Selection and Classification Methods for Predicting Search Engine Ranking
+10.1145/3665348,GAIIS '24: Proceedings of the 2024 International Conference on Generative Artificial Intelligence and Information Security
+10.1145/3627158,Contrastive Self-supervised Learning in Recommender Systems: A Survey
+10.1145/3672919,"CSAIDE '24: Proceedings of the 2024 3rd International Conference on Cyber Security, Artificial Intelligence and Digital Economy"
+10.1145/3582099,AICCC '22: Proceedings of the 2022 5th Artificial Intelligence and Cloud Computing Conference
+10.1145/3698831,CtxPipe: Context-aware Data Preparation Pipeline Construction for Machine Learning
+10.1145/3573942,AIPR '22: Proceedings of the 2022 5th International Conference on Artificial Intelligence and Pattern Recognition
+10.1145/3579654,"ACAI '22: Proceedings of the 2022 5th International Conference on Algorithms, Computing and Artificial Intelligence"
+10.1145/3390557.3394126,Hacking Machine Learning: Towards The Comprehensive Taxonomy of Attacks Against Machine Learning Systems
+10.1145/3675417,DEAI '24: Proceedings of the 2024 Guangdong-Hong Kong-Macao Greater Bay Area International Conference on Digital Economy and Artificial Intelligence
+10.1145/3473465.3473472,Self-supervised Learning for Small Shot COVID-19 Classification
+10.1145/3614008,SPML '23: Proceedings of the 2023 6th International Conference on Signal Processing and Machine Learning
+10.1145/3388142.3388153,Text mining for incoming tasks based on the urgency/importance factors and task classification using machine learning tools
+10.1145/3703847.3703856,Machine learning on multi-modal MRI for early-stage differential diagnosis of Parkinson's disease and Parkinson-plus syndromes
+10.1145/3578741,MLNLP '22: Proceedings of the 2022 5th International Conference on Machine Learning and Natural Language Processing
+10.1145/3561387,Sensor-based Human Activity Recognition Using Graph LSTM and Multi-task Classification Model
+10.1145/3314111.3323073,"Task classification model for visual fixation, exploration, and search"
+10.1145/3491102.3517522,Debiased-CAM to mitigate image perturbations with faithful visual explanations of machine learning
+10.1145/3292500.3330744,150 Successful Machine Learning Models: 6 Lessons Learned at Booking.com
+10.1145/3267305.3274178,Lightweight Modeling of User Context Combining Physical and Virtual Sensor Data
+10.1145/3328932,Multi-task Self-Supervised Learning for Human Activity Detection
+10.1145/3219819.3219838,Using Rule-Based Labels for Weak Supervised Learning: A ChemNet for Transferable Chemical Property Prediction
+10.1145/3206025.3206074,Feature Selection and Multimodal Fusion for Estimating Emotions Evoked by Movie Clips
+10.1145/3097983.3098094,Bridging Collaborative Filtering and Semi-Supervised Learning: A Neural Approach for POI Recommendation
+10.1145/3669754.3669786,Instant User Insight: Dynamic Activity Profiling
+10.5555/3382225.3382310,Cyberbullying detection on instagram with optimal online feature selection
+10.1145/2480741.2480744,A survey on smartphone-based systems for opportunistic user context recognition
+10.1145/3313831.3376504,Affective State Prediction Based on Semi-Supervised Learning from Smartphone Touch Data
+10.1145/3431500,Optimal Energy-Centric Resource Allocation and Offloading Scheme for Green Internet of Things Using Machine Learning
+10.5555/3722577.3722713,Transport-based counterfactual models
+10.1145/3672553,Benchmarking Instance-Centric Counterfactual Algorithms for XAI: From White Box to Black Box
+10.1145/2345396.2345541,A three phase approach for mental task classification using EEG
+10.1145/3127479.3132570,How good are machine learning clouds for binary classification with good features? extended abstract
+10.1145/3544548.3580959,What is Human-Centered about Human-Centered AI? A Map of the Research Landscape
+10.1145/2254129.2254159,Automatic reasoner selection using machine learning
+10.1145/3461353.3461377,Soft-Gated Self-Supervision Network for Action Reasoning: Soft-Gated Self-Supervision Network with Attention Mechanism and Joint Multi-Task Training Strategy for Action Reasoning
+10.1145/2668332.2668347,A semi-supervised learning approach for robust indoor-outdoor detection with smartphones
+10.1145/2024288.2024316,Optimizing enterprise search by automatically relating user context to textual document content
+10.1145/2971648.2971710,Efficient calibration for rssi-based indoor localization by bayesian experimental design on multi-task classification
+10.5555/3648699.3648885,Learning an explicit hyper-parameter prediction function conditioned on tasks
+10.1145/3678514,Self-Supervised Representation Learning and Temporal-Spectral Feature Fusion for Bed Occupancy Detection
+10.1145/3479645.3479664,Detection of Coronary Heart Disease Using Modified K-NN Method with Recursive Feature Elimination
+10.1145/3645103,Symbolic Knowledge Extraction and Injection with Sub-symbolic Predictors: A Systematic Literature Review
+10.1145/3568164,Automatically Temporal Labeled Data Generation Using Positional Lexicon Expansion for Focus Time Estimation of News Articles
+10.1145/3580305.3599933,Yggdrasil Decision Forests: A Fast and Extensible Decision Forests Library
+10.1613/jair.1.12918,"Neural Natural Language Generation: A Survey on Multilinguality, Multimodality, Controllability and Learning"
+10.5555/1873781.1873924,Grouping product features using semi-supervised learning with soft-constraints
+10.1145/3591130,Exploring the Effects of Scanpath Feature Engineering for Supervised Image Classification Models
+10.1145/1166253.1166268,Using a low-cost electroencephalograph for task classification in HCI research
+10.1613/jair.1.12814,"Socially Responsible AI Algorithms: Issues, Purposes, and Challenges"
+10.1145/3529399.3529444,Multi-Task Attention Network for Digital Context Classification from Internet Traffic
+10.1145/1772690.1772738,A scalable machine-learning approach for semi-structured named entity recognition
+10.5555/1564154.1564156,A supervised learning approach to automatic synonym identification based on distributional features
+10.1145/3613904.3642321,Predicting early user churn in a public digital weight loss intervention
+10.1145/3535508.3545998,Robust self-training strategy for various molecular biology prediction tasks
+10.1145/3609956.3609965,Unveiling the Dynamic Interactions between Spatial Objects: A Graph Learning Approach with Evolving Constraints
+10.1145/3447404,"Intelligent Computing for Interactive System Design: Statistics, Digital Signal Processing, and Machine Learning in Practice"
+10.1145/3170427.3188617,Towards Robust Neuroadaptive HCI: Exploring Modern Machine Learning Methods to Estimate Mental Workload From EEG Signals
+10.1145/3543848,"Multimodal Classification: Current Landscape, Taxonomy and Future Directions"
+10.5555/3586589.3586648,Causal classification: treatment effect estimation vs. outcome prediction
+10.1145/2792838.2792842,Scalable Recommender Systems: Where Machine Learning Meets Search
+10.5555/3648699.3649085,Scalable PAC-bayesian meta-learning via the PAC-optimal hyper-posterior: from theory to practice
+10.1145/2509352.2509396,Combining crowd-generated media and personal data: semi-supervised learning for context recognition
+10.1145/3448823.3448878,Improving Search Engine Ranking Prediction Based on a New Feature Engineering Tool
+10.1145/3711129.3711152,Multi-Dimensional Classification via NSGA-III Algorithm and Sparse Label Encoding
+10.1145/3411508.3421376,eNNclave: Offline Inference with Model Confidentiality
+10.1145/3643752,CodeArt: Better Code Models by Attention Regularization When Symbols Are Lacking
+10.1145/3579654.3579733,Exploiting Semantic Space to Enhance Event Detection Combined with Event Knowledge
+10.1145/3593013.3594122,Achieving Diversity in Counterfactual Explanations: a Review and Discussion
+10.1145/3217871.3217872,Recurrent Neural Network Attention Mechanisms for Interpretable System Log Anomaly Detection
+10.1145/3232116.3232152,An Improved TF-IDF algorithm based on word frequency distribution information and category distribution information
+10.1145/3637732.3637775,Adversarial Transfer Learning for Alzheimer's Disease Diagnosis Using Structural MRI
+10.5555/3455716.3455910,Contextual explanation networks
+10.1145/3708882,Recommendation as Instruction Following: A Large Language Model Empowered Recommendation Approach
+10.1145/3433541,Agile Support Vector Machine for Energy-efficient Resource Allocation in IoT-oriented Cloud using PSO
+10.1145/3640537.3641572,Fast and Accurate Context-Aware Basic Block Timing Prediction using Transformers
+10.1145/3394171.3413772,Towards Accuracy-Fairness Paradox: Adversarial Example-based Data Augmentation for Visual Debiasing
+10.1145/3714456,Text Classification Using Graph Convolutional Networks: A Comprehensive Survey
+10.1145/3511808.3557429,ReLAX: Reinforcement Learning Agent Explainer for Arbitrary Predictive Models
+10.1145/3699729,ESATED: Leveraging Extra-weak Supervision with Auxiliary Task for Enhanced Non-intrusiveness in Energy Disaggregation
+10.1145/3427423.3427427,Android malware classification based on permission categories using extreme gradient boosting
+10.1145/3664647.3681534,SAM-MIL: A Spatial Contextual Aware Multiple Instance Learning Approach for Whole Slide Image Classification
+10.1145/3230467.3230476,Visual Question Answering Agent with Visual and Textual Attention
+10.1145/3341162.3344856,Cross-location transfer learning for the sussex-huawei locomotion recognition challenge
+10.1145/3626568,A Synergistic Bidirectional LSTM and N-gram Multi-channel CNN Approach Based on BERT and FastText for Arabic Event Identification
+10.1145/3613904.3642196,PaperWeaver: Enriching Topical Paper Alerts by Contextualizing Recommended Papers with User-collected Papers
+10.1145/3580496,Emotional Intelligence Attention Unsupervised Learning Using Lexicon Analysis for Irony-based Advertising
+10.1145/3715098,Enabling Harmonious Human-Machine Interaction with Visual-Context Augmented Dialogue System: A Review
+10.1145/3592604,Semi-Supervised Lexicon-Aware Embedding for News Article Time Estimation
+10.1145/1552262.1552270,UICO: an ontology-based user interaction context model for automatic task detection on the computer desktop
+10.1145/3708496,A Comprehensive Survey on Physical Layer Authentication Techniques: Categorization and Analysis of Model-Driven and Data-Driven Approaches
+10.1145/3678717.3691257,Trajectory Anomaly Detection with Language Models
+10.1145/3613904.3642680,MoodCapture: Depression Detection using In-the-Wild Smartphone Images
+10.1145/3610916,Detecting Social Contexts from Mobile Sensing Indicators in Virtual Interactions with Socially Anxious Individuals
+10.1145/3699735,"Ask Less, Learn More: Adapting Ecological Momentary Assessment Survey Length by Modeling Question-Answer Information Gain"
+10.1145/3480968,Non-Acted Text and Keystrokes Database and Learning Methods to Recognize Emotions
+10.1145/3312614.3312620,Leveraging User Mobility and Mobile App Services Behavior for Optimal Edge Resource Utilization
+10.1145/3607947.3608003,Improving Early Detection of Suicide Ideation using Oversampling Methods
+10.1145/3388818.3389158,Local Ensemble Approach for Meningioma Tumor Firmness Detection in MRI Images
+10.1109/TCBB.2019.2904231,Extracting Inter-Sentence Relations for Associating Biological Context with Events in Biomedical Texts
+10.1109/TCBB.2020.3039834,Predicting Human Intention-Behavior Through EEG Signal Analysis Using Multi-Scale CNN
+10.1109/TASLP.2021.3110146,FluentNet: End-to-End Detection of Stuttered Speech Disfluencies With Deep Learning
+10.1145/3377713.3377761,A Deep Feature Identity-Preserved Method for Cross-Age Face Verification
+10.5555/3122009.3122017,Persistence images: a stable vector representation of persistent homology
+10.1109/TASLP.2023.3263801,Inter-Intra Modal Representation Augmentation With Trimodal Collaborative Disentanglement Network for Multimodal Sentiment Analysis
+10.1145/3694860.3694871,Assessing Pretrained Model Through Transfer Multi-Task Learn For Melanoma Classification
+10.1145/3663669,Efficient Decoding of Affective States from Video-elicited EEG Signals: An Empirical Investigation
+10.1145/3394486.3403165,Retrospective Loss: Looking Back to Improve Training of Deep Neural Networks
+10.1145/3341162.3343844,Hybrid data-driven and context-aware activity recognition with mobile devices
+10.1145/3529757,A Survey on Data-driven Software Vulnerability Assessment and Prioritization
+10.1145/3612930,An Efficient Transfer Learning Method with Auxiliary Information
+10.1109/TCBB.2020.3018467,Multi-Modal Classification for Human Breast Cancer Prognosis Prediction: Proposal of Deep-Learning Based Stacked Ensemble Model
+10.1109/TASLP.2019.2949687,Attention-Based Response Generation Using Parallel Double Q-Learning for Dialog Policy Decision in a Conversational System
+10.1145/3392717.3392748,Fast distributed bandits for online recommendation systems
+10.1145/2910896.2925431,Context Matters: Towards Extracting a Citation's Context Using Linguistic Features
+10.1145/2541831.2541832,Towards scalable activity recognition: adapting zero-effort crowdsourced acoustic models
+10.1145/3631444,Deep Heterogeneous Contrastive Hyper-Graph Learning for In-the-Wild Context-Aware Human Activity Recognition
+10.1145/3665689,BIC '24: Proceedings of the 2024 4th International Conference on Bioinformatics and Intelligent Computing
+10.1145/3477314.3507019,Automatic disease vector mosquitoes identification via hierarchical data stream classification
+10.1145/3410530.3414343,UPIC: user and position independent classical approach for locomotion and transportation modes recognition
+10.1145/3524842.3528433,On the use of fine-grained vulnerable code statements for software vulnerability assessment models
+10.1145/3204493.3204575,Predicting observer's task from eye movement patterns during motion image analysis
+10.1145/3502398,Applied Affective Computing
+10.1145/3366423.3379993,Efficient Online Multi-Task Learning via Adaptive Kernel Selection
+10.1145/3018009.3018029,Discovering usage patterns of telecommunication subscribers based on polytomous logistic regression
+10.1109/TCBB.2018.2868078,Extracting Biomedical Events with Parallel Multi-Pooling Convolutional Neural Networks
+10.1109/TASLP.2015.2389618,Robust sound event classification using deep neural networks
+10.1145/1553374.1553439,Boosting products of base classifiers
+10.5555/1756006.1953036,Classification with Incomplete Data Using Dirichlet Process Priors
+10.1145/3231884.3231897,Improving Application Launch Performance in Smartphones Using Recurrent Neural Network
+10.1145/3639063,Data Scarcity in Recommendation Systems: A Survey
+10.1145/3109761.3109792,"HCES: helper context engine system to predict relevant state of patients in COPD domain using na\""{\i}ve bayesian"
+10.1145/3639856,AIMLSystems '23: Proceedings of the Third International Conference on AI-ML Systems
+10.1145/3508546.3508577,Region-Level Attention Network for Food and Ingredient Joint Recognition
+10.1145/2523819,A survey on ontologies for human behavior recognition
+10.5555/2021855.2021886,Enhancing traditional local search recommendations with context-awareness
+10.1145/3637528.3671619,PEMBOT: Pareto-Ensembled Multi-task Boosted Trees
+10.1145/3535335,On sampled metrics for item recommendation
+10.1145/3428757.3429090,A Privacy Protection System in Context-aware Environment The Privacy Controller Module
+10.1145/3544793.3560385,Designing an Intelligent Learning System For Practicing the Oboe Embouchure
+10.1145/3414062,TransNet: Minimally Supervised Deep Transfer Learning for Dynamic Adaptation of Wearable Systems
+10.1145/3640457.3688184,Learned Ranking Function: From Short-term Behavior Predictions to Long-term User Satisfaction
+10.1145/2872518.2888609,Empirical Malware Research through Observation of System Behaviour
+10.1145/3551349.3559509,ASTOR: An Approach to Identify Security Code Reviews
+10.1145/3524106,A Survey on Requirements of Future Intelligent Networks: Solutions and Future Research Directions
+10.1145/3421937.3421971,A Framework for Addressing the Risks and Opportunities In Al-Supported Virtual Health Coaches
+10.5555/2627435.2638592,Bayesian inference with posterior regularization and applications to infinite latent SVMs
+10.1145/3231934,Efficient Learning-Based Recommendation Algorithms for Top-N Tasks and Top-N Workers in Large-Scale Crowdsourcing Systems
+10.1145/3686803,Generative AI for Self-Adaptive Systems: State of the Art and Research Roadmap
+10.1145/3241539.3267746,Type2Motion: Detecting Mobility Context from Smartphone Typing
+10.1145/3630106.3659011,MiMICRI: Towards Domain-centered Counterfactual Explanations of Cardiovascular Image Classification Models
+10.1145/3589334.3645408,Learning to Rewrite Prompts for Personalized Text Generation
+10.1145/3419394.3423629,Lumos5G: Mapping and Predicting Commercial mmWave 5G Throughput
+10.1145/3289402.3289528,Fuzzy-Based Mining Framework of Browsing Behavior to Enhance E-commerce Website Performance: Case Study from Kelkoo.com
+10.1145/3653804,CVDL '24: Proceedings of the International Conference on Computer Vision and Deep Learning
+10.1145/3610661,ICMI '23 Companion: Companion Publication of the 25th International Conference on Multimodal Interaction
+10.1145/2971648.2971748,Test time feature ordering with FOCUS: interactive predictions with minimal user burden
+10.1145/3055635.3056627,A Formal Model for Service Discovery Protocol (SDP) using SDL
+10.1109/ASE51524.2021.9678873,DSInfoSearch: supporting experimentation process of data scientists
+10.1145/3677045.3685431,User-controlled Form Adaptation by Unsupervised Learning
+10.1145/2993148.2993202,Using touchscreen interaction data to predict cognitive workload
+10.1145/3580305.3599440,Multi-Temporal Relationship Inference in Urban Areas
+10.1145/3674127,Information Retrieval: Advanced Topics and Techniques
+10.1145/3472749.3474743,Taming fNIRS-based BCI Input for Better Calibration and Broader Use
+10.1109/ICPC.2019.00050,A replication study on code comprehension and expertise using lightweight biometric sensors
+10.1145/3501296,Federated Learning for Smart Healthcare: A Survey
+10.1109/ASONAM49781.2020.9381467,A pre-training approach for stance classification in online forums
+10.1145/3638209,CIIS '23: Proceedings of the 2023 6th International Conference on Computational Intelligence and Intelligent Systems
+10.5555/3122009.3122042,Online Bayesian passive-aggressive learning
+10.1145/2769493.2769541,"An automated framework for predicting obstructive sleep apnea using a brief, daytime, non-intrusive test procedure"
+10.1109/TCBB.2021.3052811,EEG-Based Brain-Computer Interfaces (BCIs): A Survey of Recent Studies on Signal Sensing Technologies and Computational Intelligence Approaches and Their Applications
+10.1145/3308558.3313546,Fuzzy Multi-task Learning for Hate Speech Type Identification
+10.1145/3687272,HAI '24: Proceedings of the 12th International Conference on Human-Agent Interaction
+10.1145/1631040.1631042,Toward physical activity diary: motion recognition using simple acceleration features with mobile phones
+10.1145/3661996,On the Opportunities and Challenges of Offline Reinforcement Learning for Recommender Systems
+10.1145/3372342,Sensor-based Detection and Classification of Soccer Goalkeeper Training Exercises
+10.1145/3452918.3458798,Data-driven Approaches for Discovery and Prediction of User-preferred Picture Settings on Smart TVs
+10.5555/2503308.2188409,A case study on meta-generalising: a Gaussian processes approach
+10.5555/2188385.2188409,A case study on meta-generalising: a Gaussian processes approach
+10.5555/1390681.1390717,Learning Similarity with Operator-valued Large-margin Classifiers
+10.5555/1870457.1870473,Using deep belief nets for Chinese named entity categorization
+10.1145/3708557,IUI '25 Companion: Companion Proceedings of the 30th International Conference on Intelligent User Interfaces
+10.1145/3613904.3642747,Time2Stop: Adaptive and Explainable Human-AI Loop for Smartphone Overuse Intervention
+10.1145/3581754,IUI '23 Companion: Companion Proceedings of the 28th International Conference on Intelligent User Interfaces
+10.1145/3351240,Knocker: Vibroacoustic-based Object Recognition with Smartphones
+10.1109/ASONAM49781.2020.9381480,Unsupervised and interpretable domain adaptation to rapidly filter tweets for emergency services
+10.5555/3122009.3242066,Estimation of graphical models through structured norm minimization
+10.1145/3366423.3380159,Financial Defaulter Detection on Online Credit Payment via Multi-view Attributed Heterogeneous Information Network
+10.1145/1357054.1357187,Feasibility and pragmatics of classifying working memory load with an electroencephalograph
+10.1145/3711129,EITCE '24: Proceedings of the 2024 8th International Conference on Electronic Information Technology and Computer Engineering
+10.1109/TCBB.2020.3020016,Relation Extraction From Biomedical and Clinical Text: Unified Multitask Learning Framework
+10.1145/3640543,IUI '24: Proceedings of the 29th International Conference on Intelligent User Interfaces
+10.1145/3604915.3608792,Online Matching: A Real-time Bandit System for Large-scale Recommendations
+10.1145/3589334.3645404,Knowledge-Augmented Large Language Models for Personalized Contextual Query Suggestion
+10.1145/3365921.3365932,A Reinforcement Learning and Synthetic Data Approach to Mobile Notification Management
+10.1145/2676467.2676479,Context recognition in a smart home: living experiment
+10.1145/3476107,BotSpot++: A Hierarchical Deep Ensemble Model for Bots Install Fraud Detection in Mobile Advertising
+10.1145/1871437.1871586,Selectively diversifying web search results
+10.1145/2639108.2642916,Poster: am i indoor or outdoor?
+10.1145/3522664.3528602,Black-box models for non-functional properties of AI software systems
+10.1145/3359309,"""You Know What to Do"": Proactive Detection of YouTube Videos Targeted by Coordinated Hate Attacks"
+10.1145/3240323.3240331,CHAMELEON: a deep learning meta-architecture for news recommender systems
+10.14778/3632093.3632103,A Shapelet-Based Framework for Unsupervised Multivariate Time Series Representation Learning
+10.1145/1620545.1620552,Eye movement analysis for activity recognition
+10.1145/3539618.3591840,Facebook Content Search: Efficient and Effective Adapting Search on A Large Scale
+10.1145/3630106,"FAccT '24: Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency"
+10.1145/3511808.3557375,Latent Coreset Sampling based Data-Free Continual Learning
+10.1145/2556195.2556252,LASER: a scalable response prediction platform for online advertising
+10.5555/1870658.1870697,A semi-supervised approach to improve classification of infrequent discourse relations using feature vector extension
+10.1145/3543507.3583263,Cross-domain recommendation via user interest alignment
+10.1145/3442442.3453540,Improving Bounce Rate Prediction for Rare Queries by Leveraging Landing Page Signals
+10.1145/3581641,IUI '23: Proceedings of the 28th International Conference on Intelligent User Interfaces
+10.1145/3344211,RecRules: Recommending IF-THEN Rules for End-User Development
+10.1145/3340531.3412739,Prospective Modeling of Users for Online Display Advertising via Deep Time-Aware Model
+10.1145/3589334.3645707,Towards Cross-Table Masked Pretraining for Web Data Mining
+10.1145/3652583,ICMR '24: Proceedings of the 2024 International Conference on Multimedia Retrieval
+10.1145/3539618.3591899,RL4RS: A Real-World Dataset for Reinforcement Learning based Recommender System
+10.1145/3611643.3616316,Outage-Watch: Early Prediction of Outages using Extreme Event Regularizer
+10.1145/2556288.2557220,Toss 'n' turn: smartphone as sleep and sleep quality detector
+10.1145/3616855,WSDM '24: Proceedings of the 17th ACM International Conference on Web Search and Data Mining
+10.1145/3589132,SIGSPATIAL '23: Proceedings of the 31st ACM International Conference on Advances in Geographic Information Systems
+10.1145/3533271,ICAIF '22: Proceedings of the Third ACM International Conference on AI in Finance
+10.1145/3678957.3685740,Is Distance a Modality? Multi-Label Learning for Speech-Based Joint Prediction of Attributed Traits and Perceived Distances in 3D Audio Immersive Environments
+10.1145/3476886.3477519,SmartOS: towards automated learning and user-adaptive resource allocation in operating systems
+10.1145/3708359,IUI '25: Proceedings of the 30th International Conference on Intelligent User Interfaces
+10.1145/3474379,eFraudCom: An E-commerce Fraud Detection System via Competitive Graph Neural Networks
+10.1145/1026763.1026768,The networked home as a user-centric multimedia system
+10.1145/3664647,MM '24: Proceedings of the 32nd ACM International Conference on Multimedia
+10.1145/2750858.2804260,Enhancing mobile apps to use sensor hubs without programmer effort
+10.1145/2991468,Introduction to Intelligent Music Systems and Applications
+10.5555/1699571.1699579,A structural support vector method for extracting contexts and answers of questions from online forums
+10.1145/3459637.3481907,Crawler Detection in Location-Based Services Using Attributed Action Net
+10.1145/2556195.2556264,Scalable hierarchical multitask learning algorithms for conversion optimization in display advertising
+10.5555/1690299.1690318,Philippine language resources: trends and directions
+10.1145/3697355,BDIOT '24: Proceedings of the 2024 8th International Conference on Big Data and Internet of Things
+10.1145/3649902,ETRA '24: Proceedings of the 2024 Symposium on Eye Tracking Research and Applications
+10.1145/3539618.3592022,Model-free Reinforcement Learning with Stochastic Reward Stabilization for Recommender Systems
+10.1145/2818567.2818677,Web Usage Classification and Clustering Approach for Web Search Personalization
+10.1109/WI-IATW.2006.51,Behavior-Based Web Page Evaluation
+10.1145/3343031.3356073,Enhancing Endoscopic Image Classification with Symptom Localization and Data Augmentation
+10.1145/3577164,"VSIP '22: Proceedings of the 2022 4th International Conference on Video, Signal and Image Processing"
+10.1145/1654988.1654991,Inferring privacy policies for social networking services
+10.1145/3604078,ICDIP '23: Proceedings of the 15th International Conference on Digital Image Processing
+10.1145/3650400,EITCE '23: Proceedings of the 2023 7th International Conference on Electronic Information Technology and Computer Engineering
+10.1145/3583131,GECCO '23: Proceedings of the Genetic and Evolutionary Computation Conference
+10.5555/1599081.1599181,Metric learning for synonym acquisition
+10.1145/3677052,ICAIF '24: Proceedings of the 5th ACM International Conference on AI in Finance
+10.1145/3615896.3628344,Rating Inference for Custom Trips from Enriched GPS Traces using Random Forests
+10.1145/3703847,SHWID '24: Proceedings of the 2024 International Conference on Smart Healthcare and Wearable Intelligent Devices
+10.5555/1621969.1621986,SemEval-2010 task 8: multi-way classification of semantic relations between pairs of nominals
+10.1145/3437963.3441722,Causal Transfer Random Forest: Combining Logged Data and Randomized Experiments for Robust Prediction
+10.1145/3394486.3403226,On Sampled Metrics for Item Recommendation
+10.1145/3604383,ICHMI '23: Proceedings of the 2023 3rd International Conference on Human Machine Interaction
+10.1145/3089351.3089358,Distributed Adaptive Model Predictive Control of a Cluster of Autonomous and Context-Sensitive Body Cameras
+10.1145/1553374.1553527,Interactively optimizing information retrieval systems as a dueling bandits problem
+10.1145/3672121.3672130,Power terminal anomaly monitoring technology based on autoencoder and multi-layer perceptron
+10.14778/1952376.1952380,Incrementally maintaining classification using an RDBMS
+10.1145/3594739.3610760,Understanding Mobile Information Needs and Behaviours
+10.1145/3463492,Detecting Receptivity for mHealth Interventions in the Natural Environment
+10.1145/2089125.2089129,A survey of emerging approaches to spam filtering
+10.1162/coli.2008.34.2.289,Towards robust semantic role labeling
+10.1145/3503161.3548048,AEDNet: Asynchronous Event Denoising with Spatial-Temporal Correlation among Irregular Data
+10.1145/2442087.2442095,Achieving autonomous power management using reinforcement learning
+10.1145/3617233,CBMI '23: Proceedings of the 20th International Conference on Content-based Multimedia Indexing
+10.1145/3698383,RMEL '24: Proceedings of the First ACM International Workshop on Resource-efficient Mobile and Embedded LLM System in AIoT
+10.1145/3502398.3502411,Future of Affective Computing and Applied Affective Computing
+10.1145/3663529,FSE 2024: Companion Proceedings of the 32nd ACM International Conference on the Foundations of Software Engineering
+10.1145/3240323.3240348,No more ready-made deals: constructive recommendation for telco service bundling
+10.1109/MSR.2017.44,"Software evolution and quality data from controlled, multiple, industrial case studies"
+10.1145/3675888,IC3-2024: Proceedings of the 2024 Sixteenth International Conference on Contemporary Computing
+10.1145/3613905,CHI EA '24: Extended Abstracts of the CHI Conference on Human Factors in Computing Systems
+10.1145/1390334.1390569,Task detection for activity-based desktop search
+10.1145/2939672.2939718,CaSMoS: A Framework for Learning Candidate Selection Models over Structured Queries and Documents
+10.1145/3536220,ICMI '22 Companion: Companion Publication of the 2022 International Conference on Multimodal Interaction
+10.1145/3459637.3482389,Self-supervised Representation Learning on Dynamic Graphs
+10.1145/3671151,CIBDA '24: Proceedings of the 5th International Conference on Computer Information and Big Data Applications
+10.1145/3411763.3450367,Context-Aware Wearables: The Last Thing We Need is a Pandemic of Stray Cats
+10.1145/3652920,AHs '24: Proceedings of the Augmented Humans International Conference 2024
+10.1145/2633043,"Inferring Visualization Task Properties, User Performance, and User Cognitive Abilities from Eye Gaze Data"
+10.1145/3270323.3270328,News Session-Based Recommendations using Deep Neural Networks
+10.1145/3502398.3502408,Affective Computing for Enhancing Well-Being
+10.5555/2578048.2578060,Less is more: classifying mobile interactions to support context sensing in journeys
+10.1145/3701571,MUM '24: Proceedings of the International Conference on Mobile and Ubiquitous Multimedia
+10.1109/ASE51524.2021.9678622,DeepCVA: automated commit-level vulnerability assessment with deep multi-task learning
+10.1145/3610977,HRI '24: Proceedings of the 2024 ACM/IEEE International Conference on Human-Robot Interaction
+10.1145/2228360.2228599,Exploiting spatiotemporal and device contexts for energy-efficient mobile embedded systems
+10.1145/3640457,RecSys '24: Proceedings of the 18th ACM Conference on Recommender Systems
+10.1145/3604915,RecSys '23: Proceedings of the 17th ACM Conference on Recommender Systems
+10.1145/3569483,Generalization and Personalization of Mobile Sensing-Based Mood Inference Models: An Analysis of College Students in Eight Countries
+10.1145/2837126.2837157,PRISM: Policy-driven Risk-based Implicit locking for improving the Security of Mobile end-user devices
+10.1145/3551349.3560422,TransRepair: Context-aware Program Repair for Compilation Errors
+10.1145/2677855.2677916,Name Entity Conflict Detection in Biomedical Text Data Based on Probabilistic Topic Models
+10.1145/3240323.3240344,Interactive recommendation via deep neural memory augmented contextual bandits
+10.1145/3662739,MIDA '24: Proceedings of the 2024 International Conference on Machine Intelligence and Digital Applications
+10.1145/3038912.3052563,Identifying Value in Crowdsourced Wireless Signal Measurements
+10.1145/1555400.1555431,Learning to assess the quality of scientific conferences: a case study in computer science
+10.1145/3106372,Understanding and Leveraging the Impact of Response Latency on User Behaviour in Web Search
+10.1145/3443279.3443291,A Classification on Different Aspects of User Modelling in Personalized Web Search
+10.1145/3533020,Learning Implicit and Explicit Multi-task Interactions for Information Extraction
+10.1145/2678025.2701397,Automatic Detection of Learning-Centered Affective States in the Wild
+10.1145/3604915.3608854,Optimizing Long-term Value for Auction-Based Recommender Systems via On-Policy Reinforcement Learning
+10.5555/2615731.2616150,Reasoning about context and engineering context-aware agents
+10.1145/2623372,Exploration in Interactive Personalized Music Recommendation: A Reinforcement Learning Approach
+10.1145/1516241.1516356,PicAChoo: a tool for customizable feature extraction utilizing characteristics of textual data
+10.1145/2693843,Anticipatory Mobile Computing: A Survey of the State of the Art and Research Challenges
+10.1145/3607822,SUI '23: Proceedings of the 2023 ACM Symposium on Spatial User Interaction
+10.1145/2093973.2093982,Transportation mode detection using mobile phones and GIS information
+10.1145/3079628.3079666,Inferring Contextual Preferences Using Deep Auto-Encoding
+10.1145/3675094,UbiComp '24: Companion of the 2024 on ACM International Joint Conference on Pervasive and Ubiquitous Computing
+10.3115/1220575.1220642,Making computers laugh: investigations in automatic humor recognition
+10.1145/3571884,CUI '23: Proceedings of the 5th International Conference on Conversational User Interfaces
+10.1145/1754239.1754255,Text-to-query: dynamically building structured analytics to illustrate textual content
+10.1145/3615868,Boosting Scene Graph Generation with Contextual Information
+10.1145/3677182,"ASENS '24: Proceedings of the International Conference on Algorithms, Software Engineering, and Network Security"
+10.1145/3637732,ICBBE '23: Proceedings of the 2023 10th International Conference on Biomedical and Bioinformatics Engineering
+10.1145/3372246,Semantic Role Labeling System for Persian Language
+10.1145/3626772.3657969,Self-Referential Review: Exploring the Impact of Self-Reference Effect in Review
+10.1145/3664191,Computer Science Curricula 2023
+10.1145/1935826.1935884,Clustering product features for opinion mining
+10.1145/3340531.3412752,Zero-Shot Heterogeneous Transfer Learning from Recommender Systems to Cold-Start Search Retrieval
+10.1145/3698587,"BCB '24: Proceedings of the 15th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics"
+10.1145/2835966.2835971,SurfaceSense: Smartphone Can Recognize Where It Is Kept
+10.1145/3617695,BDIOT '23: Proceedings of the 2023 7th International Conference on Big Data and Internet of Things
+10.1145/3698038,SoCC '24: Proceedings of the 2024 ACM Symposium on Cloud Computing
+10.1145/3674127.3674131,Recommender Systems
+10.1145/2507157.2507180,Location-aware music recommendation using auto-tagging and hybrid matching
+10.14778/2977797.2977807,BlinkFill: semi-supervised programming by example for syntactic string transformations
+10.1145/3229434.3229441,Typical phone use habits: intense use does not predict negative well-being
+10.1145/3607947,IC3-2023: Proceedings of the 2023 Fifteenth International Conference on Contemporary Computing
+10.1145/3523227,RecSys '22: Proceedings of the 16th ACM Conference on Recommender Systems
+10.1145/2792838.2796546,Latent Context-Aware Recommender Systems
+10.1145/3594739,UbiComp/ISWC '23 Adjunct: Adjunct Proceedings of the 2023 ACM International Joint Conference on Pervasive and Ubiquitous Computing &amp; the 2023 ACM International Symposium on Wearable Computing
+10.1145/2994258.2994268,Human action recognition via skeletal and depth based feature fusion
+10.5555/3590145,ASONAM '22: Proceedings of the 2022 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining
+10.5555/2527208.2527216,Conditional random field based sentence context identification: enhancing citation services for the research community
+10.5555/1699765.1699774,Constructing an anaphorically annotated corpus with non-experts: assessing the quality of collaborative annotations
+10.1145/1099554.1099593,Versatile structural disambiguation for semantic-aware applications
+10.1145/1552291.1552293,An ontology-driven approach for semantic information retrieval on the Web
+10.1145/3549179,PRIS '22: Proceedings of the 2022 International Conference on Pattern Recognition and Intelligent Systems
+10.1162/coli_a_00333,Introduction to the special issue on language in social media: Exploiting discourse and other contextual information
+10.1109/WIIAT.2008.163,Cognitive Agents Integrating Rules and Reinforcement Learning for Context-Aware Decision Support
+10.1145/3411763,CHI EA '21: Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems
+10.1145/2688488,Ontology-Based Mapping for Automated Document Management: A Concept-Based Technique for Word Mismatch and Ambiguity Problems in Document Clustering
+10.1145/3712335,"SPCNC '24: Proceedings of the 3rd International Conference on Signal Processing, Computer Networks and Communications"
+10.1145/2670473.2670483,Discovering frequent ADL patterns from wearable accelerometers
+10.1145/3539618.3591876,"Towards Building Voice-based Conversational Recommender Systems: Datasets, Potential Solutions and Prospects"
+10.1145/3447239,Fashion Meets Computer Vision: A Survey
+10.1145/3715904,"A Comprehensive Review on IoT Marketplace Matchmaking: Approaches, Opportunities and Challenges"
+10.1145/3704522,"NSysS '24: Proceedings of the 11th International Conference on Networking, Systems, and Security"
+10.1145/3637494,"CECCT '23: Proceedings of the 2023 International Conference on Electronics, Computers and Communication Technology"
+10.1145/3611380,MMAsia '23 Workshops: Proceedings of the 5th ACM International Conference on Multimedia in Asia Workshops
+10.1145/2484028.2484151,Cumulative citation recommendation: classification vs. ranking
+10.1145/1113343.1113351,Information retrieval in context: IRiX
+10.1145/3558520,Context Prior Guided Semantic Modeling for Biomedical Image Segmentation
+10.1145/3310227,Multi-task Crowdsourcing via an Optimization Framework
+10.1145/3490099.3511158,Explaining Call Recommendations in Nursing Homes: a User-Centered Design Approach for Interacting with Knowledge-Based Health Decision Support Systems
+10.1145/2365934.2365938,Context determines content: an approach to resource recommendation in folksonomies
+10.1145/3594806,PETRA '23: Proceedings of the 16th International Conference on PErvasive Technologies Related to Assistive Environments
+10.1145/3696409,MMAsia '24: Proceedings of the 6th ACM International Conference on Multimedia in Asia
+10.1145/3637528.3671560,Temporal Uplift Modeling for Online Marketing
+10.1145/3631700,"UMAP Adjunct '24: Adjunct Proceedings of the 32nd ACM Conference on User Modeling, Adaptation and Personalization"
+10.1145/3184407.3184432,Generating Workload for ERP Applications through End-User Organization Categorization using High Level Business Operation Data
+10.1145/3351274,Leveraging Routine Behavior and Contextually-Filtered Features for Depression Detection among College Students
+10.1145/3605801,"CNCIT '23: Proceedings of the 2023 2nd International Conference on Networks, Communications and Information Technology"
+10.1145/3608298,ICMHI '23: Proceedings of the 2023 7th International Conference on Medical and Health Informatics
+10.5555/2830840.2830845,LearnLoc: a framework for smart indoor localization with embedded mobile devices
+10.1145/3442442.3453701,Summary of Tutorials at The Web Conference 2021
+10.5555/2263019.2263059,Web squared: paradigms and opportunities
+10.1145/2993148,ICMI '16: Proceedings of the 18th ACM International Conference on Multimodal Interaction
+10.1145/3672121,"CNCIT '24: Proceedings of the 2024 3rd International Conference on Networks, Communications and Information Technology"
+10.1145/3661485,EML: Emotion-Aware Meta Learning for Cross-Event False Information Detection
+10.1145/3597638,ASSETS '23: Proceedings of the 25th International ACM SIGACCESS Conference on Computers and Accessibility
+10.1145/3581807,ICCPR '22: Proceedings of the 2022 11th International Conference on Computing and Pattern Recognition
+10.1145/3589462,IDEAS '23: Proceedings of the 27th International Database Engineered Applications Symposium
+10.1145/3689942,HealthSec '24: Proceedings of the 2024 Workshop on Cybersecurity in Healthcare
+10.1145/1180995.1181044,Human computing and machine understanding of human behavior: a survey
+10.1145/3132847.3132979,Reply With: Proactive Recommendation of Email Attachments
+10.1145/2750858.2807530,Boredom-computer interaction: boredom proneness and the use of smartphone
+10.1145/3663548,ASSETS '24: Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility
+10.1145/1111449.1111487,Towards intelligent QA interfaces: discourse processing for context questions
+10.1145/3644523,ICCSMT '23: Proceedings of the 2023 4th International Conference on Computer Science and Management Technology
+10.1145/2370216.2370289,Helping mobile apps bootstrap with fewer users
+10.1145/2499621,A tutorial on human activity recognition using body-worn inertial sensors
+10.1145/2736277.2741646,Query Suggestion and Data Fusion in Contextual Disambiguation
+10.1145/2381716.2381827,Situation recognition in sensor based environments using concept lattices
+10.1145/3230905.3230941,Using Context Ontology and Linear SVM for Chronic Kidney Disease Prediction
+10.1145/2856767.2856786,Beyond Relevance: Adapting Exploration/Exploitation in Information Retrieval
+10.1145/511446.511513,Topic-sensitive PageRank
+10.1145/3611659,VRST '23: Proceedings of the 29th ACM Symposium on Virtual Reality Software and Technology
+10.1145/2732407,Learning to Remove Soft Shadows
+10.1145/3003733.3003767,Signal Processing Techniques Restructure The Big Data Era
+10.1145/3582515,GoodIT '23: Proceedings of the 2023 ACM Conference on Information Technology for Social Good
+10.1145/3605098,SAC '24: Proceedings of the 39th ACM/SIGAPP Symposium on Applied Computing
+10.1145/3627673.3679598,Social Influence Learning for Recommendation Systems
+10.1145/3512576.3512639,"Future Smart Cities: Vision, Challenges and Technology Trends"
+10.1145/3561801,BDIOT '22: Proceedings of the 2022 5th International Conference on Big Data and Internet of Things
+10.1145/3616855.3635846,Ad-load Balancing via Off-policy Learning in a Content Marketplace
+10.1145/3655693,EICC '24: Proceedings of the 2024 European Interdisciplinary Cybersecurity Conference
+10.1145/3678717,SIGSPATIAL '24: Proceedings of the 32nd ACM International Conference on Advances in Geographic Information Systems
+10.1145/3675095,ISWC '24: Proceedings of the 2024 ACM International Symposium on Wearable Computers
+10.1145/2444776.2444791,A framework for context-aware privacy of sensor data on mobile systems
+10.1145/3720538,Software Engineering for OpenHarmony: A Research Roadmap
+10.1145/3626772,SIGIR '24: Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval
+10.1145/3130956,Beyond Interruptibility: Predicting Opportune Moments to Engage Mobile Phone Users
+10.1145/2009916.2009928,Learning search tasks in queries and web pages via graph regularization
+10.1145/2505515.2505520,Toward advice mining: conditional random fields for extracting advice-revealing text units
+10.1145/3534678.3539108,CausalMTA: Eliminating the User Confounding Bias for Causal Multi-touch Attribution
+10.1145/3555776,SAC '23: Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing
+10.1145/2554850.2555059,MUSES: a corporate user-centric system which applies computational intelligence methods
+10.1145/3593013,"FAccT '23: Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency"
+10.3115/1219840.1219912,Semantic role labeling using different syntactic views
+10.1145/2792838.2799672,"""Please, Not Now!"": A Model for Timing Recommendations"
+10.1145/3063955.3063976,CLR: coupled logistic regression model for CTR prediction
+10.1145/3018661.3018716,Multilinear Factorization Machines for Multi-Task Multi-View Learning
+10.1145/3122865,Frontiers of Multimedia Research
+10.5555/1596276.1596303,A context pattern induction method for named entity extraction
+10.5555/1621474.1621477,SemEval-2007 task 04: classification of semantic relations between nominals
+10.1145/3627043,"UMAP '24: Proceedings of the 32nd ACM Conference on User Modeling, Adaptation and Personalization"
+10.1145/3019612.3019671,Enhanced situation space mining for data streams
+10.1145/3563359,"UMAP '23 Adjunct: Adjunct Proceedings of the 31st ACM Conference on User Modeling, Adaptation and Personalization"
+10.1145/3635059,PCI '23: Proceedings of the 27th Pan-Hellenic Conference on Progress in Computing and Informatics
+10.1145/3678884,CSCW Companion '24: Companion Publication of the 2024 Conference on Computer-Supported Cooperative Work and Social Computing
+10.1145/3648188,HT '24: Proceedings of the 35th ACM Conference on Hypertext and Social Media
+10.5555/1858681.1858738,Identifying non-explicit citing sentences for citation-based summarization
+10.1145/352342.2317216,Reverse Engineering of Use Case Realizations in UML
+10.1145/2517351.2517368,Lifestreams: a modular sense-making toolset for identifying important patterns from everyday life
+10.1145/3539618.3591831,Integrity and Junkiness Failure Handling for Embedding-based Retrieval: A Case Study in Social Network Search
+10.1145/3631407,Semantic Loss: A New Neuro-Symbolic Approach for Context-Aware Human Activity Recognition
+10.1145/3544793,UbiComp/ISWC '22 Adjunct: Adjunct Proceedings of the 2022 ACM International Joint Conference on Pervasive and Ubiquitous Computing and the 2022 ACM International Symposium on Wearable Computers
+10.1145/2462456.2464446,Auditeur: a mobile-cloud service platform for acoustic event detection on smartphones
+10.1145/1968613.1968725,Socially interactive CDSS for u-life care
+10.1145/3510003.3510110,PerfSig: extracting performance bug signatures via multi-modality causal analysis
+10.1145/1278366.1278371,Generating semantically enriched user profiles for Web personalization
+10.1145/3019612.3019694,Part-of-speech tagging for web search queries using a large-scale web corpus
+10.1145/3474085.3475440,Build Your Own Bundle - A Neural Combinatorial Optimization Method
+10.1145/3121050.3121110,LEARning Next gEneration Rankers (LEARNER 2017)
+10.1145/3448300.3468290,Write to know: on the feasibility of wrist motion based user-authentication from handwriting
+10.1145/3626772.3657848,Large Language Models and Future of Information Retrieval: Opportunities and Challenges
+10.1145/3639478,ICSE-Companion '24: Proceedings of the 2024 IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings
+10.1145/3708493,CC '25: Proceedings of the 34th ACM SIGPLAN International Conference on Compiler Construction
+10.1145/1772690.1772703,Classification-enhanced ranking
+10.1145/3593434,EASE '23: Proceedings of the 27th International Conference on Evaluation and Assessment in Software Engineering
+10.1145/3658619,EduCHI '24: Proceedings of the 6th Annual Symposium on HCI Education
+10.1145/3447404.3447406,Introduction
+10.1145/3614321,ICEGOV '23: Proceedings of the 16th International Conference on Theory and Practice of Electronic Governance
+10.1145/3609956,SSTD '23: Proceedings of the 18th International Symposium on Spatial and Temporal Data
+10.1145/3584931,CSCW '23 Companion: Companion Publication of the 2023 Conference on Computer Supported Cooperative Work and Social Computing
+10.1145/3569966,CSSE '22: Proceedings of the 5th International Conference on Computer Science and Software Engineering
+10.1145/3477025,Precise Correlation Extraction for IoT Fault Detection With Concurrent Activities
+10.1145/3341162.3345609,Unsupervised domain adaptation for robust sensory systems
+10.1145/3447548.3467192,Towards the D-Optimal Online Experiment Design for Recommender Selection
+10.1145/3647632,MOBILESoft '24: Proceedings of the IEEE/ACM 11th International Conference on Mobile Software Engineering and Systems
+10.1145/3178876.3186165,Learning to Collaborate: Multi-Scenario Ranking via Multi-Agent Reinforcement Learning
+10.1145/2002980.2002985,Employing Constituent Dependency Information for Tree Kernel-Based Semantic Relation Extraction between Named Entities
+10.1145/3629606,CHCHI '23: Proceedings of the Eleventh International Symposium of Chinese CHI
+10.1145/3625007,ASONAM '23: Proceedings of the 2023 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining
+10.1145/3712001,Security and Privacy Challenges of Large Language Models: A Survey
+10.1145/1877868.1877880,Enhanced human behavior recognition using HMM and evaluative rectification
+10.1145/3565472,"UMAP '23: Proceedings of the 31st ACM Conference on User Modeling, Adaptation and Personalization"
+10.1145/3643991,MSR '24: Proceedings of the 21st International Conference on Mining Software Repositories
+10.1145/3591106,ICMR '23: Proceedings of the 2023 ACM International Conference on Multimedia Retrieval
+10.1145/3702038,IHC '24: Proceedings of the XXIII Brazilian Symposium on Human Factors in Computing Systems
+10.1145/3314111.3319826,Ferns for area of interest free scanpath classification
+10.1145/3603555,MuC '23: Proceedings of Mensch und Computer 2023
+10.1145/3587819,MMSys '23: Proceedings of the 14th ACM Multimedia Systems Conference
+10.1145/3673791,SIGIR-AP 2024: Proceedings of the 2024 Annual International ACM SIGIR Conference on Research and Development in Information Retrieval in the Asia Pacific Region
+10.5555/3715674,"SC-W '24: Proceedings of the SC '24 Workshops of the International Conference on High Performance Computing, Network, Storage, and Analysis"
+10.1145/3643514,MAPLE: Mobile App Prediction Leveraging Large Language Model Embeddings
+10.1145/3588340,"ICBICC '22: Proceedings of the 2022 International Conference on Big Data, IoT, and Cloud Computing"
+10.1145/3487553,WWW '22: Companion Proceedings of the Web Conference 2022
+10.1145/1935826.1935878,Unbiased offline evaluation of contextual-bandit-based news article recommendation algorithms
+10.5555/1147685.1147748,Some sensor network elements for ubiquitous computing
+10.5555/3694718,JCDL '23: Proceedings of the 2023 ACM/IEEE Joint Conference on Digital Libraries
+10.5555/2818754.2818793,AppContext: differentiating malicious and benign mobile app behaviors using context
+10.1145/3639477,ICSE-SEIP '24: Proceedings of the 46th International Conference on Software Engineering: Software Engineering in Practice
+10.3115/1220175.1220191,Modeling commonality among related classes in relation extraction
+10.1145/3447548.3467228,TabularNet: A Neural Network Architecture for Understanding Semantic Structures of Tabular Data
+10.1145/3381001,Predicting Brain Functional Connectivity Using Mobile Sensing
+10.1145/3640794,CUI '24: Proceedings of the 6th ACM Conference on Conversational User Interfaces
+10.5555/1025132.1026300,Extracting Precise Link Context Using NLP Parsing Technique
+10.1145/3670653,MuC '24: Proceedings of Mensch und Computer 2024
+10.1109/ASONAM55673.2022.10068655,Predicting Depression and Anxiety on Reddit: A Multi-Task Learning Approach
+10.1145/3308560,WWW '19: Companion Proceedings of The 2019 World Wide Web Conference
+10.1145/3603555.3603574,How Unique do we Move? Understanding the Human Body and Context Factors for User Identification
+10.1145/3540250,ESEC/FSE 2022: Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering
+10.5555/1273073.1273136,Automatic identification of pro and con reasons in online reviews
+10.1145/2645710.2653368,Deviation-based and similarity-based contextual SLIM recommendation algorithms
+10.1145/3597503,ICSE '24: Proceedings of the IEEE/ACM 46th International Conference on Software Engineering
+10.1145/3544548.3580962,A Framework and Call to Action for the Future Development of EMG-Based Input in HCI
+10.1145/3649217,ITiCSE 2024: Proceedings of the 2024 on Innovation and Technology in Computer Science Education V. 1
+10.1145/1142473.1142555,Documentum ECI self-repairing wrappers: performance analysis
+10.1145/2647868.2654856,Medical case retrieval
+10.1145/3545258,Internetware '22: Proceedings of the 13th Asia-Pacific Symposium on Internetware
+10.1145/3410530.3414429,Trading energy for accuracy in mobile interruptiblity inference
+10.1145/2072298.2072306,Combining content-based analysis and crowdsourcing to improve user interaction with zoomable video
+10.1145/3379155.3391321,Detecting Relevance during Decision-Making from Eye Movements for UI Adaptation
+10.1145/3626705,MUM '23: Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia
+10.1145/3593663,ECSEE '23: Proceedings of the 5th European Conference on Software Engineering Education
+10.1145/945546.945549,"Challenges in information retrieval and language modeling: report of a workshop held at the center for intelligent information retrieval, University of Massachusetts Amherst, September 2002"
+10.1145/2821650.2821674,Zodiac: Organizing Large Deployment of Sensors to Create Reusable Applications for Buildings
+10.1145/2645710.2645756,CSLIM: contextual SLIM recommendation algorithms
+10.1145/3543758,MuC '22: Proceedings of Mensch und Computer 2022
+10.1145/3305258,Content-Aware Trust Propagation Toward Online Review Spam Detection
+10.1145/3576842,IoTDI '23: Proceedings of the 8th ACM/IEEE Conference on Internet of Things Design and Implementation
+10.1145/1387663.1387665,Activity recognition via user-trace segmentation
+10.3115/1220175.1220221,Scaling distributional similarity to large corpora
+10.5555/1385289.1385373,A smart calendar application for mobile environments
+10.1109/TCBB.2017.2684127,Multitask Protein Function Prediction through Task Dissimilarity
+10.1145/3448080,Fine-Grained and Context-Aware Behavioral Biometrics for Pattern Lock on Smartphones
+10.1145/3191756,W-Air: Enabling Personal Air Pollution Monitoring on Wearables
+10.1145/1993077.1993081,Community Discovery via Metagraph Factorization
+10.1145/1864708.1864792,Identifying and utilizing contextual data in hybrid recommender systems
+10.1145/3323679.3326527,Scaling Deep Learning Models for Spectrum Anomaly Detection
+10.1145/1409240.1409260,Mobile phones assisting with health self-care: a diabetes case study
+10.1145/3432210,Automated Detection of Stressful Conversations Using Wearable Physiological and Inertial Sensors
+10.1145/2991561.2991562,A Bandit Approach for Intelligent IoT Service Composition across Heterogeneous Smart Spaces
+10.1145/3678890,"RAID '24: Proceedings of the 27th International Symposium on Research in Attacks, Intrusions and Defenses"
+10.1145/3551349,ASE '22: Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering
+10.1145/3571600,"ICVGIP '22: Proceedings of the Thirteenth Indian Conference on Computer Vision, Graphics and Image Processing"
+10.1145/3607199,"RAID '23: Proceedings of the 26th International Symposium on Research in Attacks, Intrusions and Defenses"
+10.1145/3573381,IMX '23: Proceedings of the 2023 ACM International Conference on Interactive Media Experiences
+10.1145/3627508,CHIIR '24: Proceedings of the 2024 Conference on Human Information Interaction and Retrieval
+10.1145/3538969,"ARES '22: Proceedings of the 17th International Conference on Availability, Reliability and Security"
+10.1145/2629504,Toward Personalized Context Recognition for Mobile Users: A Semisupervised Bayesian HMM Approach
+10.1145/3564746,ACMSE '23: Proceedings of the 2023 ACM Southeast Conference
+10.1145/3658644,CCS '24: Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security
+10.1145/3611643,ESEC/FSE 2023: Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering
+10.1145/3522711,Characterization and Prediction of Mobile Tasks
+10.1145/3615896,"LocalRec '23: Proceedings of the 7th ACM SIGSPATIAL Workshop on Location-based Recommendations, Geosocial Networks and Geoadvertising"
+10.1145/3567445,IoT '22: Proceedings of the 12th International Conference on the Internet of Things
+10.1145/3209219.3209228,Incorporating Constraints into Matrix Factorization for Clothes Package Recommendation
+10.1109/WI.2007.141,Mining Context-based User Preferences for m-Services Applications
+10.1145/2645710.2645733,Explore-exploit in top-N recommender systems via Gaussian processes
+10.1145/3544549,CHI EA '23: Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing Systems
+10.1145/2647868.2654940,Improving Content-based and Hybrid Music Recommendation using Deep Learning
+10.1145/3269206.3271797,Semantically-Enhanced Topic Modeling
+10.1145/3643832,"MOBISYS '24: Proceedings of the 22nd Annual International Conference on Mobile Systems, Applications and Services"
+10.1145/3665463,CHI PLAY Companion '24: Companion Proceedings of the 2024 Annual Symposium on Computer-Human Interaction in Play
+10.1145/3640537,CC 2024: Proceedings of the 33rd ACM SIGPLAN International Conference on Compiler Construction
+10.1109/ICSE.2017.24,Decoding the representation of code in the brain: an fMRI study of code review and expertise
+10.1145/3581791,"MobiSys '23: Proceedings of the 21st Annual International Conference on Mobile Systems, Applications and Services"
+10.1145/3434643,Toward an Objective Measure of Developers’ Cognitive Activities
+10.1145/3308558,WWW '19: The World Wide Web Conference
+10.1145/3581784,"SC '23: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
+10.1145/3614419,WEBSCI '24: Proceedings of the 16th ACM Web Science Conference
+10.1145/3292522.3326024,Minority Report: Cyberbullying Prediction on Instagram
+10.1145/383952.383995,Evaluating topic-driven web crawlers
+10.1109/TNET.2019.2936939,cDeepArch: A Compact Deep Neural Network Architecture for Mobile Sensing
+10.1145/3650212,ISSTA 2024: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis
+10.1145/2723372,SIGMOD '15: Proceedings of the 2015 ACM SIGMOD International Conference on Management of Data
+10.1145/2783258.2783304,Deep Model Based Transfer and Multi-Task Learning for Biological Image Analysis
+10.1145/1454008.1454048,Personalized recommendation in social tagging systems using hierarchical clustering
+10.1145/3572864,HotMobile '23: Proceedings of the 24th International Workshop on Mobile Computing Systems and Applications
+10.1145/3546155,NordiCHI '22: Nordic Human-Computer Interaction Conference
+10.1145/3131895,Low-resource Multi-task Audio Sensing for Mobile and Embedded Devices via Shared Deep Neural Network Representations
+10.1145/2414425.2414435,An approach to social recommendation for context-aware mobile services
+10.1145/1118890.1118893,Feature-based similarity search in 3D object databases
+10.1145/3654777,UIST '24: Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology
+10.1145/3015783,"The Handbook of Multimodal-Multisensor Interfaces: Foundations, User Modeling, and Common Modality Combinations - Volume 1"
+10.1145/3233027.3233039,N-dimensional tensor factorization for self-configuration of software product lines at runtime
+10.1145/2935334.2935347,Conversational context helps improve mobile notification management
+10.1109/TCBB.2016.2515610,Private data analytics on biomedical sensing data via distributed computation
+10.1145/3001837,Interacting with Recommenders—Overview and Research Directions
+10.1145/2684822.2685287,You Are Where You Go: Inferring Demographic Attributes from Location Check-ins
+10.1145/3626111,HotNets '23: Proceedings of the 22nd ACM Workshop on Hot Topics in Networks
+10.1145/3086665,"Search, Mining, and Their Applications on Mobile Devices: Introduction to the Special Issue"
+10.1145/2837185.2837199,Classifying malicious system behavior using event propagation trees
+10.1145/2185677.2185741,mPuff: automated detection of cigarette smoking puffs from respiration measurements
+10.1145/3395050,Roaming Through the Castle Tunnels: An Empirical Analysis of Inter-app Navigation of Android Apps
+10.1145/3638067,IHC '23: Proceedings of the XXII Brazilian Symposium on Human Factors in Computing Systems
+10.1145/2971648.2971747,PrefMiner: mining user's preferences for intelligent mobile notification management
+10.1145/2858036.2858218,Finding Significant Stress Episodes in a Discontinuous Time Series of Rapidly Varying Mobile Sensor Data
+10.1145/3538712,SSDBM '22: Proceedings of the 34th International Conference on Scientific and Statistical Database Management
+10.1145/3623278,"ASPLOS '23: Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 4"
+10.1145/3676641,"ASPLOS '25: Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2"
+10.1145/3689031,EuroSys '25: Proceedings of the Twentieth European Conference on Computer Systems
+10.5555/3606010,ICSE '23: Proceedings of the 45th International Conference on Software Engineering
+10.1145/3613904,CHI '24: Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems
+10.1145/3586183,UIST '23: Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology
+10.1145/2423636.2423644,Physical activity recognition using multiple sensors embedded in a wearable device
+10.1145/3432699,Where You Go Matters: A Study on the Privacy Implications of Continuous Location Tracking
+10.1145/2493432.2493449,Walk detection and step counting on unconstrained smartphones
+10.1145/1966874.1966879,Service-oriented information extraction
+10.1145/3544548,CHI '23: Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems
+10.1145/3651890,ACM SIGCOMM '24: Proceedings of the ACM SIGCOMM 2024 Conference
+10.1145/2370216.2370243,Understanding and prediction of mobile application usage for smart phones
+10.1145/2442670.2442673,Integrating multiple contexts in real-time collaboration applications
+10.1145/3411764,CHI '21: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems
+10.5555/1567545.1567550,A language independent approach for name categorization and discrimination
+10.1145/3015783.3015793,Multimodal technologies for seniors: challenges and opportunities
+10.1145/3570353,COP '22: Proceedings of the 14th ACM International Workshop on Context-Oriented Programming and Advanced Modularity
+10.5555/1771592.1771593,A statistical reasoning system for medication prompting
+10.1145/2070942.2070949,"Balancing energy, latency and accuracy for mobile sensor data classification"
+10.1145/2382636.2382714,Selecting keywords to represent web pages using Wikipedia information
+10.1145/3569009,"TEI '23: Proceedings of the Seventeenth International Conference on Tangible, Embedded, and Embodied Interaction"
+10.1145/2422256.2422265,PROMISE retreat report prospects and opportunities for information access evaluation
+10.1145/3555228,SBES '22: Proceedings of the XXXVI Brazilian Symposium on Software Engineering
+10.1145/1772690.1772734,Context-aware citation recommendation
+10.5555/3571885,"SC '22: Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis"
+10.1145/2532640,A Multimedia Recommender System
+10.1145/601858.601882,Research activities in database management and information retrieval at University of Illinois at Chicago
+10.1145/3689050,"TEI '25: Proceedings of the Nineteenth International Conference on Tangible, Embedded, and Embodied Interaction"
+10.1145/3579990,CGO '23: Proceedings of the 21st ACM/IEEE International Symposium on Code Generation and Optimization
+10.1145/2934687,A Comprehensive Survey and Classification of Approaches for Community Question Answering
+10.1145/3359996,VRST '19: Proceedings of the 25th ACM Symposium on Virtual Reality Software and Technology
+10.1145/2998181,CSCW '17: Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing
+10.1145/2729094,ITiCSE '15: Proceedings of the 2015 ACM Conference on Innovation and Technology in Computer Science Education

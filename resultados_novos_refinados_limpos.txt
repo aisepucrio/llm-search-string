@@ -1,0 +1,68 @@
+("software product line" OR SPL) AND ("non-functional properties" OR performance OR footprint OR energy) AND (optimization OR measurement) AND ("variant derivation" OR "feature-oriented programming")
+("software product line" OR SPL) AND ("non-functional properties" OR "quality attributes" OR performance OR size OR "binary size") AND ("software configuration" OR "product derivation") AND (measurement OR "attribute evaluation")
+("software defect prediction" OR "defect prediction") AND ("machine learning" OR "data mining" OR "classification") AND ("source code" OR "code metrics")
+("machine learning" OR "data mining") AND ("product line" OR "product lines" OR "configuration space") AND ("constraint inference" OR "constraint discovery" OR "constraint generation") AND ("product configuration" OR "software configuration")
+("performance prediction" OR "performance modeling") AND ("configurable systems" OR "variant selection") AND ("sampling strategies" OR "sampling methods" OR "sampling techniques") AND ("feature selection" OR "variant generation")
+("software product line" OR SPL) AND ("non-functional properties" OR performance OR footprint OR energy) AND (optimization OR "variant derivation")
+("software product line" OR SPL) AND ("non-functional properties" OR "quality attributes") AND ("software modules" OR "code units") AND ("measurement" OR "optimization" OR "configuration")
+("machine learning" OR "data mining") AND ("software defect" OR "software fault" OR "bug prediction")
+
+("machine learning" OR "data mining") AND ("product line" OR "product-line") AND ("constraint inference" OR "cross-tree constraints")
+("configurable systems" OR "system variants") AND ("performance prediction" OR "performance evaluation") AND ("sampling strategies" OR "sampling methods" OR "sample selection") AND ("feature selection" OR "feature coverage")
+("software product line" OR SPL) AND ("non-functional properties" OR "quality attributes" OR performance OR footprint OR energy) AND (optimization OR "variant derivation") AND ("feature-oriented programming" OR "conditional compilation")
+("software product line" OR SPL) AND ("non-functional properties" OR "quality attributes" OR performance OR security OR reliability OR usability) AND ("product derivation" OR configuration) AND (measurement OR "attribute-driven design")
+("software defect prediction" OR "defect prediction") AND ("machine learning" OR PNN OR CART OR "J48 algorithm" OR GMDH) AND ("source code" OR "code metrics")
+("machine learning" OR "data mining" OR "artificial intelligence") AND ("product line" OR "product lines" OR "software product line" OR "SPL") AND ("constraint inference" OR "constraint generation" OR "constraint discovery" OR "cross-tree constraints")
+("configurable systems" OR "variant generation") AND ("performance prediction" OR "performance modeling" OR "performance estimation") AND ("sampling strategies" OR "sampling methods" OR "sample selection") AND ("feature selection" OR "feature frequency" OR "t-way feature coverage")
+("software product line" OR "SPL") AND ("non-functional properties" OR "NFPs") AND optimization AND measurement
+("software product line" OR "SPL") AND ("non-functional property" OR "functional property") AND ("product derivation" OR "configuration process") AND (measure* OR optimize*)
+("software defect" OR "defect prediction") AND (machine learning)
+("machine learning" OR "ML") AND ("product lines" OR "product line constraints") AND (infer OR derive)
+("configurable systems" OR "individual system variants") AND ("performance prediction" OR "sampling strategies") AND ("cost-efficient" OR "measurement effort")
+software product line AND ("non-functional property" OR "performance" OR "footprint" OR "energy") AND optimization AND (SPL OR variant)
+("software product line" OR "SPL") AND ("non-functional property" OR "quality attribute") AND (measure OR evaluate) AND ("software module" OR "code unit")
+("software defect" OR "defect prediction") AND ("machine learning" OR ML) AND (PNN OR CART OR "decision tree" OR rule-based)
+("product line" OR "software product lines") AND ("machine learning" OR "ML") AND constraints AND oracle
+("configurable system" OR "software product line") AND ("performance prediction" OR "predict performance") AND (sampling OR measure)
+("software product line" OR "SPL") AND ("non-functional properties" OR "qualitative specification" OR "quantitative measurement") AND (optimization OR variant space)
+("software product line" OR "SPL") AND ("non-functional properties" OR "quality attributes") AND ("feature composition" OR "product derivation") AND (measurement OR optimization)
+("software defect" OR "defect prediction") AND ("machine learning" OR "ML") AND (PNN OR CART OR J48)
+("machine learning" OR "ML") AND ("product line" OR "productlines") AND constraints AND (infer OR learn) AND (correct OR valid) AND video generator
+("configurable systems" OR "system variants") AND ("performance prediction" OR "sampling strategies") AND (measurement effort OR accuracy)
+("software product line" OR "SPL") AND ("non-functional property" OR "performance optimization" OR "energy efficiency") AND ("variant derivation" OR "optimization algorithm")
+("software product line" OR "SPL") AND ("non-functional property" OR "performance metric" OR "quality attribute") AND ("configuration process" OR "product derivation")
+("machine learning" OR "artificial intelligence") AND ("software defect prediction" OR "defect prediction") AND ("source code analysis" OR "algorithmic approach")
+("machine learning" OR "constraint inference") AND ("product lines" OR "variability intensive systems") AND (oracle OR validation)
+("performance prediction" OR "configurable systems") AND ("sampling strategies" OR "sampling methods") AND ("software performance" OR "system variants")
+("Software product line" OR "SPL") AND ("non-functional properties" OR "optimization goals") AND (variant OR "program derivation")
+("non-functional properties" OR "software metrics") AND ("product derivation" OR "software product lines") AND (configuration OR "complexity management")
+("software defect" OR "predictive maintenance") AND ("machine learning" OR "classification algorithms") AND ("source code analysis" OR "software metrics")
+("machine learning" OR "constraint inference") AND ("product lines" OR "variability intensive systems") AND ("constraints" OR "cross-tree constraints")
+("configurable systems" OR "system variants") AND ("performance prediction" OR "sampling strategies") AND ("prediction accuracy" OR "measurement effort")
+("software product lines" OR "SPL engineering") AND ("non-functional properties" OR "optimization goals") AND ("variant-derivation process" OR "feature-oriented programming" OR "conditional compilation")
+
+After searching with the extracted terms, the following new list of keywords is generated to expand the search string:
+
+* To capture more relevant articles on optimization of non-functional properties in SPLs:
+	+ Optimization techniques (e.g., genetic algorithms, simulated annealing)
+	+ Performance metrics (e.g., response time, throughput)
+	+ Energy efficiency
+	+ Footprint reduction
+	+ Variability management
+* To focus on the application domains mentioned in the abstract:
+	+ Database management systems
+	+ Operating systems
+
+The second version of the search string is:
+
+("software product lines" OR "SPL engineering") AND ("non-functional properties" OR "optimization goals") AND ((genetic algorithms OR simulated annealing) OR (performance metrics OR response time OR throughput) OR energy efficiency OR footprint reduction OR variability management OR database management systems OR operating systems)
+
+Final search string:
+ 
+("software product lines" OR "SPL engineering") AND ("non-functional properties" OR "optimization goals") AND ((genetic algorithms OR simulated annealing) OR (performance metrics OR response time OR throughput) OR energy efficiency OR footprint reduction OR variability management OR database management OR operating system)
+("software product lines" OR "SPL") AND ("non-functional properties" OR "performance measures" OR "binary size constraints") AND ("configuration process" OR "product derivation")
+("software defect" OR "software errors") AND ("machine learning" OR "predictive model") AND ("source code analysis" OR "code metrics" OR "feature selection")
+(product line OR product lines) AND (constraints OR constraint inference) AND (machine learning OR variabilty intensive systems)
+
+("product line" OR "product lines") AND ("constraint inference" OR constraints) AND ("machine learning" OR "variability intensive system")
+(configurable systems OR performance prediction) AND (sampling strategies OR "small samples") AND (prediction accuracy OR measurement effort)

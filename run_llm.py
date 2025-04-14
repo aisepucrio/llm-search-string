@@ -11,10 +11,10 @@ import re
 ollama_client = ollama.Client(timeout=60)
 print("iniciamos cliente")
 
-models = ['deepseek-r1:8b', 'llama3.1:8b']
+models = ['gemma3:12b', 'mistral-nemo:latest', 'llama3.1:latest']
 
 def salvar_em_txt(nome_arquivo, conteudo):
-    with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:  # 'w' para sobrescrever e salvar o JSON
+    with open(nome_arquivo, 'w', encoding='utf-8') as arquivo: 
         json.dump(conteudo, arquivo, indent=4, ensure_ascii=False)
     print(f'Conteúdo salvo no arquivo "{nome_arquivo}".')
 
@@ -45,16 +45,12 @@ def main(models):
         resultados[model] = []
 
         for prompt_name, prompt_content in prompts.items():
-            for article in articles:
+            for article in new_articles:
                 inicio = time.time()
                 answer = run_llm(model, prompt_content, article)
                 fim = time.time()
 
                 tempo_execucao = round(fim - inicio, 2)
-
-                if model == 'deepseek-r1:8b':
-                    print("Limpando resposta")
-                    answer = limpar_resposta(answer)
 
                 resultado = {
                     'prompt_name': prompt_name,
@@ -66,11 +62,11 @@ def main(models):
 
                 resultados[model].append(resultado)
 
-    salvar_em_txt("resultados_llm.json", resultados)
+    salvar_em_txt("resultados_novos.json", resultados)
             
 
     print("Classification completed.")
-    winsound.Beep(500, 5000)
+    winsound.Beep(500, 4000)
 
 if __name__ == '__main__':
     winsound.Beep(500, 1000)
