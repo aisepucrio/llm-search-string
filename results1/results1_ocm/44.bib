@@ -1,0 +1,1580 @@
+@inproceedings{10.1145/3358960.3379137,
+author = {Alves Pereira, Juliana and Acher, Mathieu and Martin, Hugo and J\'{e}z\'{e}quel, Jean-Marc},
+title = {Sampling Effect on Performance Prediction of Configurable Systems: A Case Study},
+year = {2020},
+isbn = {9781450369916},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3358960.3379137},
+doi = {10.1145/3358960.3379137},
+abstract = {Numerous software systems are highly configurable and provide a myriad of configuration options that users can tune to fit their functional and performance requirements (e.g., execution time). Measuring all configurations of a system is the most obvious way to understand the effect of options and their interactions, but is too costly or infeasible in practice. Numerous works thus propose to measure only a few configurations (a sample) to learn and predict the performance of any combination of options' values. A challenging issue is to sample a small and representative set of configurations that leads to a good accuracy of performance prediction models. A recent study devised a new algorithm, called distance-based sampling, that obtains state-of-the-art accurate performance predictions on different subject systems. In this paper, we replicate this study through an in-depth analysis of x264, a popular and configurable video encoder. We systematically measure all 1,152 configurations of x264 with 17 input videos and two quantitative properties (encoding time and encoding size). Our goal is to understand whether there is a dominant sampling strategy over the very same subject system (x264), i.e., whatever the workload and targeted performance properties. The findings from this study show that random sampling leads to more accurate performance models. However, without considering random, there is no single "dominant" sampling, instead different strategies perform best on different inputs and non-functional properties, further challenging practitioners and researchers.},
+booktitle = {Proceedings of the ACM/SPEC International Conference on Performance Engineering},
+pages = {277–288},
+numpages = {12},
+keywords = {software product lines, performance prediction, machine learning, configurable systems},
+location = {Edmonton AB, Canada},
+series = {ICPE '20}
+}
+
+@inproceedings{10.1109/ASE.2015.45,
+author = {Sarkar, Atri and Guo, Jianmei and Siegmund, Norbert and Apel, Sven and Czarnecki, Krzysztof},
+title = {Cost-efficient sampling for performance prediction of configurable systems},
+year = {2015},
+isbn = {9781509000241},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ASE.2015.45},
+doi = {10.1109/ASE.2015.45},
+abstract = {A key challenge of the development and maintenance of configurable systems is to predict the performance of individual system variants based on the features selected. It is usually infeasible to measure the performance of all possible variants, due to feature combinatorics. Previous approaches predict performance based on small samples of measured variants, but it is still open how to dynamically determine an ideal sample that balances prediction accuracy and measurement effort. In this paper, we adapt two widely-used sampling strategies for performance prediction to the domain of configurable systems and evaluate them in terms of sampling cost, which considers prediction accuracy and measurement effort simultaneously. To generate an initial sample, we introduce a new heuristic based on feature frequencies and compare it to a traditional method based on t-way feature coverage. We conduct experiments on six real-world systems and provide guidelines for stakeholders to predict performance by sampling.},
+booktitle = {Proceedings of the 30th IEEE/ACM International Conference on Automated Software Engineering},
+pages = {342–352},
+numpages = {11},
+location = {Lincoln, Nebraska},
+series = {ASE '15}
+}
+
+@inproceedings{10.1145/3461001.3471155,
+author = {Martin, Hugo and Acher, Mathieu and Pereira, Juliana Alves and J\'{e}z\'{e}quel, Jean-Marc},
+title = {A comparison of performance specialization learning for configurable systems},
+year = {2021},
+isbn = {9781450384698},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3461001.3471155},
+doi = {10.1145/3461001.3471155},
+abstract = {The specialization of the configuration space of a software system has been considered for targeting specific configuration profiles, usages, deployment scenarios, or hardware settings. The challenge is to find constraints among options' values that only retain configurations meeting a performance objective. Since the exponential nature of configurable systems makes a manual specialization unpractical, several approaches have considered its automation using machine learning, i.e., measuring a sample of configurations and then learning what options' values should be constrained. Even focusing on learning techniques based on decision trees for their built-in explainability, there is still a wide range of possible approaches that need to be evaluated, i.e., how accurate is the specialization with regards to sampling size, performance thresholds, and kinds of configurable systems. In this paper, we compare six learning techniques: three variants of decision trees (including a novel algorithm) with and without the use of model-based feature selection. We first perform a study on 8 configurable systems considered in previous related works and show that the accuracy reaches more than 90% and that feature selection can improve the results in the majority of cases. We then perform a study on the Linux kernel and show that these techniques performs as well as on the other systems. Overall, our results show that there is no one-size-fits-all learning variant (though high accuracy can be achieved): we present guidelines and discuss tradeoffs.},
+booktitle = {Proceedings of the 25th ACM International Systems and Software Product Line Conference - Volume A},
+pages = {46–57},
+numpages = {12},
+location = {Leicester, United Kingdom},
+series = {SPLC '21}
+}
+
+@inproceedings{10.1145/3236024.3236074,
+author = {Jamshidi, Pooyan and Velez, Miguel and K\"{a}stner, Christian and Siegmund, Norbert},
+title = {Learning to sample: exploiting similarities across environments to learn performance models for configurable systems},
+year = {2018},
+isbn = {9781450355735},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3236024.3236074},
+doi = {10.1145/3236024.3236074},
+abstract = {Most software systems provide options that allow users to tailor the system in terms of functionality and qualities. The increased flexibility raises challenges for understanding the configuration space and the effects of options and their interactions on performance and other non-functional properties. To identify how options and interactions affect the performance of a system, several sampling and learning strategies have been recently proposed. However, existing approaches usually assume a fixed environment (hardware, workload, software release) such that learning has to be repeated once the environment changes. Repeating learning and measurement for each environment is expensive and often practically infeasible. Instead, we pursue a strategy that transfers knowledge across environments but sidesteps heavyweight and expensive transfer-learning strategies. Based on empirical insights about common relationships regarding (i) influential options, (ii) their interactions, and (iii) their performance distributions, our approach, L2S (Learning to Sample), selects better samples in the target environment based on information from the source environment. It progressively shrinks and adaptively concentrates on interesting regions of the configuration space. With both synthetic benchmarks and several real systems, we demonstrate that L2S outperforms state of the art performance learning and transfer-learning approaches in terms of measurement effort and learning accuracy.},
+booktitle = {Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {71–82},
+numpages = {12},
+keywords = {transfer learning, configurable systems, Software performance},
+location = {Lake Buena Vista, FL, USA},
+series = {ESEC/FSE 2018}
+}
+
+@inproceedings{10.1145/3382494.3410677,
+author = {Shu, Yangyang and Sui, Yulei and Zhang, Hongyu and Xu, Guandong},
+title = {Perf-AL: Performance Prediction for Configurable Software through Adversarial Learning},
+year = {2020},
+isbn = {9781450375801},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3382494.3410677},
+doi = {10.1145/3382494.3410677},
+abstract = {Context: Many software systems are highly configurable. Different configuration options could lead to varying performances of the system. It is difficult to measure system performance in the presence of an exponential number of possible combinations of these options.Goal: Predicting software performance by using a small configuration sample.Method: This paper proposes Perf-AL to address this problem via adversarial learning. Specifically, we use a generative network combined with several different regularization techniques (L1 regularization, L2 regularization and a dropout technique) to output predicted values as close to the ground truth labels as possible. With the use of adversarial learning, our network identifies and distinguishes the predicted values of the generator network from the ground truth value distribution. The generator and the discriminator compete with each other by refining the prediction model iteratively until its predicted values converge towards the ground truth distribution.Results: We argue that (i) the proposed method can achieve the same level of prediction accuracy, but with a smaller number of training samples. (ii) Our proposed model using seven real-world datasets show that our approach outperforms the state-of-the-art methods. This help to further promote software configurable performance.Conclusion: Experimental results on seven public real-world datasets demonstrate that PERF-AL outperforms state-of-the-art software performance prediction methods.},
+booktitle = {Proceedings of the 14th ACM / IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)},
+articleno = {16},
+numpages = {11},
+keywords = {regularization, configurable systems, adversarial learning, Software performance prediction},
+location = {Bari, Italy},
+series = {ESEM '20}
+}
+
+@inproceedings{10.1109/ICSE43902.2021.00100,
+author = {Velez, Miguel and Jamshidi, Pooyan and Siegmund, Norbert and Apel, Sven and K\"{a}stner, Christian},
+title = {White-Box Analysis over Machine Learning: Modeling Performance of Configurable Systems},
+year = {2021},
+isbn = {9781450390859},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ICSE43902.2021.00100},
+doi = {10.1109/ICSE43902.2021.00100},
+abstract = {Performance-influence models can help stakeholders understand how and where configuration options and their interactions influence the performance of a system. With this understanding, stakeholders can debug performance behavior and make deliberate configuration decisions. Current black-box techniques to build such models combine various sampling and learning strategies, resulting in tradeoffs between measurement effort, accuracy, and interpretability. We present Comprex, a white-box approach to build performance-influence models for configurable systems, combining insights of local measurements, dynamic taint analysis to track options in the implementation, compositionality, and compression of the configuration space, without relying on machine learning to extrapolate incomplete samples. Our evaluation on 4 widely-used, open-source projects demonstrates that Comprex builds similarly accurate performance-influence models to the most accurate and expensive black-box approach, but at a reduced cost and with additional benefits from interpretable and local models.},
+booktitle = {Proceedings of the 43rd International Conference on Software Engineering},
+pages = {1072–1084},
+numpages = {13},
+location = {Madrid, Spain},
+series = {ICSE '21}
+}
+
+@inproceedings{10.1145/2786805.2786845,
+author = {Siegmund, Norbert and Grebhahn, Alexander and Apel, Sven and K\"{a}stner, Christian},
+title = {Performance-influence models for highly configurable systems},
+year = {2015},
+isbn = {9781450336758},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2786805.2786845},
+doi = {10.1145/2786805.2786845},
+abstract = {Almost every complex software system today is configurable. While configurability has many benefits, it challenges performance prediction, optimization, and debugging. Often, the influences of individual configuration options on performance are unknown. Worse, configuration options may interact, giving rise to a configuration space of possibly exponential size. Addressing this challenge, we propose an approach that derives a performance-influence model for a given configurable system, describing all relevant influences of configuration options and their interactions. Our approach combines machine-learning and sampling heuristics in a novel way. It improves over standard techniques in that it (1) represents influences of options and their interactions explicitly (which eases debugging), (2) smoothly integrates binary and numeric configuration options for the first time, (3) incorporates domain knowledge, if available (which eases learning and increases accuracy), (4) considers complex constraints among options, and (5) systematically reduces the solution space to a tractable size. A series of experiments demonstrates the feasibility of our approach in terms of the accuracy of the models learned as well as the accuracy of the performance predictions one can make with them.},
+booktitle = {Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering},
+pages = {284–294},
+numpages = {11},
+keywords = {sampling, machine learning, Performance-influence models},
+location = {Bergamo, Italy},
+series = {ESEC/FSE 2015}
+}
+
+@inproceedings{10.1109/PACT.2019.00042,
+author = {Zhu, Gangyi and Jiang, Peng and Agrawal, Gagan},
+title = {A Methodology for Characterizing Sparse Datasets and Its Application to SIMD Performance Prediction},
+year = {2024},
+isbn = {9781728136134},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/PACT.2019.00042},
+doi = {10.1109/PACT.2019.00042},
+abstract = {Irregular computations are commonly seen in many scientific and engineering domains that use unstructured meshes or sparse matrices. The performance of an irregular application is very dependent upon the dataset. This paper poses the following question: "given an unstructured mesh or a graph, what method(s) can be used to sample it, such that the execution on the resulting sampled dataset can accurately reflect performance characteristics on the full dataset". Our first insight is that developing a universal sampling approach for all sparse matrices is unpractical. According to the non-zero distribution of the sparse matrix, we propose two novel sampling strategies: Stride Average sampling and Random Tile sampling, which are suitable for uniform and skewed sparse matrices respectively. To help categorize a sparse matrix as uniform or skewed, we introduce clustering coefficient as an important feature which can be propagated into the decision tree model. We also adapt Random Node Neighbor sampling approach for efficient estimation of clustering coefficient.We apply our unstructured dataset characterization approach to modeling the performance for SIMD irregular applications, where the sampled dataset obtained is used to predict cache miss rate and SIMD utilization ratio. We also build analytical models to estimate overheads incurred by load imbalance among threads. With knowledge of these factors, we adapt a code skeleton framework SKOPE to capture the workload behaviors and aggregate performance statistics for execution time prediction.},
+booktitle = {Proceedings of the International Conference on Parallel Architectures and Compilation Techniques},
+pages = {444–455},
+numpages = {12},
+location = {Seattle, WA, USA},
+series = {PACT '19}
+}
+
+@inproceedings{10.1145/3030207.3030216,
+author = {Valov, Pavel and Petkovich, Jean-Christophe and Guo, Jianmei and Fischmeister, Sebastian and Czarnecki, Krzysztof},
+title = {Transferring Performance Prediction Models Across Different Hardware Platforms},
+year = {2017},
+isbn = {9781450344043},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3030207.3030216},
+doi = {10.1145/3030207.3030216},
+abstract = {Many software systems provide configuration options relevant to users, which are often called features. Features influence functional properties of software systems as well as non-functional ones, such as performance and memory consumption. Researchers have successfully demonstrated the correlation between feature selection and performance. However, the generality of these performance models across different hardware platforms has not yet been evaluated.We propose a technique for enhancing generality of performance models across different hardware environments using linear transformation. Empirical studies on three real-world software systems show that our approach is computationally efficient and can achieve high accuracy (less than 10% mean relative error) when predicting system performance across 23 different hardware platforms. Moreover, we investigate why the approach works by comparing performance distributions of systems and structure of performance models across different platforms.},
+booktitle = {Proceedings of the 8th ACM/SPEC on International Conference on Performance Engineering},
+pages = {39–50},
+numpages = {12},
+keywords = {regression trees, performance modelling, model transfer, linear transformation},
+location = {L'Aquila, Italy},
+series = {ICPE '17}
+}
+
+@inproceedings{10.1145/2791060.2791069,
+author = {Valov, Pavel and Guo, Jianmei and Czarnecki, Krzysztof},
+title = {Empirical comparison of regression methods for variability-aware performance prediction},
+year = {2015},
+isbn = {9781450336130},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2791060.2791069},
+doi = {10.1145/2791060.2791069},
+abstract = {Product line engineering derives product variants by selecting features. Understanding the correlation between feature selection and performance is important for stakeholders to acquire a desirable product variant. We infer such a correlation using four regression methods based on small samples of measured configurations, without additional effort to detect feature interactions. We conduct experiments on six real-world case studies to evaluate the prediction accuracy of the regression methods. A key finding in our empirical study is that one regression method, called Bagging, is identified as the best to make accurate and robust predictions for the studied systems.},
+booktitle = {Proceedings of the 19th International Conference on Software Product Line},
+pages = {186–190},
+numpages = {5},
+location = {Nashville, Tennessee},
+series = {SPLC '15}
+}
+
+@inproceedings{10.1145/3660317.3660322,
+author = {Schmid, Larissa and Sa\u{g}lam, Timur and Selzer, Michael and Koziolek, Anne},
+title = {Cost-Efficient Construction of Performance Models},
+year = {2024},
+isbn = {9798400706455},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3660317.3660322},
+doi = {10.1145/3660317.3660322},
+abstract = {Modern high-performance applications are highly-configurable systems that provide hundreds of configuration options. Performance models offer insights into the performance of these applications and help users understand the impact of these options. Yet, crafting models for such applications proves costly due to the many configuration options and their unknown performance impacts that need to be modeled. However, some options are performance-irrelevant, and removing them can reduce construction costs without compromising accuracy. This paper explores an approach to automatically identify performance-irrelevant configuration options empirically. By leveraging established performance modeling methods, we devise cost-efficient preliminary prediction models that rely on fewer samples and analyze them to identify such options. We evaluate our approach using a real-world HPC application to demonstrate our method's effectiveness in recognizing performance-irrelevant options and the potential to save costs for performance modeling.},
+booktitle = {Proceedings of the 4th Workshop on Performance EngineeRing, Modelling, Analysis, and VisualizatiOn STrategy},
+pages = {1–7},
+numpages = {7},
+keywords = {automatic performance modeling, empirical performance modeling, configurable systems, sampling},
+location = {Pisa, Italy},
+series = {PERMAVOST '24}
+}
+
+@article{10.1145/3702986,
+author = {Gong, Jingzhi and Chen, Tao},
+title = {Deep Configuration Performance Learning: A Systematic Survey and Taxonomy},
+year = {2024},
+issue_date = {January 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {34},
+number = {1},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3702986},
+doi = {10.1145/3702986},
+abstract = {Performance is arguably the most crucial attribute that reflects the quality of a configurable software system. However, given the increasing scale and complexity of modern software, modeling and predicting how various configurations can impact performance becomes one of the major challenges in software maintenance. As such, performance is often modeled without having a thorough knowledge of the software system, but relying mainly on data, which fits precisely with the purpose of deep learning. In this article, we conduct a comprehensive review exclusively on the topic of deep learning for performance learning of configurable software, covering 1,206 searched papers spanning six indexing services, based on which 99 primary papers were extracted and analyzed. Our results outline key statistics, taxonomy, strengths, weaknesses, and optimal usage scenarios for techniques related to the preparation of configuration data, the construction of deep learning performance models, the evaluation of these models, and their utilization in various software configuration-related tasks. We also identify the good practices and potentially problematic phenomena from the studies surveyed, together with a comprehensive summary of actionable suggestions and insights into future opportunities within the field. To promote open science, all the raw results of this survey can be accessed at our repository: .},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = dec,
+articleno = {25},
+numpages = {62},
+keywords = {Configuration Performance, Deep Learning, Configurable Software, Performance Modeling, Performance Prediction, Software Engineering}
+}
+
+@article{10.1145/2579993,
+author = {Bellog\'{\i}n, Alejandro and Castells, Pablo and Cantador, Iv\'{a}n},
+title = {Neighbor Selection and Weighting in User-Based Collaborative Filtering: A Performance Prediction Approach},
+year = {2014},
+issue_date = {March 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {2},
+issn = {1559-1131},
+url = {https://doi.org/10.1145/2579993},
+doi = {10.1145/2579993},
+abstract = {User-based collaborative filtering systems suggest interesting items to a user relying on similar-minded people called neighbors. The selection and weighting of these neighbors characterize the different recommendation approaches. While standard strategies perform a neighbor selection based on user similarities, trust-aware recommendation algorithms rely on other aspects indicative of user trust and reliability. In this article we restate the trust-aware recommendation problem, generalizing it in terms of performance prediction techniques, whose goal is to predict the performance of an information retrieval system in response to a particular query. We investigate how to adopt the preceding generalization to define a unified framework where we conduct an objective analysis of the effectiveness (predictive power) of neighbor scoring functions. The proposed framework enables discriminating whether recommendation performance improvements are caused by the used neighbor scoring functions or by the ways these functions are used in the recommendation computation. We evaluated our approach with several state-of-the-art and novel neighbor scoring functions on three publicly available datasets. By empirically comparing four neighbor quality metrics and thirteen performance predictors, we found strong predictive power for some of the predictors with respect to certain metrics. This result was then validated by checking the final performance of recommendation strategies where predictors are used for selecting and/or weighting user neighbors. As a result, we have found that, by measuring the predictive power of neighbor performance predictors, we are able to anticipate which predictors are going to perform better in neighbor-scoring-powered versions of a user-based collaborative filtering algorithm.},
+journal = {ACM Trans. Web},
+month = mar,
+articleno = {12},
+numpages = {30},
+keywords = {user-based collaborative filtering, trust, performance prediction, neighbor weighting, neighbor selection, Recommender systems}
+}
+
+@inproceedings{10.1109/ASE56229.2023.00091,
+author = {Xia, Yuanjie and Ding, Zishuo and Shang, Weiyi},
+title = {CoMSA: A Modeling-Driven Sampling Approach for Configuration Performance Testing},
+year = {2024},
+isbn = {9798350329964},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ASE56229.2023.00091},
+doi = {10.1109/ASE56229.2023.00091},
+abstract = {Highly configurable systems enable customers to flexibly configure the systems in diverse deployment environments. The flexibility of configurations also poses challenges for performance testing. On one hand, there exist a massive number of possible configurations; while on the other hand, the time and resources are limited for performance testing, which is already a costly process during software development. Modeling the performance of configurations is one of the solutions to reduce the cost of configuration performance testing. Although prior research proposes various modeling and sampling techniques to build configuration performance models, the sampling approaches used in the model typically do not consider the accuracy of the performance models, leading to potential suboptimal performance modeling results in practice. In this paper, we present a modeling-driven sampling approach (CoMSA) to improve the performance modeling of highly configurable systems. The intuition of CoMSA is to select samples based on their uncertainties to the performance models. In other words, the configurations that have the more uncertain performance prediction results by the performance models are more likely to be selected as further training samples to improve the model. CoMSA is designed by considering both scenarios where 1) the software projects do not have historical performance testing results (cold start) and 2) there exist historical performance testing results (warm start). We evaluate the performance of our approach in four subjects, namely LRZIP, LLVM, x264, and SQLite. Through the evaluation result, we can conclude that our sampling approaches could highly enhance the accuracy of the prediction models and the efficiency of configuration performance testing compared to other baseline sampling approaches.},
+booktitle = {Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering},
+pages = {1352–1363},
+numpages = {12},
+location = {Echternach, Luxembourg},
+series = {ASE '23}
+}
+
+@inproceedings{10.1145/3358960.3379127,
+author = {Valov, Pavel and Guo, Jianmei and Czarnecki, Krzysztof},
+title = {Transferring Pareto Frontiers across Heterogeneous Hardware Environments},
+year = {2020},
+isbn = {9781450369916},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3358960.3379127},
+doi = {10.1145/3358960.3379127},
+abstract = {Software systems provide user-relevant configuration options called features. Features affect functional and non-functional system properties, whereas selections of features represent system configurations. A subset of configuration space forms a Pareto frontier of optimal configurations in terms of multiple properties, from which a user can choose the best configuration for a particular scenario. However, when a well-studied system is redeployed on a different hardware, information about property value and the Pareto frontier might not apply. We investigate whether it is possible to transfer this information across heterogeneous hardware environments. We propose a methodology for approximating and transferring Pareto frontiers of configurable systems across different hardware environments. We approximate a Pareto frontier by training an individual predictor model for each system property, and by aggregating predictions of each property into an approximated frontier. We transfer the approximated frontier across hardware by training a transfer model for each property, by applying it to a respective predictor, and by combining transferred properties into a frontier. We evaluate our approach by modeling Pareto frontiers as binary classifiers that separate all system configurations into optimal and non-optimal ones. Thus we can assess quality of approximated and transferred frontiers using common statistical measures like sensitivity and specificity. We test our approach using five real-world software systems from the compression domain, while paying special attention to their performance. Evaluation results demonstrate that accuracy of approximated frontiers depends linearly on predictors' training sample sizes, whereas transferring introduces only minor additional error to a frontier even for small training sizes.},
+booktitle = {Proceedings of the ACM/SPEC International Conference on Performance Engineering},
+pages = {12–23},
+numpages = {12},
+keywords = {regression trees, performance prediction, linear regression, configurable software, Pareto frontier transferring, Pareto frontier},
+location = {Edmonton AB, Canada},
+series = {ICPE '20}
+}
+
+@article{10.1145/3554979,
+author = {Paun, Iulia and Moshfeghi, Yashar and Ntarmos, Nikos},
+title = {White Box: On the Prediction of Collaborative Filtering Recommendation Systems’ Performance},
+year = {2023},
+issue_date = {February 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {23},
+number = {1},
+issn = {1533-5399},
+url = {https://doi.org/10.1145/3554979},
+doi = {10.1145/3554979},
+abstract = {Collaborative Filtering (CF) recommendation algorithms are a popular solution to the information overload problem, aiding users in the item selection process. Relevant research has long focused on refining and improving these models to produce better (more effective) recommendations, and has converged on a methodology to predict their effectiveness on target datasets by evaluating them on random samples of the latter. However, predicting the efficiency of the solutions—especially with regard to their time- and resource-hungry training phase, whose requirements dwarf those of the prediction/recommendation phase—has received little to no attention in the literature. This article addresses this gap for a number of representative and highly popular CF models, including algorithms based on matrix factorization, k-nearest neighbors, co-clustering, and slope one schemes. To this end, we first study the computational complexity of the training phase of said CF models and derive time and space complexity equations. Then, using characteristics of the input and the aforementioned equations, we contribute a methodology for predicting the processing time and memory usage of their training phase. Our contributions further include an adaptive sampling strategy, to address the tradeoff between resource usage costs and prediction accuracy, and a framework that quantifies both the efficiency and effectiveness of CF. Finally, a systematic experimental evaluation demonstrates that our method outperforms state-of-the-art regression schemes by a considerable margin, with an overhead that is a small fraction of the overall requirements of CF training.},
+journal = {ACM Trans. Internet Technol.},
+month = feb,
+articleno = {8},
+numpages = {29},
+keywords = {sampling-based time and memory prediction, effectiveness evaluation, efficiency evaluation, Recommendation systems}
+}
+
+@inproceedings{10.1145/3512290.3528731,
+author = {Cosson, Rapha\"{e}l and Derbel, Bilel and Liefooghe, Arnaud and Verel, S\'{e}bastien and Aguirre, Hernan and Zhang, Qingfu and Tanaka, Kiyoshi},
+title = {Cost-vs-accuracy of sampling in multi-objective combinatorial exploratory landscape analysis},
+year = {2022},
+isbn = {9781450392372},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3512290.3528731},
+doi = {10.1145/3512290.3528731},
+abstract = {The design of effective features enabling the development of automated landscape-aware techniques requires to address a number of inter-dependent issues. In this paper, we are interested in contrasting the amount of budget devoted to the computation of features with respect to: (i) the effectiveness of the features in grasping the characteristics of the landscape, and (ii) the gain in accuracy when solving an unknown problem instance by means of a feature-informed automated algorithm selection approach. We consider multi-objective combinatorial landscapes where, to the best of our knowledge, no in depth investigations have been conducted so far. We study simple cost-adjustable sampling strategies for extracting different state-of-the-art features. Based on extensive experiments, we report a comprehensive analysis on the impact of sampling on landscape feature values, and the subsequent automated algorithm selection task. In particular, we identify different global trends of feature values leading to non-trivial cost-vs-accuracy trade-off(s). Besides, we provide evidence that the sampling strategy can improve the prediction accuracy of automated algorithm selection. Interestingly, this holds independently of whether the sampling cost is taken into account or not in the overall solving budget.},
+booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+pages = {493–501},
+numpages = {9},
+keywords = {NK-landscapes, automated algorithm selection, landscape analysis, multi-objective optimization},
+location = {Boston, Massachusetts},
+series = {GECCO '22}
+}
+
+@inproceedings{10.1145/3581784.3607069,
+author = {Hutter, Edward and Solomonik, Edgar},
+title = {Application Performance Modeling via Tensor Completion},
+year = {2023},
+isbn = {9798400701092},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3581784.3607069},
+doi = {10.1145/3581784.3607069},
+abstract = {Performance tuning, software/hardware co-design, and job scheduling are among the many tasks that rely on models to predict application performance. We propose and evaluate low-rank tensor decomposition for modeling application performance. We discretize the input and configuration domains of an application using regular grids. Application execution times mapped within grid-cells are averaged and represented by tensor elements. We show that low-rank canonical-polyadic (CP) tensor decomposition is effective in approximating these tensors. We further show that this decomposition enables accurate extrapolation of unobserved regions of an application's parameter space. We then employ tensor completion to optimize a CP decomposition given a sparse set of observed execution times. We consider alternative piecewise/grid-based models and supervised learning models for six applications and demonstrate that CP decomposition optimized using tensor completion offers higher prediction accuracy and memory-efficiency for high-dimensional performance modeling.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {65},
+numpages = {14},
+location = {Denver, CO, USA},
+series = {SC '23}
+}
+
+@inproceedings{10.1109/ICSE.2019.00112,
+author = {Kaltenecker, Christian and Grebhahn, Alexander and Siegmund, Norbert and Guo, Jianmei and Apel, Sven},
+title = {Distance-based sampling of software configuration spaces},
+year = {2019},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ICSE.2019.00112},
+doi = {10.1109/ICSE.2019.00112},
+abstract = {Configurable software systems provide a multitude of configuration options to adjust and optimize their functional and non-functional properties. For instance, to find the fastest configuration for a given setting, a brute-force strategy measures the performance of all configurations, which is typically intractable. Addressing this challenge, state-of-the-art strategies rely on machine learning, analyzing only a few configurations (i.e., a sample set) to predict the performance of other configurations. However, to obtain accurate performance predictions, a representative sample set of configurations is required. Addressing this task, different sampling strategies have been proposed, which come with different advantages (e.g., covering the configuration space systematically) and disadvantages (e.g., the need to enumerate all configurations). In our experiments, we found that most sampling strategies do not achieve a good coverage of the configuration space with respect to covering relevant performance values. That is, they miss important configurations with distinct performance behavior. Based on this observation, we devise a new sampling strategy, called distance-based sampling, that is based on a distance metric and a probability distribution to spread the configurations of the sample set according to a given probability distribution across the configuration space. This way, we cover different kinds of interactions among configuration options in the sample set. To demonstrate the merits of distance-based sampling, we compare it to state-of-the-art sampling strategies, such as t-wise sampling, on 10 real-world configurable software systems. Our results show that distance-based sampling leads to more accurate performance models for medium to large sample sets.},
+booktitle = {Proceedings of the 41st International Conference on Software Engineering},
+pages = {1084–1094},
+numpages = {11},
+location = {Montreal, Quebec, Canada},
+series = {ICSE '19}
+}
+
+@inproceedings{10.1145/3277453.3277477,
+author = {Zhao, Xinchao and Lv, Weimin},
+title = {Reliability Evaluation of Complex Equipment Based on Virtual Samples and Performance Degradation},
+year = {2018},
+isbn = {9781450365413},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3277453.3277477},
+doi = {10.1145/3277453.3277477},
+abstract = {Aiming at the difficulties in reliability evaluation of small samples and multi-performance parameter products, a reliability evaluation method based on virtual samples and performance degradation is proposed. Firstly, the multi-performance parameter distance concept is introduced, and the original parameter is virtual augmented with the performance parameter distance. Secondly, the improved Elman neural network is used to process the sample to obtain the complete degradation trajectory. Finally, this method is combined with the performance prediction method based on performance degradation to process the degradation data of a certain type of space relay and obtain a lifetime of 128 hours. The result shows the method effectively solves the processing problem of the rare sample data in the accelerated degradation test, which has certain reference significance.},
+booktitle = {Proceedings of the 2018 International Conference on Electronics and Electrical Engineering Technology},
+pages = {112–117},
+numpages = {6},
+keywords = {Virtual sample, Reliability, Performance degradation, Distance analysis},
+location = {Tianjin, China},
+series = {EEET '18}
+}
+
+@inproceedings{10.1109/ICSE48619.2023.00176,
+author = {M\"{u}hlbauer, Stefan and Sattler, Florian and Kaltenecker, Christian and Dorn, Johannes and Apel, Sven and Siegmund, Norbert},
+title = {Analyzing the Impact of Workloads on Modeling the Performance of Configurable Software Systems},
+year = {2023},
+isbn = {9781665457019},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ICSE48619.2023.00176},
+doi = {10.1109/ICSE48619.2023.00176},
+abstract = {Modern software systems often exhibit numerous configuration options to tailor them to user requirements, including the system's performance behavior. Performance models derived via machine learning are an established approach for estimating and optimizing configuration-dependent software performance. Most existing approaches in this area rely on software performance measurements conducted with a single workload (i.e., input fed to a system). This single workload, however, is often not representative of a software system's real-world application scenarios. Understanding to what extent configuration and workload---individually and combined---cause a software system's performance to vary is key to understand whether performance models are generalizable across different configurations and workloads. Yet, so far, this aspect has not been systematically studied.To fill this gap, we conducted a systematic empirical study across 25 258 configurations from nine real-world configurable software systems to investigate the effects of workload variation at system-level performance and for individual configuration options. We explore driving causes for workload-configuration interactions by enriching performance observations with option-specific code coverage information.Our results demonstrate that workloads can induce substantial performance variation and interact with configuration options, often in non-monotonous ways. This limits not only the generaliz-ability of single-workload models, but also challenges assumptions for existing transfer-learning techniques. As a result, workloads should be considered when building performance prediction models to maintain and improve representativeness and reliability.},
+booktitle = {Proceedings of the 45th International Conference on Software Engineering},
+pages = {2085–2097},
+numpages = {13},
+location = {Melbourne, Victoria, Australia},
+series = {ICSE '23}
+}
+
+@proceedings{10.1145/3660317,
+title = {PERMAVOST '24: Proceedings of the 4th Workshop on Performance EngineeRing, Modelling, Analysis, and VisualizatiOn STrategy},
+year = {2024},
+isbn = {9798400706455},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Pisa, Italy}
+}
+
+@inproceedings{10.1109/SEAMS.2017.11,
+author = {Jamshidi, Pooyan and Velez, Miguel and K\"{a}stner, Christian and Siegmund, Norbert and Kawthekar, Prasad},
+title = {Transfer learning for improving model predictions in highly configurable software},
+year = {2017},
+isbn = {9781538615508},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/SEAMS.2017.11},
+doi = {10.1109/SEAMS.2017.11},
+abstract = {Modern software systems are built to be used in dynamic environments using configuration capabilities to adapt to changes and external uncertainties. In a self-adaptation context, we are often interested in reasoning about the performance of the systems under different configurations. Usually, we learn a black-box model based on real measurements to predict the performance of the system given a specific configuration. However, as modern systems become more complex, there are many configuration parameters that may interact and we end up learning an exponentially large configuration space. Naturally, this does not scale when relying on real measurements in the actual changing environment. We propose a different solution: Instead of taking the measurements from the real system, we learn the model using samples from other sources, such as simulators that approximate performance of the real system at low cost. We define a cost model that transform the traditional view of model learning into a multi-objective problem that not only takes into account model accuracy but also measurements effort as well. We evaluate our cost-aware transfer learning solution using real-world configurable software including (i) a robotic system, (ii) 3 different stream processing applications, and (iii) a NoSQL database system. The experimental results demonstrate that our approach can achieve (a) a high prediction accuracy, as well as (b) a high model reliability.},
+booktitle = {Proceedings of the 12th International Symposium on Software Engineering for Adaptive and Self-Managing Systems},
+pages = {31–41},
+numpages = {11},
+keywords = {transfer learning, model prediction, model learning, machine learning, highly configurable software},
+location = {Buenos Aires, Argentina},
+series = {SEAMS '17}
+}
+
+@inproceedings{10.1145/3238147.3238175,
+author = {Bao, Liang and Liu, Xin and Xu, Ziheng and Fang, Baoyin},
+title = {AutoConfig: automatic configuration tuning for distributed message systems},
+year = {2018},
+isbn = {9781450359375},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3238147.3238175},
+doi = {10.1145/3238147.3238175},
+abstract = {Distributed message systems (DMSs) serve as the communication backbone for many real-time streaming data processing applications. To support the vast diversity of such applications, DMSs provide a large number of parameters to configure. However, It overwhelms for most users to configure these parameters well for better performance. Although many automatic configuration approaches have been proposed to address this issue, critical challenges still remain: 1) to train a better and robust performance prediction model using a limited number of samples, and 2) to search for a high-dimensional parameter space efficiently within a time constraint. In this paper, we propose AutoConfig -- an automatic configuration system that can optimize producer-side throughput on DMSs. AutoConfig constructs a novel comparison-based model (CBM) that is more robust that the prediction-based model (PBM) used by previous learning-based approaches. Furthermore, AutoConfig uses a weighted Latin hypercube sampling (wLHS) approach to select a set of samples that can provide a better coverage over the high-dimensional parameter space. wLHS allows AutoConfig to search for more promising configurations using the trained CBM. We have implemented AutoConfig on the Kafka platform, and evaluated it using eight different testing scenarios deployed on a public cloud. Experimental results show that our CBM can obtain better results than that of PBM under the same random forests based model. Furthermore, AutoConfig outperforms default configurations by 215.40% on average, and five state-of-the-art configuration algorithms by 7.21%-64.56%.},
+booktitle = {Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering},
+pages = {29–40},
+numpages = {12},
+keywords = {weighted Latin hypercube sampling, distributed message system, comparison-based model, automatic configuration tuning},
+location = {Montpellier, France},
+series = {ASE '18}
+}
+
+@inproceedings{10.1109/ICSE43902.2021.00099,
+author = {Weber, Max and Apel, Sven and Siegmund, Norbert},
+title = {White-Box Performance-Influence Models: A Profiling and Learning Approach},
+year = {2021},
+isbn = {9781450390859},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ICSE43902.2021.00099},
+doi = {10.1109/ICSE43902.2021.00099},
+abstract = {Many modern software systems are highly configurable, allowing the user to tune them for performance and more. Current performance modeling approaches aim at finding performance-optimal configurations by building performance models in a black-box manner. While these models provide accurate estimates, they cannot pinpoint causes of observed performance behavior to specific code regions. This does not only hinder system understanding, but it also complicates tracing the influence of configuration options to individual methods.We propose a white-box approach that models configuration-dependent performance behavior at the method level. This allows us to predict the influence of configuration decisions on individual methods, supporting system understanding and performance debugging. The approach consists of two steps: First, we use a coarse-grained profiler and learn performance-influence models for all methods, potentially identifying some methods that are highly configuration- and performance-sensitive, causing inaccurate predictions. Second, we re-measure these methods with a fine-grained profiler and learn more accurate models, at higher cost, though. By means of 9 real-world Java software systems, we demonstrate that our approach can efficiently identify configuration-relevant methods and learn accurate performance-influence models.},
+booktitle = {Proceedings of the 43rd International Conference on Software Engineering},
+pages = {1059–1071},
+numpages = {13},
+keywords = {software variability, software product lines, performance, Configuration management},
+location = {Madrid, Spain},
+series = {ICSE '21}
+}
+
+@article{10.1109/TCBB.2019.2953908,
+author = {Wang, Bing and Mei, Changqing and Wang, Yuanyuan and Zhou, Yuming and Cheng, Mu-Tian and Zheng, Chun-Hou and Wang, Lei and Zhang, Jun and Chen, Peng and Xiong, Yan},
+title = {Imbalance Data Processing Strategy for Protein Interaction Sites Prediction},
+year = {2019},
+issue_date = {May-June 2021},
+publisher = {IEEE Computer Society Press},
+address = {Washington, DC, USA},
+volume = {18},
+number = {3},
+issn = {1545-5963},
+url = {https://doi.org/10.1109/TCBB.2019.2953908},
+doi = {10.1109/TCBB.2019.2953908},
+abstract = {Protein-protein interactions play essential roles in various biological progresses. Identifying protein interaction sites can facilitate researchers to understand life activities and therefore will be helpful for drug design. However, the number of experimental determined protein interaction sites is far less than that of protein sites in protein-protein interaction or protein complexes. Therefore, the negative and positive samples are usually imbalanced, which is common but bring result bias on the prediction of protein interaction sites by computational approaches. In this work, we presented three imbalance data processing strategies to reconstruct the original dataset, and then extracted protein features from the evolutionary conservation of amino acids to build a predictor for identification of protein interaction sites. On a dataset with 10,430 surface residues but only 2,299 interface residues, the imbalance dataset processing strategies can obviously reduce the prediction bias, and therefore improve the prediction performance of protein interaction sites. The experimental results show that our prediction models can achieve a better prediction performance, such as a prediction accuracy of 0.758, or a high F-measure of 0.737, which demonstrated the effectiveness of our method.},
+journal = {IEEE/ACM Trans. Comput. Biol. Bioinformatics},
+month = nov,
+pages = {985–994},
+numpages = {10}
+}
+
+@article{10.1145/1328195.1328196,
+author = {Ipek, Engin and McKee, Sally A. and Singh, Karan and Caruana, Rich and Supinski, Bronis R. de and Schulz, Martin},
+title = {Efficient architectural design space exploration via predictive modeling},
+year = {2008},
+issue_date = {January 2008},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {4},
+number = {4},
+issn = {1544-3566},
+url = {https://doi.org/10.1145/1328195.1328196},
+doi = {10.1145/1328195.1328196},
+abstract = {Efficiently exploring exponential-size architectural design spaces with many interacting parameters remains an open problem: the sheer number of experiments required renders detailed simulation intractable. We attack this via an automated approach that builds accurate predictive models. We simulate sampled points, using results to teach our models the function describing relationships among design parameters. The models can be queried and are very fast, enabling efficient design tradeoff discovery. We validate our approach via two uniprocessor sensitivity studies, predicting IPC with only 1--2% error. In an experimental study using the approach, training on 1% of a 250-K-point CMP design space allows our models to predict performance with only 4--5% error. Our predictive modeling combines well with techniques that reduce the time taken by each simulation experiment, achieving net time savings of three-four orders of magnitude.},
+journal = {ACM Trans. Archit. Code Optim.},
+month = jan,
+articleno = {1},
+numpages = {34},
+keywords = {sensitivity studies, performance prediction, design space exploration, Artificial neural networks}
+}
+
+@inproceedings{10.1145/3510003.3510200,
+author = {Dubslaff, Clemens and Weis, Kallistos and Baier, Christel and Apel, Sven},
+title = {Causality in configurable software systems},
+year = {2022},
+isbn = {9781450392211},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3510003.3510200},
+doi = {10.1145/3510003.3510200},
+abstract = {Detecting and understanding reasons for defects and inadvertent behavior in software is challenging due to their increasing complexity. In configurable software systems, the combinatorics that arises from the multitude of features a user might select from adds a further layer of complexity. We introduce the notion of feature causality, which is based on counterfactual reasoning and inspired by the seminal definition of actual causality by Halpern and Pearl. Feature causality operates at the level of system configurations and is capable of identifying features and their interactions that are the reason for emerging functional and non-functional properties. We present various methods to explicate these reasons, in particular well-established notions of responsibility and blame that we extend to the feature-oriented setting. Establishing a close connection of feature causality to prime implicants, we provide algorithms to effectively compute feature causes and causal explications. By means of an evaluation on a wide range of configurable software systems, including community benchmarks and real-world systems, we demonstrate the feasibility of our approach: We illustrate how our notion of causality facilitates to identify root causes, estimate the effects of features, and detect feature interactions.},
+booktitle = {Proceedings of the 44th International Conference on Software Engineering},
+pages = {325–337},
+numpages = {13},
+location = {Pittsburgh, Pennsylvania},
+series = {ICSE '22}
+}
+
+@inproceedings{10.1145/1168857.1168882,
+author = {\"{I}pek, Engin and McKee, Sally A. and Caruana, Rich and de Supinski, Bronis R. and Schulz, Martin},
+title = {Efficiently exploring architectural design spaces via predictive modeling},
+year = {2006},
+isbn = {1595934510},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1168857.1168882},
+doi = {10.1145/1168857.1168882},
+abstract = {Architects use cycle-by-cycle simulation to evaluate design choices and understand tradeoffs and interactions among design parameters. Efficiently exploring exponential-size design spaces with many interacting parameters remains an open problem: the sheer number of experiments renders detailed simulation intractable. We attack this problem via an automated approach that builds accurate, confident predictive design-space models. We simulate sampled points, using the results to teach our models the function describing relationships among design parameters. The models produce highly accurate performance estimates for other points in the space, can be queried to predict performance impacts of architectural changes, and are very fast compared to simulation, enabling efficient discovery of tradeoffs among parameters in different regions. We validate our approach via sensitivity studies on memory hierarchy and CPU design spaces: our models generally predict IPC with only 1-2% error and reduce required simulation by two orders of magnitude. We also show the efficacy of our technique for exploring chip multiprocessor (CMP) design spaces: when trained on a 1% sample drawn from a CMP design space with 250K points and up to 55x performance swings among different system configurations, our models predict performance with only 4-5% error on average. Our approach combines with techniques to reduce time per simulation, achieving net time savings of three-four orders of magnitude.},
+booktitle = {Proceedings of the 12th International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {195–206},
+numpages = {12},
+keywords = {sensitivity studies, performance prediction, design space exploration, artificial neural networks},
+location = {San Jose, California, USA},
+series = {ASPLOS XII}
+}
+
+@inproceedings{10.1145/3324884.3416620,
+author = {Dorn, Johannes and Apel, Sven and Siegmund, Norbert},
+title = {Mastering uncertainty in performance estimations of configurable software systems},
+year = {2021},
+isbn = {9781450367684},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3324884.3416620},
+doi = {10.1145/3324884.3416620},
+abstract = {Understanding the influence of configuration options on performance is key for finding optimal system configurations, system understanding, and performance debugging. In prior research, a number of performance-influence modeling approaches have been proposed, which model a configuration option's influence and a configuration's performance as a scalar value. However, these point estimates falsely imply a certainty regarding an option's influence that neglects several sources of uncertainty within the assessment process, such as (1) measurement bias, (2) model representation and learning process, and (3) incomplete data. This leads to the situation that different approaches and even different learning runs assign different scalar performance values to options and interactions among them. The true influence is uncertain, though. There is no way to quantify this uncertainty with state-of-the-art performance modeling approaches. We propose a novel approach, P4, based on probabilistic programming that explicitly models uncertainty for option influences and consequently provides a confidence interval for each prediction of a configuration's performance alongside a scalar. This way, we can explain, for the first time, why predictions may cause errors and which option's influences may be unreliable. An evaluation on 12 real-world subject systems shows that P4's accuracy is in line with the state of the art while providing reliable confidence intervals, in addition to scalar predictions.},
+booktitle = {Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering},
+pages = {684–696},
+numpages = {13},
+keywords = {P4, configurable software systems, performance-influence modeling, probabilistic programming},
+location = {Virtual Event, Australia},
+series = {ASE '20}
+}
+
+@inproceedings{10.1109/ICSE-NIER.2019.00028,
+author = {Trubiani, Catia and Apel, Sven},
+title = {PLUS: performance learning for uncertainty of software},
+year = {2019},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ICSE-NIER.2019.00028},
+doi = {10.1109/ICSE-NIER.2019.00028},
+abstract = {Uncertainty is particularly critical in software performance engineering when it relates to the values of important parameters such as workload, operational profile, and resource demand, because such parameters inevitably affect the overall system performance. Prior work focused on monitoring the performance characteristics of software systems while considering influence of configuration options. The problem of incorporating uncertainty as a first-class concept in the software development process to identify performance issues is still challenging. The PLUS (Performance Learning for Uncertainty of Software) approach aims at addressing these limitations by investigating the specification of a new class of performance models capturing how the different uncertainties underlying a software system affect its performance characteristics. The main goal of PLUS is to answer a fundamental question in the software performance engineering domain: How to model the variable configuration options (i.e., software and hardware resources) and their intrinsic uncertainties (e.g., resource demand, processor speed) to represent the performance characteristics of software systems? This way, software engineers are exposed to a quantitative evaluation of their systems that supports them in the task of identifying performance critical configurations along with their uncertainties.},
+booktitle = {Proceedings of the 41st International Conference on Software Engineering: New Ideas and Emerging Results},
+pages = {77–80},
+numpages = {4},
+keywords = {uncertainty, machine learning},
+location = {Montreal, Quebec, Canada},
+series = {ICSE-NIER '19}
+}
+
+@inproceedings{10.1145/3324884.3416573,
+author = {M\"{u}hlbauer, Stefan and Apel, Sven and Siegmund, Norbert},
+title = {Identifying software performance changes across variants and versions},
+year = {2021},
+isbn = {9781450367684},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3324884.3416573},
+doi = {10.1145/3324884.3416573},
+abstract = {We address the problem of identifying performance changes in the evolution of configurable software systems. Finding optimal configurations and configuration options that influence performance is already difficult, but in the light of software evolution, configuration-dependent performance changes may lurk in a potentially large number of different versions of the system.In this work, we combine two perspectives---variability and time---into a novel perspective. We propose an approach to identify configuration-dependent performance changes retrospectively across the software variants and versions of a software system. In a nutshell, we iteratively sample pairs of configurations and versions and measure the respective performance, which we use to update a model of likelihoods for performance changes. Pursuing a search strategy with the goal of measuring selectively and incrementally further pairs, we increase the accuracy of identified change points related to configuration options and interactions.We have conducted a number of experiments both on controlled synthetic data sets as well as in real-world scenarios with different software systems. Our evaluation demonstrates that we can pinpoint performance shifts to individual configuration options and interactions as well as commits introducing change points with high accuracy and at scale. Experiments on three real-world systems explore the effectiveness and practicality of our approach.},
+booktitle = {Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering},
+pages = {611–622},
+numpages = {12},
+keywords = {active learning, configurable software systems, machine learning, software evolution, software performance},
+location = {Virtual Event, Australia},
+series = {ASE '20}
+}
+
+@article{10.1145/3611663,
+author = {Oh, Jeho and Batory, Don and Heradio, Rub\'{e}n},
+title = {Finding Near-optimal Configurations in Colossal Spaces with Statistical Guarantees},
+year = {2023},
+issue_date = {January 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {33},
+number = {1},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3611663},
+doi = {10.1145/3611663},
+abstract = {A Software Product Line (SPL) is a family of similar programs. Each program is defined by a unique set of features, called a configuration, that satisfies all feature constraints. “What configuration achieves the best performance for a given workload?” is the SPLOptimization (SPLO) challenge. SPLO is daunting: just 80 unconstrained features yield 1024 unique configurations, which equals the estimated number of stars in the universe. We explain (a) how uniform random sampling and random search algorithms solve SPLO more efficiently and accurately than current machine-learned performance models and (b) how to compute statistical guarantees on the quality of a returned configuration; i.e., it is within x% of optimal with y% confidence.},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = nov,
+articleno = {7},
+numpages = {36},
+keywords = {Software product lines, configuration optimization, product spaces, machine learning, uniform random sampling, random search, order statistics}
+}
+
+@article{10.1145/1105734.1105738,
+author = {Davis, John D. and Fu, Cong and Laudon, James},
+title = {The RASE (Rapid, Accurate Simulation Environment) for chip multiprocessors},
+year = {2005},
+issue_date = {November 2005},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {33},
+number = {4},
+issn = {0163-5964},
+url = {https://doi.org/10.1145/1105734.1105738},
+doi = {10.1145/1105734.1105738},
+abstract = {We present RASE, a full system high performance simulation methodology for simulating complex server applications and server class chip multiprocessors enabled with fine-grain multithreading (CMTs). RASE combines application knowledge, operating system information, and data access patterns with an instruction stream from a highly-tuned, scalable steady-state benchmark [5] [22] to generate multiple representative instruction streams that can be mapped to a variety of CMT configurations. We use execution-driven simulation to generate instruction streams for M processors and store them as instruction trace files (several billion instructions per processor) that can be post-processed and augmented for larger than M processor system simulation. We use SPEC JBB2000, TPC-C, and an XML server benchmark to compare the performance estimates of RASE to a reference prototype CMT system. By varying M, we find that our trace-driven simulation methodology predicts within 5% of the instructions per cycle (IPC) of the reference hardware for the applications. Without post-processing the traces, in the best cases, the performance prediction accuracy degrades to 20-40% of the real IPC for instruction traces that require a high replication factor.},
+journal = {SIGARCH Comput. Archit. News},
+month = nov,
+pages = {14–23},
+numpages = {10}
+}
+
+@inproceedings{10.1145/3444950.3447284,
+author = {Bouhali, Noureddine and Ouarnoughi, Hamza and Niar, Smail and El Cadi, Abdessamad Ait},
+title = {Execution Time Modeling for CNN Inference on Embedded GPUs},
+year = {2021},
+isbn = {9781450389525},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3444950.3447284},
+doi = {10.1145/3444950.3447284},
+abstract = {Machine learning is one of the most cutting edge methods in computer vision. Convolutional Neural Networks (CNN) in particular are widely used in edge computing based applications such as autonomous driving for image recognition or object tracking. Different constraints exist in this application area such as real-time, energy consumption, memory resources, etc. Choosing the optimal CNN for each GPU at hand is really hard to do, while maintaining high levels of accuracy and performance. This makes prior knowledge about the execution time a necessary prerequisite information before the final deployment of the CNN on the edge GPU platform. In this paper, we compare 5 execution time prediction models on a large set of CNNs-based applications. The tested predictors use machine learning regression approach. The proposed methodology is based on the utilization of high level CNN features. At the opposite of state-of-the-art approaches, no implementation or profiling on the hardware is required. A Mean Absolute Percentage Error (MAPE) of 5% using Support Vector Regression and Artificial Neural Networks has been obtained in the experiments. Our comparison shows the efficiency of these models to rapidly explore a large space of CNN models or Hardware configurations.},
+booktitle = {Proceedings of the 2021 Drone Systems Engineering and Rapid Simulation and Performance Evaluation: Methods and Tools Proceedings},
+pages = {59–65},
+numpages = {7},
+location = {Budapest, Hungary},
+series = {DroneSE and RAPIDO '21}
+}
+
+@inproceedings{10.1109/SEAMS.2019.00015,
+author = {Jamshidi, Pooyan and C\'{a}mara, Javier and Schmerl, Bradley and K\"{a}stner, Christian and Garlan, David},
+title = {Machine learning meets quantitative planning: enabling self-adaptation in autonomous robots},
+year = {2019},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/SEAMS.2019.00015},
+doi = {10.1109/SEAMS.2019.00015},
+abstract = {Modern cyber-physical systems (e.g., robotics systems) are typically composed of physical and software components, the characteristics of which are likely to change over time. Assumptions about parts of the system made at design time may not hold at run time, especially when a system is deployed for long periods (e.g., over decades). Self-adaptation is designed to find reconfigurations of systems to handle such run-time inconsistencies. Planners can be used to find and enact optimal reconfigurations in such an evolving context. However, for systems that are highly configurable, such planning becomes intractable due to the size of the adaptation space. To overcome this challenge, in this paper we explore an approach that (a) uses machine learning to find Pareto-optimal configurations without needing to explore every configuration and (b) restricts the search space to such configurations to make planning tractable. We explore this in the context of robot missions that need to consider task timeliness and energy consumption. An independent evaluation shows that our approach results in high-quality adaptation plans in uncertain and adversarial environments.},
+booktitle = {Proceedings of the 14th International Symposium on Software Engineering for Adaptive and Self-Managing Systems},
+pages = {39–50},
+numpages = {12},
+keywords = {self-adaptive systems, robotics systems, quantitative planning, machine learning, artificial intelligence},
+location = {Montreal, Quebec, Canada},
+series = {SEAMS '19}
+}
+
+@inproceedings{10.1145/3534678.3539200,
+author = {Liu, Xinyi and Guan, Wanxian and Li, Lianyun and Li, Hui and Lin, Chen and Li, Xubin and Chen, Si and Xu, Jian and Deng, Hongbo and Zheng, Bo},
+title = {Pretraining Representations of Multi-modal Multi-query E-commerce Search},
+year = {2022},
+isbn = {9781450393850},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3534678.3539200},
+doi = {10.1145/3534678.3539200},
+abstract = {The importance of modeling contextual information within a search session has been widely acknowledged. However, learning representations of multi-query multi-modal (MM) search, in which Mobile Taobao users repeatedly submit textual and visual queries, remains unexplored in literature. Previous work which learns task-specific representations of textual query sessions fails to capture diverse query types and correlations in MM search sessions. This paper presents to represent MM search sessions by heterogeneous graph neural network (HGN). A multi-view contrastive learning framework is proposed to pretrain the HGN, with two views to model different intra-query, inter-query, and inter-modality information diffusion in MM search. Extensive experiments demonstrate that, the pretrained session representation can benefit state-of-the-art baselines on various downstream tasks, such as personalized click prediction, query suggestion, and intent classification.},
+booktitle = {Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+pages = {3429–3437},
+numpages = {9},
+keywords = {e-commerce search, graph contrastive learning, query pretraining},
+location = {Washington DC, USA},
+series = {KDD '22}
+}
+
+@inproceedings{10.1145/3540250.3558943,
+author = {Chatterjee, Ayan and Ahmed, Bestoun S. and Hallin, Erik and Engman, Anton},
+title = {Testing of machine learning models with limited samples: an industrial vacuum pumping application},
+year = {2022},
+isbn = {9781450394130},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3540250.3558943},
+doi = {10.1145/3540250.3558943},
+abstract = {There is often a scarcity of training data for machine learning (ML) classification and regression models in industrial production, especially for time-consuming or sparsely run manufacturing processes. Traditionally, a majority of the limited ground-truth data is used for training, while a handful of samples are left for testing. In that case, the number of test samples is inadequate to properly evaluate the robustness of the ML models under test (i.e., the system under test) for classification and regression. Furthermore, the output of these ML models may be inaccurate or even fail if the input data differ from the expected. This is the case for ML models used in the Electroslag Remelting (ESR) process in the refined steel industry to predict the pressure in a vacuum chamber. A vacuum pumping event that occurs once a workday generates a few hundred samples in a year of pumping for training and testing. In the absence of adequate training and test samples, this paper first presents a method to generate a fresh set of augmented samples based on vacuum pumping principles. Based on the generated augmented samples, three test scenarios and one test oracle are presented to assess the robustness of an ML model used for production on an industrial scale. Experiments are conducted with real industrial production data obtained from Uddeholms AB steel company. The evaluations indicate that Ensemble and Neural Network are the most robust when trained on augmented data using the proposed testing strategy. The evaluation also demonstrates the proposed method's effectiveness in checking and improving ML algorithms' robustness in such situations. The work improves software testing's state-of-the-art robustness testing in similar settings. Finally, the paper presents an MLOps implementation of the proposed approach for real-time ML model prediction and action on the edge node and automated continuous delivery of ML software from the cloud.},
+booktitle = {Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {1280–1290},
+numpages = {11},
+keywords = {vacuum pumping, software testing, mlops, machine learning, data decomposition, data augmentation},
+location = {Singapore, Singapore},
+series = {ESEC/FSE 2022}
+}
+
+@inproceedings{10.1145/3548606.3560629,
+author = {Shen, Junxian and Zhang, Han and Geng, Yantao and Li, Jiawei and Wang, Jilong and Xu, Mingwei},
+title = {Gringotts: Fast and Accurate Internal Denial-of-Wallet Detection for Serverless Computing},
+year = {2022},
+isbn = {9781450394505},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3548606.3560629},
+doi = {10.1145/3548606.3560629},
+abstract = {Serverless computing, or Function-as-a-Service, is gaining continuous popularity due to its pay-as-you-go billing model, flexibility, and low costs. These characteristics, however, bring additional security risks, such as the Denial-of-Wallet (DoW) attack, to serverless tenants. In this paper, we perform a real-world DoW attack on commodity serverless platforms to evaluate its severity. To identify such attacks, we design, implement, and evaluate Gringotts, an accurate, easy-to-use DoW detection system with a negligible performance overhead. Gringotts addresses the information ambiguity inherent in serverless functions by introducing a well-designed performance metrics collection agent. Then, Gringotts uses the Mahalanobis distance to discover anomalies in the distribution of the metrics. We implement Gringotts as a real system and conduct extensive experiments using a testbed to evaluate the performance of Gringotts. Our results indicate that Gringotts has a performance overhead of less than 1.1%, with an average detection delay of 1.86 seconds and an average accuracy of over 95.75%.},
+booktitle = {Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {2627–2641},
+numpages = {15},
+keywords = {serverless computing, performance anomalies detection, denial-of-wallet attack},
+location = {Los Angeles, CA, USA},
+series = {CCS '22}
+}
+
+@inproceedings{10.5555/2840819.2840871,
+author = {Sangaiah, Karthik and Hempstead, Mark and Taskin, Baris},
+title = {Uncore RPD: Rapid Design Space Exploration of the Uncore via Regression Modeling},
+year = {2015},
+isbn = {9781467383899},
+publisher = {IEEE Press},
+abstract = {A regression-based design space exploration methodology is proposed that models the impacts of the memory hierarchy and the network-on-chip (NoC) on the overall chip multiprocessor (CMP) performance. Designers cannot explore all possible designs for a NoC without considering interactions with the rest of the uncore, in particular the cache configuration and memory hierarchy which determine the amount and pattern of the traffic on the NoC. The proposed regression model is able to capture the salient design points of the uncore for a comprehensive design space exploration by designing memory and NoC-specific regression models and leveraging recent advances in uncore simulation. To show the utility of our methodology, UncoreRPD, two case studies are presented: i) analyzing and refining regression models for an 8-core CMP and ii) performing a rapid design space exploration to find best performing designs of a NoC-based CMP given area-constraints for CMPs of up to 64 cores. Through these case studies, it is shown that i) simultaneous consideration of the memory and NoC parameters in the NoC design space exploration can refine uncore-based regression models, ii) sampling techniques must consider the dynamic design space of the uncore, and iii) overall, the proposed regression models reduce the amount of simulations required to characterize the NoC design space by up to four orders of magnitude.},
+booktitle = {Proceedings of the IEEE/ACM International Conference on Computer-Aided Design},
+pages = {365–372},
+numpages = {8},
+location = {Austin, TX, USA},
+series = {ICCAD '15}
+}
+
+@inproceedings{10.1145/3357236.3395545,
+author = {Sultanum, Nicole and Ghorashi, Soroush and Meek, Christopher and Ramos, Gonzalo},
+title = {A Teaching Language for Building Object Detection Models},
+year = {2020},
+isbn = {9781450369749},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3357236.3395545},
+doi = {10.1145/3357236.3395545},
+abstract = {Object detection is a key application of machine learning. Currently, these detector models rely on deep networks that offer model builders limited agency over model construction, refinement and maintenance. Human-centered approaches to address these issues explore the exchange of knowledge between a human-in-the-loop and a learning system. This exchange, mediated through a teaching language, is often restricted to the specification of labels and constrains user expressiveness communicating other forms of knowledge to the system. We propose and assess an expressive teaching language for specifying object detectors which includes constructs such as concepts and relationships. From a formative study, we identified language building blocks and articulated design goals for creating interactive experiences in teaching object detection. We applied these goals through a design probe that highlighted further research questions and a set of design takeaways.},
+booktitle = {Proceedings of the 2020 ACM Designing Interactive Systems Conference},
+pages = {1223–1234},
+numpages = {12},
+keywords = {teaching language, qualitative study, object detection, machine teaching, interactive machine learning},
+location = {Eindhoven, Netherlands},
+series = {DIS '20}
+}
+
+@proceedings{10.1145/3712464,
+title = {SPCT '24: Proceedings of the 2024 4th International Conference on Signal Processing and Communication Technology},
+year = {2024},
+isbn = {9798400710636},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3662739,
+title = {MIDA '24: Proceedings of the 2024 International Conference on Machine Intelligence and Digital Applications},
+year = {2024},
+isbn = {9798400718144},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Ningbo, China}
+}
+
+@proceedings{10.1145/3629527,
+title = {ICPE '24 Companion: Companion of the 15th ACM/SPEC International Conference on Performance Engineering},
+year = {2024},
+isbn = {9798400704451},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to present the ICPE 2024 workshops program. ICPE workshops extend the main conference by providing a forum to foster discussion on hot and emerging topics from the broad field of performance engineering. They offer a highly dynamic venue to exchange ideas, establish new collaborations, and bootstrap debates on novel techniques, methodologies, and their associated early research results. Workshops feature various presentation formats, including research paper presentations, panel discussions, and keynote talks. Through these presentations and discussions with peer researchers, ICPE workshops help shape future research and identify promising research directions for performance engineering.},
+location = {London, United Kingdom}
+}
+
+@proceedings{10.1145/3650215,
+title = {ICMLCA '23: Proceedings of the 2023 4th International Conference on Machine Learning and Computer Application},
+year = {2023},
+isbn = {9798400709449},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hangzhou, China}
+}
+
+@proceedings{10.1145/3704558,
+title = {CFIMA '24: Proceedings of the 2024 2nd International Conference on Frontiers of Intelligent Manufacturing and Automation},
+year = {2024},
+isbn = {9798400710681},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3620678,
+title = {SoCC '23: Proceedings of the 2023 ACM Symposium on Cloud Computing},
+year = {2023},
+isbn = {9798400703874},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Santa Cruz, CA, USA}
+}
+
+@proceedings{10.1145/3690407,
+title = {CAIBDA '24: Proceedings of the 2024 4th International Conference on Artificial Intelligence, Big Data and Algorithms},
+year = {2024},
+isbn = {9798400710247},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3700297,
+title = {ISAIE '24: Proceedings of the 2024 International Symposium on Artificial Intelligence for Education},
+year = {2024},
+isbn = {9798400707100},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3677182,
+title = {ASENS '24: Proceedings of the International Conference on Algorithms, Software Engineering, and Network Security},
+year = {2024},
+isbn = {9798400709784},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Nanchang, China}
+}
+
+@proceedings{10.1145/3711129,
+title = {EITCE '24: Proceedings of the 2024 8th International Conference on Electronic Information Technology and Computer Engineering},
+year = {2024},
+isbn = {9798400710094},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@article{10.1145/3127324,
+author = {Volioti, Christina and Manitsaris, Sotiris and Hemery, Edgar and Hadjidimitriou, Stelios and Charisis, Vasileios and Hadjileontiadis, Leontios and Katsouli, Eleni and Moutarde, Fabien and Manitsaris, Athanasios},
+title = {A Natural User Interface for Gestural Expression and Emotional Elicitation to Access the Musical Intangible Cultural Heritage},
+year = {2018},
+issue_date = {June 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {11},
+number = {2},
+issn = {1556-4673},
+url = {https://doi.org/10.1145/3127324},
+doi = {10.1145/3127324},
+abstract = {This article describes a prototype natural user interface, named the Intangible Musical Instrument, which aims to facilitate access to knowledge of performers that constitutes musical Intangible Cultural Heritage using off-the-shelf motion capturing that is easily accessed by the public at large. This prototype is able to capture, model, and recognize musical gestures (upper body including fingers) as well as to sonify them. The emotional status of the performer affects the sound parameters at the synthesis level. Intangible Musical Instrument is able to support both learning and performing/composing by providing to the user not only intuitive gesture control but also a unique user experience. In addition, the first evaluation of the Intangible Musical Instrument is presented, in which all the functionalities of the system are assessed. Overall, the results with respect to this evaluation were very promising.},
+journal = {J. Comput. Cult. Herit.},
+month = apr,
+articleno = {10},
+numpages = {20},
+keywords = {sonification, evaluation, emotional status, Gesture recognition}
+}
+
+@proceedings{10.1145/3674805,
+title = {ESEM '24: Proceedings of the 18th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement},
+year = {2024},
+isbn = {9798400710476},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Barcelona, Spain}
+}
+
+@article{10.1145/2818353,
+author = {Jiang, Chuntao and Yu, Zhibin and Eeckhout, Lieven and Jin, Hai and Liao, Xiaofei and Xu, Chengzhong},
+title = {Two-Level Hybrid Sampled Simulation of Multithreaded Applications},
+year = {2015},
+issue_date = {January 2016},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {12},
+number = {4},
+issn = {1544-3566},
+url = {https://doi.org/10.1145/2818353},
+doi = {10.1145/2818353},
+abstract = {Sampled microarchitectural simulation of single-threaded applications is mature technology for over a decade now. Sampling multithreaded applications, on the other hand, is much more complicated. Not until very recently have researchers proposed solutions for sampled simulation of multithreaded applications. Time-Based Sampling (TBS) samples multithreaded application execution based on time—not instructions as is typically done for single-threaded applications—yielding estimates for a multithreaded application’s execution time. In this article, we revisit and analyze previously proposed TBS approaches (periodic and cantor fractal based sampling), and we obtain a number of novel and surprising insights, such as (i) accurately estimating fast-forwarding IPC, that is, performance in-between sampling units, is more important than accurately estimating sample IPC, that is, performance within the sampling units; (ii) fast-forwarding IPC estimation accuracy is determined by both the sampling unit distribution and how to use the sampling units to predict fast-forwarding IPC; and (iii) cantor sampling is more accurate at small sampling unit sizes, whereas periodic is more accurate at large sampling unit sizes.These insights lead to the development of Two-level Hybrid Sampling (THS), a novel sampling methodology for multithreaded applications that combines periodic sampling’s accuracy at large time scales (i.e., uniformly selecting coarse-grain sampling units across the entire program execution) with cantor sampling’s accuracy at small time scales (i.e., the ability to accurately predict fast-forwarding IPC in-between small sampling units). The clustered occurrence of small sampling units under cantor sampling also enables shortened warmup and thus enhanced simulation speed. Overall, THS achieves an average absolute execution time prediction error of 4% while yielding an average simulation speedup of 40 \texttimes{} compared to detailed simulation, which is both more accurate and faster than the current state-of-the-art. Case studies illustrate THS’ ability to accurately predict relative performance differences across the design space.},
+journal = {ACM Trans. Archit. Code Optim.},
+month = nov,
+articleno = {39},
+numpages = {25},
+keywords = {sampling, multithreaded workloads, multicore processor, Microarchitecture simulation}
+}
+
+@proceedings{10.1145/3703187,
+title = {CISAI '24: Proceedings of the 2024 7th International Conference on Computer Information Science and Artificial Intelligence},
+year = {2024},
+isbn = {9798400707254},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3604915,
+title = {RecSys '23: Proceedings of the 17th ACM Conference on Recommender Systems},
+year = {2023},
+isbn = {9798400702419},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Singapore, Singapore}
+}
+
+@proceedings{10.1145/3709026,
+title = {CSAI '24: Proceedings of the 2024 8th International Conference on Computer Science and Artificial Intelligence},
+year = {2024},
+isbn = {9798400718182},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3695080,
+title = {ICCBD '24: Proceedings of the 2024 International Conference on Cloud Computing and Big Data},
+year = {2024},
+isbn = {9798400710223},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Dali, China}
+}
+
+@proceedings{10.1145/3675249,
+title = {ICCMT '24: Proceedings of the 2024 International Conference on Computer and Multimedia Technology},
+year = {2024},
+isbn = {9798400718267},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Sanming, China}
+}
+
+@proceedings{10.1145/3712335,
+title = {SPCNC '24: Proceedings of the 3rd International Conference on Signal Processing, Computer Networks and Communications},
+year = {2024},
+isbn = {9798400710834},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3689236,
+title = {ICCSIE '24: Proceedings of the 2024 9th International Conference on Cyber Security and Information Engineering},
+year = {2024},
+isbn = {9798400718137},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3670105,
+title = {CNIOT '24: Proceedings of the 2024 5th International Conference on Computing, Networks and Internet of Things},
+year = {2024},
+isbn = {9798400716751},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Tokyo, Japan}
+}
+
+@proceedings{10.1145/3686424,
+title = {EDCS '24: Proceedings of the 2024 Guangdong-Hong Kong-Macao Greater Bay Area International Conference on Education Digitalization and Computer Science},
+year = {2024},
+isbn = {9798400710360},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Shenzhen, China}
+}
+
+@proceedings{10.1145/3630138,
+title = {PCCNT '23: Proceedings of the 2023 International Conference on Power, Communication, Computing and Networking Technologies},
+year = {2023},
+isbn = {9781450399951},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Wuhan, China}
+}
+
+@proceedings{10.1145/3652628,
+title = {ICAICE '23: Proceedings of the 4th International Conference on Artificial Intelligence and Computer Engineering},
+year = {2023},
+isbn = {9798400708831},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Dalian, China}
+}
+
+@proceedings{10.1145/3603781,
+title = {CNIOT '23: Proceedings of the 2023 4th International Conference on Computing, Networks and Internet of Things},
+year = {2023},
+isbn = {9798400700705},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Xiamen, China}
+}
+
+@proceedings{10.1145/3581784,
+title = {SC '23: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+year = {2023},
+isbn = {9798400701092},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Started in 1988, the SC Conference has become the annual nexus for researchers and practitioners from academia, industry and government to share information and foster collaborations to advance the state of the art in High Performance Computing (HPC), Networking, Storage, and Analysis.},
+location = {Denver, CO, USA}
+}
+
+@proceedings{10.1145/3708394,
+title = {AIFE '24: Proceeding of the 2024 International Conference on Artificial Intelligence and Future Education},
+year = {2024},
+isbn = {9798400710650},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3706468,
+title = {LAK '25: Proceedings of the 15th International Learning Analytics and Knowledge Conference},
+year = {2025},
+isbn = {9798400707018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3671151,
+title = {CIBDA '24: Proceedings of the 5th International Conference on Computer Information and Big Data Applications},
+year = {2024},
+isbn = {9798400718106},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Wuhan, China}
+}
+
+@proceedings{10.1145/3579654,
+title = {ACAI '22: Proceedings of the 2022 5th International Conference on Algorithms, Computing and Artificial Intelligence},
+year = {2022},
+isbn = {9781450398336},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Sanya, China}
+}
+
+@proceedings{10.1145/3677052,
+title = {ICAIF '24: Proceedings of the 5th ACM International Conference on AI in Finance},
+year = {2024},
+isbn = {9798400710810},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Brooklyn, NY, USA}
+}
+
+@proceedings{10.1145/3650400,
+title = {EITCE '23: Proceedings of the 2023 7th International Conference on Electronic Information Technology and Computer Engineering},
+year = {2023},
+isbn = {9798400708305},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Xiamen, China}
+}
+
+@proceedings{10.1145/3581807,
+title = {ICCPR '22: Proceedings of the 2022 11th International Conference on Computing and Pattern Recognition},
+year = {2022},
+isbn = {9781450397056},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Beijing, China}
+}
+
+@proceedings{10.1145/3710848,
+title = {PPoPP '25: Proceedings of the 30th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming},
+year = {2025},
+isbn = {9798400714436},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Las Vegas, NV, USA}
+}
+
+@proceedings{10.1145/3638529,
+title = {GECCO '24: Proceedings of the Genetic and Evolutionary Computation Conference},
+year = {2024},
+isbn = {9798400704949},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {GECCO is the largest peer-reviewed conference in the field of Evolutionary Computation, and the main conference of the Special Interest Group on Genetic and Evolutionary Computation (SIGEVO) of the Association for Computing Machinery (ACM).},
+location = {Melbourne, VIC, Australia}
+}
+
+@proceedings{10.1145/3647444,
+title = {ICIMMI '23: Proceedings of the 5th International Conference on Information Management &amp; Machine Intelligence},
+year = {2023},
+isbn = {9798400709418},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Jaipur, India}
+}
+
+@proceedings{10.1145/3573428,
+title = {EITCE '22: Proceedings of the 2022 6th International Conference on Electronic Information Technology and Computer Engineering},
+year = {2022},
+isbn = {9781450397148},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Xiamen, China}
+}
+
+@proceedings{10.1145/3626246,
+title = {SIGMOD '24: Companion of the 2024 International Conference on Management of Data},
+year = {2024},
+isbn = {9798400704222},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {On behalf of the SIGMOD 2024 organizing committee, it is our distinct honor, as General Chairs, to welcome you to the 2024 ACM International Conference on Management of Data - SIGMOD 2024. We are thrilled to be hosting this prestigious event for the very first time in Latin America, and specifically in Santiago de Chile, a recognized leader in data technology within the region. This marks a significant milestone for the SIGMOD community, and we are honored to have you join us for a fully in-person experience in this vibrant and innovative city.},
+location = {Santiago AA, Chile}
+}
+
+@proceedings{10.1145/3569966,
+title = {CSSE '22: Proceedings of the 5th International Conference on Computer Science and Software Engineering},
+year = {2022},
+isbn = {9781450397780},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Guilin, China}
+}
+
+@inproceedings{10.1145/3626246.3653378,
+author = {Pavlenko, Anna and Cahoon, Joyce and Zhu, Yiwen and Kroth, Brian and Nelson, Michael and Carter, Andrew and Liao, David and Wright, Travis and Camacho-Rodr\'{\i}guez, Jes\'{u}s and Saur, Karla},
+title = {Vertically Autoscaling Monolithic Applications with CaaSPER: Scalable Container-as-a-Service Performance Enhanced Resizing Algorithm for the Cloud},
+year = {2024},
+isbn = {9798400704222},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3626246.3653378},
+doi = {10.1145/3626246.3653378},
+abstract = {Kubernetes has emerged as a prominent open-source platform for managing cloud applications, including stateful databases. These monolithic applications rely on vertical scaling, adjusting CPU cores based on load fluctuations. However, our analysis of Kubernetes-based Database-as-a-Service (DBaaS) offerings at Microsoft revealed that many customers consistently over-provision resources for peak workloads, neglecting cost-saving opportunities through resource scale-down. We found that there is a gap in the ability of existing vertical autoscaling tools to minimize resource slack and respond promptly to throttling, leading to increased costs and impacting crucial metrics such as throughput and availability.To address this challenge, we propose CaaSPER, a vertical autoscaling algorithm that blends reactive and proactive strategies. By dynamically adjusting CPU resources, CaaSPER minimizes resource slack, maintains optimal CPU utilization, and reduces throttling. Importantly, customers have the flexibility to prioritize either cost savings or high performance based on their preferences. Extensive testing demonstrates that CaaSPER effectively reduces throttling and keeps CPU utilization within target levels. CaaSPER is designed to be application-agnostic and platform-agnostic, with potential for extension to other applications requiring vertical autoscaling.},
+booktitle = {Companion of the 2024 International Conference on Management of Data},
+pages = {241–254},
+numpages = {14},
+keywords = {containers, kubernetes, resource optimization, vertical auto-scaling},
+location = {Santiago AA, Chile},
+series = {SIGMOD '24}
+}
+
+@proceedings{10.1145/3605573,
+title = {ICPP '23: Proceedings of the 52nd International Conference on Parallel Processing},
+year = {2023},
+isbn = {9798400708435},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Salt Lake City, UT, USA}
+}
+
+@proceedings{10.1145/3584376,
+title = {RICAI '22: Proceedings of the 2022 4th International Conference on Robotics, Intelligent Control and Artificial Intelligence},
+year = {2022},
+isbn = {9781450398343},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Dongguan, China}
+}
+
+@proceedings{10.1145/3559009,
+title = {PACT '22: Proceedings of the International Conference on Parallel Architectures and Compilation Techniques},
+year = {2022},
+isbn = {9781450398688},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {PACT is a long-running and unique conference at the intersection of parallel architectures and compilers that brings together researchers from industry, academia, and national laboratories to present and discuss their latest research results. How applications serve as a driver for innovations in architecture and compilers is an important theme of the conference.},
+location = {Chicago, Illinois}
+}
+
+@proceedings{10.1145/3540250,
+title = {ESEC/FSE 2022: Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+year = {2022},
+isbn = {9781450394130},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {On behalf of all members of the organizing committee, we are delighted to welcome everyone to the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2022. The event continues the long, distinguished ESEC/FSE tradition of presenting the most innovative research, and facilitating interactions between scientists and engineers who are passionate about advancing the theory and practice of software engineering.},
+location = {Singapore, Singapore}
+}
+
+@proceedings{10.1145/3653081,
+title = {IoTAAI '23: Proceedings of the 2023 5th International Conference on Internet of Things, Automation and Artificial Intelligence},
+year = {2023},
+isbn = {9798400716485},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Nanchang, China}
+}
+
+@proceedings{10.1145/3675094,
+title = {UbiComp '24: Companion of the 2024 on ACM International Joint Conference on Pervasive and Ubiquitous Computing},
+year = {2024},
+isbn = {9798400710582},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to UbiComp/ISWC 2024, the companion program of two premier conferences: The 2024 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2024) and the 2024 International Symposium on Wearable Computers (ISWC 2024). UbiComp and ISWC are premier interdisciplinary venues for international researchers, designers, developers, practitioners and educators in the field to present and discuss novel and impactful research in interactive, mobile, wearable and ubiquitous computing. The companion program has traditionally been a very important part of the UbiComp/ISWC conference series.UbiComp/ISWC 2024 is held from October 5 to 9, 2024 in Melbourne, Australia. Originally, UbiComp/ISWC was scheduled to take place in Melbourne in 2021. However, due to the significant impact of COVID-19, our community decided to postpone conferences taking place in their traditional form until last year, when UbiComp took place as an in-person event in Mexico. Now, in 2024 we look to consolidate the strength and ties in our community by having another fully in-person event and hoping to welcome a new generation of researchers to meet and explore the wonderful people that make up our community.},
+location = {Melbourne VIC, Australia}
+}
+
+@proceedings{10.5555/3715674,
+title = {SC-W '24: Proceedings of the SC '24 Workshops of the International Conference on High Performance Computing, Network, Storage, and Analysis},
+year = {2024},
+isbn = {9798350355543},
+publisher = {IEEE Press},
+location = {Atlanta, GA, USA}
+}
+
+@proceedings{10.1145/3626772,
+title = {SIGIR '24: Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+year = {2024},
+isbn = {9798400704314},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 47th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2024), taking place in Washington D.C., USA, from July 14 to 18, 2024.SIGIR serves as the foremost international forum for the presentation of groundbreaking research findings, the demonstration of innovative systems and techniques, and the exploration of forwardthinking research directions in the field of information retrieval.This year's SIGIR is an in-person conference. We believe that an in-person conference is beneficial for several reasons: it fosters direct engagement and networking opportunities, enhances the exchange of research ideas, contributes to a more dynamic and productive conference experience, and nurtures our research community by welcoming newcomers, providing them with the opportunity to become acquainted with SIGIR traditions. This decision has not been made lightly. We understand the challenges that can pose in the aftermath of a pandemic and amidst the uncertainties of the world around us. To accommodate those who cannot attend, we have implemented a series of measures such as proxy presenters, livestreaming, and recording sessions. These steps are taken to ensure that everyone has access to the valuable content that the conference offers.},
+location = {Washington DC, USA}
+}
+
+@proceedings{10.1145/3640457,
+title = {RecSys '24: Proceedings of the 18th ACM Conference on Recommender Systems},
+year = {2024},
+isbn = {9798400705052},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bari, Italy}
+}
+
+@proceedings{10.1145/3636555,
+title = {LAK '24: Proceedings of the 14th Learning Analytics and Knowledge Conference},
+year = {2024},
+isbn = {9798400716188},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Kyoto, Japan}
+}
+
+@book{10.1145/3674127,
+editor = {Alonso, Omar and Baeza-Yates, Ricardo},
+title = {Information Retrieval: Advanced Topics and Techniques},
+year = {2024},
+isbn = {9798400710506},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+edition = {1},
+volume = {60},
+abstract = {In the last decade, deep learning and word embeddings have made significant impacts on information retrieval (IR) by adding techniques based in neural networks and language models. At the same time, certain search modalities such as neural IR and conversational search have become more popular. This book, written by international academic and industry experts, brings the field up to date with detailed discussions of these new approaches and techniques. The book is organized in three sections: Foundations, Adaptations and Concerns, and Verticals.Under Foundations, we address topics that form the basic structure of any modern IR system, including recommender systems. These new techniques are developed to augment indexing, retrieval, and ranking. Neural IR, recommender systems, evaluation, query-driven functionality, and knowledge graphs are covered in this section.IR systems need to adapt to specific user characteristics and preferences, and techniques that were considered too niche a few years ago are now a matter of system design consideration. The Adaptations and Concerns section covers the following topics: conversational search, cross-language retrieval, temporal extraction and retrieval, bias in retrieval systems, and privacy in search.While web search engines are the most popular information access point, there are cases where specific verticals provide a better experience in terms of content and relevance. The Verticals section describes eCommerce, professional search, personal collections, music retrieval, and biomedicine as examples.}
+}
+
+@proceedings{10.5555/3606010,
+title = {ICSE '23: Proceedings of the 45th International Conference on Software Engineering},
+year = {2023},
+isbn = {9781665457019},
+publisher = {IEEE Press},
+abstract = {ICSE is the leading and by far the largest conference in Software Engineering, attracting researchers, practitioners and students from around the world. ICSE2023 is co-located with 10 conferences and symposia this year, many long-established and prestigious venues in their own right.},
+location = {Melbourne, Victoria, Australia}
+}
+
+@proceedings{10.1145/3566097,
+title = {ASPDAC '23: Proceedings of the 28th Asia and South Pacific Design Automation Conference},
+year = {2023},
+isbn = {9781450397834},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {ASP-DAC is a high-quality and premium conference on Electronic Design Automation (EDA) like other sister conferences such as Design Automation Conference (DAC), Design, Automation &amp; Test in Europe (DATE), International Conference on Computer Aided Design (ICCAD), and Embedded SystemsWeek (ESWEEK). ASP-DAC started in 1995 and has continuously offered opportunities to learn about the advancements on LSI design and design automation fields, as well as to communicate with each other for researchers and designers around Asia and South Pacific regions.},
+location = {Tokyo, Japan}
+}
+
+@proceedings{10.1145/3644523,
+title = {ICCSMT '23: Proceedings of the 2023 4th International Conference on Computer Science and Management Technology},
+year = {2023},
+isbn = {9798400709517},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Xi'an, China}
+}
+
+@proceedings{10.1145/2993148,
+title = {ICMI '16: Proceedings of the 18th ACM International Conference on Multimodal Interaction},
+year = {2016},
+isbn = {9781450345569},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Tokyo, Japan}
+}
+
+@proceedings{10.1145/3638530,
+title = {GECCO '24 Companion: Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+year = {2024},
+isbn = {9798400704956},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Melbourne, VIC, Australia}
+}
+
+@proceedings{10.1145/3664647,
+title = {MM '24: Proceedings of the 32nd ACM International Conference on Multimedia},
+year = {2024},
+isbn = {9798400706868},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {We are delighted to welcome you to Melbourne, Australia for ACM Multimedia 2024, the 32nd ACM International Conference on Multimedia. ACM Multimedia is the premier international conference series in the area of multimedia within the field of computer science. Since 1993, ACM Multimedia has been bringing together worldwide researchers and practitioners from academia and industry to present their innovative research and to discuss recent advancements in multimedia.For the first time since the end of the COVID-19 pandemic, this year's conference returns to the Asia-Pacific region and resumes as a full-fledged, inperson event. With no travel restrictions or significant visa challenges, we are excited to once again experience the warmth of face-to-face gatherings, where we can reconnect with colleagues and friends.The enthusiasm and support from the community have been incredible. ACM Multimedia 2024 received over 4,300 main conference submissions, accepting more than 1,100 papers (please refer to the TPC Chairs' message for details). In addition, 10 Grand Challenges were selected from 22 submissions, 18 workshops from 30 submissions, and 8 tutorials from 13 proposals. We've prepared an exciting five-day program: workshops, grand challenges, and tutorials will be held on the 1st and 5th days, with the main conference occupying the middle three days. All accepted papers will be accessible online prior to the conference, and we are working to ensure proceedings are available through the ACM Digital Library around the conference period.This year's conference features three distinguished academic keynote speeches, several prestigious SIGMM award talks, a panel discussion on Generative AI in Multimedia, a refreshed Brave New Idea (BNI) session, and our inaugural industry program.The opening keynote will be delivered by Prof. Pascale Fung from HKUST, a Fellow of AAAI, ACL, and IEEE. Her talk will explore the pressing topic of Agents in the Large Language Model (LLM) Era. Prof. Judy Kay from the University of Sydney, a renowned expert in HCI, user modeling, and ubiquitous computing, will give the second keynote on how to empower individuals to harness and control their multimodal data. The final academic keynote will be presented by Prof. Jiebo Luo from the University of Rochester, a Fellow of ACM, AAAI, IEEE, SPIE, and IAPR, as well as a member of Academia Europaea and the US National Academy of Inventors. He will discuss leveraging LLMs as social multimedia analysis engines.This year, we continue using OpenReview to ensure an open and transparent review process. Thanks to the exceptional efforts of the technical program committee, every paper received at least three reviews before the review announcement. The BNI track has also revamped its review process to align with the main conference, promoting visionary papers. Additionally, we are excited to introduce the industry program to ACM Multimedia for the first time, featuring industry keynote speeches, expert talks, and demonstrations (please refer to the industry chairs' message for further details).We are also committed to making the conference inclusive and accessible. To support students with financial constraints, we have awarded travel grants to at least 25 students from the ACM Multimedia 2024 budget, with an additional 20+ students receiving SIGMM travel grants. Over 20 local students have also been recruited as volunteers, benefiting from complimentary registration. Furthermore, we have arranged childcare facilities to accommodate attendees with young children. A welcome reception will take place on the 2nd day of the conference, followed by a gala dinner on the 3rd day, featuring exciting cultural performances.We hope you find this year's program engaging and thought-provoking and that it offers valuable opportunities to exchange ideas with fellow researchers and practitioners from around the globe. We also encourage you to take time to explore the beautiful city of Melbourne and its surrounding regions.},
+location = {Melbourne VIC, Australia}
+}
+
+@proceedings{10.1145/3560905,
+title = {SenSys '22: Proceedings of the 20th ACM Conference on Embedded Networked Sensor Systems},
+year = {2022},
+isbn = {9781450398862},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to ACM SenSys 2022, the 20th ACM Conference on Embedded Networked Sensor Systems, the premier computer systems conference focused on networked sensing systems and applications.},
+location = {Boston, Massachusetts}
+}
+
+@proceedings{10.1145/3536221,
+title = {ICMI '22: Proceedings of the 2022 International Conference on Multimodal Interaction},
+year = {2022},
+isbn = {9781450393904},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bengaluru, India}
+}
+
+@proceedings{10.1145/3654522,
+title = {ICIIT '24: Proceedings of the 2024 9th International Conference on Intelligent Information Technology},
+year = {2024},
+isbn = {9798400716713},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Ho Chi Minh City, Vietnam}
+}
+
+@proceedings{10.1145/3650212,
+title = {ISSTA 2024: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis},
+year = {2024},
+isbn = {9798400706127},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 33rd edition of the International Symposium on Software Testing and Analysis, ISSTA 2024, held on September 16--20, 2024 in Vienna, Austria. ISSTA 2024 is co-located with ECOOP and MPLR 2024. ISSTA brings together academics, industrial researchers, and practitioners from all over the world working on testing and analyzing software systems.},
+location = {Vienna, Austria}
+}
+
+@proceedings{10.1145/3616855,
+title = {WSDM '24: Proceedings of the 17th ACM International Conference on Web Search and Data Mining},
+year = {2024},
+isbn = {9798400703713},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to the 17th ACM International Conference on Web Search and Data Mining - WSDM 2024. WSDM is one of the premier conferences in the fields of web search and data mining, with a dynamic and growing community from academia and industry. After two years of virtual conferences and in-person conferences in Singapore, the 2024 edition is an in-person conference with virtual elements. We hope you enjoy the conference at the "Centro Internacional de Congresos de Yucatan (CIC)" in Merida from March 4 to March 8, 2024.We are excited to kick off the program with a dynamic mix of Tutorials and Industry Day. Our seven tutorials will cover a broad range of search and data mining topics. Industry Day will provide valuable insights from leaders at major technology companies. The core technical program continues WSDM's tradition of a single-track format, featuring 109 thought-provoking papers from both academic and industry experts. We're honored to have inspiring keynote speakers each day: Nicolas Christin (CMU), Elizabeth Reid (Google), and Saiph Savage (Civic A.I. Lab). Additionally, 17 interactive demonstrations will showcase the latest prototypes and systems. The final day offers a stimulating Doctoral Consortium and six engaging workshops on topics including integrity in social networks, large language model for society, psychology-informed information access system, interactive and scalable information retrieval system and machine learning on graphs. WSDM 2024 proudly presents WSDM day on information retrieval and Web in the region. WSDM Cup Day highlights finalists' presentations addressing challenges in Conversational Multi-Doc QA. This diverse and stimulating program promises to be an enriching experience for all!.},
+location = {Merida, Mexico}
+}
+
+@proceedings{10.1145/3583131,
+title = {GECCO '23: Proceedings of the Genetic and Evolutionary Computation Conference},
+year = {2023},
+isbn = {9798400701191},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {GECCO is the largest peer-reviewed conference in the field of Evolutionary Computation, and the main conference of the Special Interest Group on Genetic and Evolutionary Computation (SIGEVO) of the Association for Computing Machinery (ACM).},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3629296,
+title = {ICETC '23: Proceedings of the 15th International Conference on Education Technology and Computers},
+year = {2023},
+isbn = {9798400709111},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Barcelona, Spain}
+}
+
+@proceedings{10.1145/3698038,
+title = {SoCC '24: Proceedings of the 2024 ACM Symposium on Cloud Computing},
+year = {2024},
+isbn = {9798400712869},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Redmond, WA, USA}
+}
+
+@proceedings{10.1145/3551349,
+title = {ASE '22: Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering},
+year = {2022},
+isbn = {9781450394758},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rochester, MI, USA}
+}
+
+@proceedings{10.5555/3643142,
+title = {WSC '23: Proceedings of the Winter Simulation Conference},
+year = {2023},
+isbn = {9798350369663},
+publisher = {IEEE Press},
+location = {San Antonio, Texas, USA}
+}
+
+@proceedings{10.1145/3630106,
+title = {FAccT '24: Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency},
+year = {2024},
+isbn = {9798400704505},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rio de Janeiro, Brazil}
+}
+
+@proceedings{10.1145/3590140,
+title = {Middleware '23: Proceedings of the 24th International Middleware Conference},
+year = {2023},
+isbn = {9798400701771},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bologna, Italy}
+}
+
+@proceedings{10.1145/3308558,
+title = {WWW '19: The World Wide Web Conference},
+year = {2019},
+isbn = {9781450366748},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to The Web Conference 2019. The Web Conference is the premier venue focused on understanding the current state and the evolution of the Web through the lens of computer science, computational social science, economics, policy, and many other disciplines. The 2019 edition of the conference is a reflection point as we celebrate the 30th anniversary of the Web.},
+location = {San Francisco, CA, USA}
+}
+
+@proceedings{10.1145/3651890,
+title = {ACM SIGCOMM '24: Proceedings of the ACM SIGCOMM 2024 Conference},
+year = {2024},
+isbn = {9798400706141},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Sydney, NSW, Australia}
+}
+
+@proceedings{10.1145/3611643,
+title = {ESEC/FSE 2023: Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+year = {2023},
+isbn = {9798400703270},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {We are pleased to welcome all delegates to ESEC/FSE 2023, the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering. ESEC/FSE is an internationally renowned forum for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, experiences, and challenges in the field of software engineering. ESEC/FSE brings together experts from academia and industry to exchange the latest research results and trends as well as their practical application in all areas of software engineering.},
+location = {San Francisco, CA, USA}
+}
+
+@proceedings{10.1145/3583133,
+title = {GECCO '23 Companion: Proceedings of the Companion Conference on Genetic and Evolutionary Computation},
+year = {2023},
+isbn = {9798400701207},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {GECCO is the largest peer-reviewed conference in the field of Evolutionary Computation, and the main conference of the Special Interest Group on Genetic and Evolutionary Computation (SIGEVO) of the Association for Computing Machinery (ACM).},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3555776,
+title = {SAC '23: Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing},
+year = {2023},
+isbn = {9781450395175},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Tallinn, Estonia}
+}
+
+@proceedings{10.1145/2970276,
+title = {ASE '16: Proceedings of the 31st IEEE/ACM International Conference on Automated Software Engineering},
+year = {2016},
+isbn = {9781450338455},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Singapore, Singapore}
+}
+
+@proceedings{10.1145/3600100,
+title = {BuildSys '23: Proceedings of the 10th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation},
+year = {2023},
+isbn = {9798400702303},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Istanbul, Turkey}
+}
+
+@proceedings{10.1145/3593434,
+title = {EASE '23: Proceedings of the 27th International Conference on Evaluation and Assessment in Software Engineering},
+year = {2023},
+isbn = {9798400700446},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Oulu, Finland}
+}
+
+@proceedings{10.1145/3552326,
+title = {EuroSys '23: Proceedings of the Eighteenth European Conference on Computer Systems},
+year = {2023},
+isbn = {9781450394871},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rome, Italy}
+}
+
+@proceedings{10.1145/3597503,
+title = {ICSE '24: Proceedings of the IEEE/ACM 46th International Conference on Software Engineering},
+year = {2024},
+isbn = {9798400702174},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3663529,
+title = {FSE 2024: Companion Proceedings of the 32nd ACM International Conference on the Foundations of Software Engineering},
+year = {2024},
+isbn = {9798400706585},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {We are pleased to welcome all delegates to FSE 2024, the ACM International Conference on the Foundations of Software Engineering (FSE) 2024. The conference now has a shorter name! FSE is an internationally renowned forum for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, experiences, and challenges in the field of software engineering. FSE brings together experts from academia and industry to exchange the latest research results and trends as well as their practical application in all areas of software engineering.},
+location = {Porto de Galinhas, Brazil}
+}
+
+@proceedings{10.1145/3544548,
+title = {CHI '23: Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
+year = {2023},
+isbn = {9781450394215},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hamburg, Germany}
+}
+
+@proceedings{10.1145/3605098,
+title = {SAC '24: Proceedings of the 39th ACM/SIGAPP Symposium on Applied Computing},
+year = {2024},
+isbn = {9798400702433},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {On behalf of the Organizing Committee, I extend a warm welcome to you at the 39th Annual ACM Symposium on Applied Computing (SAC 2024), taking place in \'{A}vila, Spain, and hosted by the University of Salamanca. For more than three decades, this international forum has been dedicated to computer scientists, engineers, and practitioners, providing a platform for presenting their research findings and results in various areas of applied computing. The organizing committee sincerely appreciates your participation in this exciting international event, and we hope that the conference proves interesting and beneficial for all attendees.},
+location = {Avila, Spain}
+}
+
+@proceedings{10.1145/3620665,
+title = {ASPLOS '24: Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+year = {2024},
+isbn = {9798400703850},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {2},
+abstract = {Welcome to the second volume of ASPLOS'24: the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems. This document is dedicated to the 2024 summer review cycle.We introduced several notable changes to ASPLOS this year, many of which were discussed in the previous message from program chairs in Volume 1. Here, to avoid repetition, we assume that readers have already read the latter message and will only describe differences between the current cycle and the previous one. These include: (1) developing and utilizing an automated format violation identifier script focused on uncovering disallowed vertical space manipulations that "squeeze" space; (2) incorporating authors-declared best-matching topics into our review assignment process; (3) introducing the new ASPLOS role of Program Vice Chairs to cope with the increased number of submissions and the added load caused by foregoing synchronous program committee (PC) meetings, which necessitated additional managerial involvement in online dissensions; and (4) characterizing a systematic problem that ASPLOS is facing in reviewing quantum computing submissions, describing how we addressed it, and highlighting how we believe that it should be handled in the future.Key statistics of the ASPLOS'24 summer cycle include: 409 submissions were finalized (about 1.5x more than last year's summer count and nearly 2.4x more than our spring cycle), with 107 related to accelerators/FPGAs/GPUs, 97 to machine learning, 88 to storage/memory, 80 to security, and 69 to datacenter/cloud; 179 (44%) submissions were promoted to the second review round; 54 (13.2%) papers were accepted (with 20 awarded one or more artifact evaluation badges); 33 (8.1%) submissions were allowed to submit major revisions, of which 27 were subsequently accepted during the fall cycle (with 13 awarded one or more artifact evaluation badges); 1,499 reviews were uploaded; and 5,557 comments were generated during online discussions.Analyzing the per-submission most-related broader areas of research, which we asked authors to associate with their work in the submission form, revealed that 71%, 47%, and 28% of the submissions are categorized by their authors as related to architecture, operating systems, and programming languages, respectively, with about 45% being "interdisciplinary" submissions (associated with more than one area). The full details are available in the PDF of the front matter.},
+location = {La Jolla, CA, USA}
+}
+
+@proceedings{10.1145/3613904,
+title = {CHI '24: Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems},
+year = {2024},
+isbn = {9798400703300},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Honolulu, HI, USA}
+}
+
+@proceedings{10.1109/3656337,
+title = {ASPDAC '20: Proceedings of the 25th Asia and South Pacific Design Automation Conference},
+year = {2020},
+isbn = {9781728141237},
+publisher = {IEEE Press},
+abstract = {Since 1995, ASP-DAC has been served as a great platform for researchers, academics, industrial participants and students to exchange and share their ideas and the latest advanced technologies on LSI design and design automation areas.},
+location = {Beijing, China}
+}
+
+@proceedings{10.1145/3613905,
+title = {CHI EA '24: Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
+year = {2024},
+isbn = {9798400703317},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Honolulu, HI, USA}
+}
+
+@proceedings{10.1145/3308560,
+title = {WWW '19: Companion Proceedings of The 2019 World Wide Web Conference},
+year = {2019},
+isbn = {9781450366755},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to &lt;I&gt;The Web Conference 2019&lt;/I&gt;. The Web Conference is the premier venue focused on understanding the current state and the evolution of the Web through the lens of computer science, computational social science, economics, policy, and many other disciplines. The 2019 edition of the conference is a reflection point as we celebrate the 30th anniversary of the Web.},
+location = {San Francisco, USA}
+}
+
+@proceedings{10.1145/3411764,
+title = {CHI '21: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+year = {2021},
+isbn = {9781450380966},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Yokohama, Japan}
+}
+
+@proceedings{10.1145/2517349,
+title = {SOSP '13: Proceedings of the Twenty-Fourth ACM Symposium on Operating Systems Principles},
+year = {2013},
+isbn = {9781450323888},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the Proceedings of the 24th ACM Symposium on Operating Systems Principles (SOSP 2013), held at the Nemacolin Woodlands Resort, Farmington, Pennsylvania, USA. This year's program includes 30 papers, and touches on a wide range of computer systems topics, from kernels to big data, from responsiveness to correctness, and from devices to data centers. The program committee made every effort to identify and include some of the most creative and thought-provoking ideas in computer systems today. Each accepted paper was shepherded by a program committee member to make sure the papers are as readable and complete as possible. We hope you will enjoy the program as much as we did in selecting it.},
+location = {Farminton, Pennsylvania}
+}
+

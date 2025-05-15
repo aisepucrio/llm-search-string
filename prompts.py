@@ -1,10 +1,59 @@
 prompts = {
-    'prompt0': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, academic search string to retrieve relevant articles on the same topic. 
+    'prompt0': '''You will receive the **title** and **abstract** of a scientific article. Your goal is to generate one, and only one, **comprehensive Boolean search string** to retrieve **relevant articles on the same topic**.
+
+To do this, extract the **key concepts** from the text and identify **related terms**, including synonyms, abbreviations, variations, and associated expressions, in order to **broaden the scope** and increase recall. Focus on the underlying meaning of the topic, not just keywords that appear literally in the text.
+
+The final output must be a single, logically structured search string using Boolean operators:
+- Use OR to connect similar terms within a concept.
+- Use AND to connect distinct concepts.
+
+Do not provide any explanation or additional information. Return **only** the complete search string.
+
+Expected output format:
+("machine learning" OR "ML" OR "supervised learning" OR "unsupervised learning") AND ("software product line" OR "SPL" OR "product line engineering" OR "variability management")''',
+
+    'prompt1': '''You will receive the **title** and **abstract** of a scientific article. Your task is to generate one, and only one, **search string** to retrieve articles on the same general topic. The search string must be **semantically rich and contextually expanded** to improve retrieval of **relevant scientific literature**.
+
+To build it, follow these steps:
+1. Identify the **main topics and concepts** from the title and abstract.
+2. For each concept, include **related expressions**, such as synonyms, abbreviations, technical variations, or common usage forms.
+3. Group semantically related terms using OR.
+4. Combine different conceptual groups using AND.
+5. Avoid overly specific expressions that might reduce the number of retrieved articles. You need to **broaden the scope**, thinking about what more general terms could relate to those.
+
+Return only the final Boolean search string. Do not include explanations or intermediate steps.
+
+Expected format:
+("machine learning" OR "ML" OR "supervised learning" OR "unsupervised learning") AND ("software product line" OR "SPL" OR "product line engineering" OR "variability management")''',
+
+    'prompt2': '''You will receive the **title** and **abstract** of a scientific article. Your task is to generate one, and only one, **expanded Boolean search string** to retrieve relevant literature on the same topic. The goal is not to narrow the topic, but to ensure **broad yet relevant** retrieval of literature.
+
+Use the following approach:
+1. Extract the main concepts from the title and abstract.
+2. Expand each concept by identifying semantically related terms (e.g., synonyms, expressions, domain-specific variations, acronyms, plural/singular forms).
+3. Organize terms into **clusters**, where each cluster represents a coherent subtopic.
+4. Use OR to join terms within a cluster and AND to connect different clusters.
+
+Then, simulate a refinement step: imagine that the initial string was used to retrieve articles. Based on the retrieved set, expand the query by including additional terms that would likely improve recall while maintaining topic relevance.
+
+You have to avoid overly specific expressions that might reduce the number of retrieved articles. You need to **broaden the scope**, thinking about what more general terms could relate to those.
+
+Return only the **final version** of the enriched Boolean search string, incorporating both the initial and the expanded terms. Do not include reasoning or commentary.
+
+Expected format:
+("machine learning" OR "ML" OR "supervised learning" OR "unsupervised learning") AND ("software product line" OR "SPL" OR "product line engineering" OR "variability management")
+'''
+}
+
+
+
+prompts_antigos = {
+    'prompt0': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, Boolean search string to retrieve other scientific articles that address the same general research theme or area.
     One suggested approach is to take the keywords from the provided article and augment them with related words.
     I want just and only a search string. Don't give me any additional information.
     An exemple of expected output format: ("nutritional intervention" OR "dietary intervention") AND ("type 2 diabetes" OR "T2DM") AND (randomized OR "clinical trial")
     ''',
-    'prompt1': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, search string to retrieve relevant articles on the same topic. Don't give me any  additional information.
+    'prompt1': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, search string to retrieve other scientific articles that address the same general research theme or area.. Don't give me any  additional information.
 To do this, you can follow these steps:
 Use the provided title and abstract of the article to identify the most important terms.
 Identify words that are closely related to the central theme of the text, considering bigrams and trigrams, to select the most relevant expressions.
@@ -14,7 +63,7 @@ Connect the clusters with each other using AND.
 The final answer is the search string based on the reasoning. I want just and only the search string. Don't give me any additional information.
 An exemple of expected format output: : ("nutritional intervention" OR "dietary intervention") AND ("type 2 diabetes" OR "T2DM") AND (randomized OR "clinical trial")
     ''',
-    'prompt2': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, search string to retrieve relevant articles on the same topic. Don't give me any  additional information.
+    'prompt2': '''You will receive the title and abstract of a scientific article. Your goal is to generate one, and just and only one, search string to retrieve other scientific articles that address the same general research theme or area.. Don't give me any  additional information.
 The approach suggestion:
 Use the provided title and abstract of the article to identify the most important terms.
 Identify words that are closely related to the central theme of the text, considering bigrams and trigrams, to select the most relevant expressions.
@@ -24,7 +73,7 @@ Connect the terms within each cluster using OR.
 Connect the clusters with each other using AND.
 With that, you will have the search string. Now the approach suggestion for improve that one search string.
 Imagine that the extracted terms were used to search for relevant articles and you take 10 of then. 
-Generate a new list of keywords based on how the terms could be expanded to capture more relevant articles.
+Generate a new list of keywords based on how the terms could be expanded to capture other scientific articles that address the same general research theme or area..
 Build a second version of the search string, expanded with suggested terms.
 Present the final search string result. I want just and only the search string. Don't give me any additional information.
 An exemple of expected output format: ("nutritional intervention" OR "dietary intervention") AND ("type 2 diabetes" OR "T2DM") AND (randomized OR "clinical trial")

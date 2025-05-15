@@ -1,0 +1,2229 @@
+@inproceedings{10.1145/3634713.3634720,
+author = {Klikovits, Stefan and Gambi, Alessio and Dhungana, Deepak and Rabiser, Rick},
+title = {Leveraging Software Product Lines for Testing Autonomous Vehicles},
+year = {2024},
+isbn = {9798400708770},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3634713.3634720},
+doi = {10.1145/3634713.3634720},
+abstract = {Extensive testing of Automated Driving Systems (ADS), such as Advanced Driver Assistance Systems and Autonomous Vehicles, is commonly conducted using simulators programmed to implement various driving scenarios, a technique known as scenario-based testing. ADS scenario-based testing using simulations is challenging because it requires identifying scenarios that can effectively test ADS functionalities while ensuring that driving simulators’ features match the driving scenarios’ requirements. This short paper discusses the main challenges of systematically conducting simulation-based testing and proposes leveraging Software Product Line techniques to address them. Specifically, we argue that variability models can be used to support testers in generating test scenarios by effectively capturing and relating the variability in driving simulators, testing scenarios, and ADS implementations. We conclude by outlining an agenda for future research in this important area.},
+booktitle = {Proceedings of the 18th International Working Conference on Variability Modelling of Software-Intensive Systems},
+pages = {56–60},
+numpages = {5},
+keywords = {Autonomous Vehicles, Scenario- and Simulation-based Testing, Software Product Lines},
+location = {Bern, Switzerland},
+series = {VaMoS '24}
+}
+
+@inproceedings{10.1145/3336294.3336309,
+author = {Temple, Paul and Acher, Mathieu and Perrouin, Gilles and Biggio, Battista and Jezequel, Jean-Marc and Roli, Fabio},
+title = {Towards Quality Assurance of Software Product Lines with Adversarial Configurations},
+year = {2019},
+isbn = {9781450371384},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3336294.3336309},
+doi = {10.1145/3336294.3336309},
+abstract = {Software product line (SPL) engineers put a lot of effort to ensure that, through the setting of a large number of possible configuration options, products are acceptable and well-tailored to customers' needs. Unfortunately, options and their mutual interactions create a huge configuration space which is intractable to exhaustively explore. Instead of testing all products, machine learning is increasingly employed to approximate the set of acceptable products out of a small training sample of configurations. Machine learning (ML) techniques can refine a software product line through learned constraints and a priori prevent non-acceptable products to be derived. In this paper, we use adversarial ML techniques to generate adversarial configurations fooling ML classifiers and pinpoint incorrect classifications of products (videos) derived from an industrial video generator. Our attacks yield (up to) a 100% misclassification rate and a drop in accuracy of 5%. We discuss the implications these results have on SPL quality assurance.},
+booktitle = {Proceedings of the 23rd International Systems and Software Product Line Conference - Volume A},
+pages = {277–288},
+numpages = {12},
+keywords = {machine learning, quality assurance, software product line, software testing, software variability},
+location = {Paris, France},
+series = {SPLC '19}
+}
+
+@inproceedings{10.1145/3461001.3471152,
+author = {Silva, Publio and Bezerra, Carla I. M. and Machado, Ivan},
+title = {A machine learning model to classify the feature model maintainability},
+year = {2021},
+isbn = {9781450384698},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3461001.3471152},
+doi = {10.1145/3461001.3471152},
+abstract = {Software Product Lines (SPL) are generally specified using a Feature Model (FM), an artifact designed in the early stages of the SPL development life cycle. This artifact can quickly become too complex, which makes it challenging to maintain an SPL. Therefore, it is essential to evaluate the artifact's maintainability continuously. The literature brings some approaches that evaluate FM maintainability through the aggregation of maintainability measures. Machine Learning (ML) models can be used to create these approaches. They can aggregate the values of independent variables into a single target data, also called a dependent variable. Besides, when using white-box ML models, it is possible to interpret and explain the ML model results. This work proposes white-box ML models intending to classify the FM maintainability based on 15 measures. To build the models, we performed the following steps: (i) we compared two approaches to evaluate the FM maintainability through a human-based oracle of FM maintainability classifications; (ii) we used the best approach to pre-classify the ML training dataset; (iii) we generated three ML models and compared them against classification accuracy, precision, recall, F1 and AUC-ROC; and, (iv) we used the best model to create a mechanism capable of providing improvement indicators to domain engineers. The best model used the decision tree algorithm that obtained accuracy, precision, and recall of 0.81, F1-Score of 0.79, and AUC-ROC of 0.91. Using this model, we could reduce the number of measures needed to evaluate the FM maintainability from 15 to 9 measures.},
+booktitle = {Proceedings of the 25th ACM International Systems and Software Product Line Conference - Volume A},
+pages = {35–45},
+numpages = {11},
+keywords = {feature model, machine learning, quality evaluation, software product line},
+location = {Leicester, United Kingdom},
+series = {SPLC '21}
+}
+
+@inproceedings{10.1145/3233027.3233039,
+author = {Pereira, Juliana Alves and Schulze, Sandro and Figueiredo, Eduardo and Saake, Gunter},
+title = {N-dimensional tensor factorization for self-configuration of software product lines at runtime},
+year = {2018},
+isbn = {9781450364645},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3233027.3233039},
+doi = {10.1145/3233027.3233039},
+abstract = {Dynamic software product lines demand self-adaptation of their behavior to deal with runtime contextual changes in their environment and offer a personalized product to the user. However, taking user preferences and context into account impedes the manual configuration process, and thus, an efficient and automated procedure is required. To automate the configuration process, context-aware recommendation techniques have been acknowledged as an effective mean to provide suggestions to a user based on their recognized context. In this work, we propose a collaborative filtering method based on tensor factorization that allows an integration of contextual data by modeling an N-dimensional tensor User-Feature-Context instead of the traditional two-dimensional User-Feature matrix. In the proposed approach, different types of non-functional properties are considered as additional contextual dimensions. Moreover, we show how to self-configure software product lines by applying our N-dimensional tensor factorization recommendation approach. We evaluate our approach by means of an empirical study using two datasets of configurations derived for medium-sized product lines. Our results reveal significant improvements in the predictive accuracy of the configuration over a state-of-the-art non-contextual matrix factorization approach. Moreover, it can scale up to a 7-dimensional tensor containing hundred of configurations in a couple of milliseconds.},
+booktitle = {Proceedings of the 22nd International Systems and Software Product Line Conference - Volume 1},
+pages = {87–97},
+numpages = {11},
+keywords = {recommender systems, runtime decision-making, self-configuration, software product lines},
+location = {Gothenburg, Sweden},
+series = {SPLC '18}
+}
+
+@inproceedings{10.1145/3071178.3071261,
+author = {Safdar, Safdar Aqeel and Lu, Hong and Yue, Tao and Ali, Shaukat},
+title = {Mining cross product line rules with multi-objective search and machine learning},
+year = {2017},
+isbn = {9781450349208},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3071178.3071261},
+doi = {10.1145/3071178.3071261},
+abstract = {Nowadays, an increasing number of systems are being developed by integrating products (belonging to different product lines) that communicate with each other through information networks. Cost-effectively supporting Product Line Engineering (PLE) and in particular enabling automation of configuration in PLE is a challenge. Capturing rules is the key for enabling automation of configuration. Product configuration has a direct impact on runtime interactions of communicating products. Such products might be within or across product lines and there usually don't exist explicitly specified rules constraining configurable parameter values of such products. Manually specifying such rules is tedious, time-consuming, and requires expert's knowledge of the domain and the product lines. To address this challenge, we propose an approach named as SBRM that combines multi-objective search with machine learning to mine rules. To evaluate the proposed approach, we performed a real case study of two communicating Video Conferencing Systems belonging to two different product lines. Results show that SBRM performed significantly better than Random Search in terms of fitness values, Hyper-Volume, and machine learning quality measurements. When comparing with rules mined with real data, SBRM performed significantly better in terms of Failed Precision (18%), Failed Recall (72%), and Failed F-measure (59%).},
+booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+pages = {1319–1326},
+numpages = {8},
+keywords = {configuration, machine learning, multi-objective search, product line, rule mining},
+location = {Berlin, Germany},
+series = {GECCO '17}
+}
+
+@inproceedings{10.1145/3646548.3672586,
+author = {Fernandez-Amoros, David and Heradio, Ruben and Horcas Aguilera, Jose Miguel and Galindo, Jos\'{e} A. and Benavides, David and Fuentes, Lidia},
+title = {Pragmatic Random Sampling of the Linux Kernel: Enhancing the Randomness and Correctness of the conf Tool},
+year = {2024},
+isbn = {9798400705939},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3646548.3672586},
+doi = {10.1145/3646548.3672586},
+abstract = {The configuration space of some systems is so large that it cannot be computed. This is the case with the Linux Kernel, which provides almost 19,000 configurable options described across more than 1,600 files in the Kconfig language. As a result, many analyses of the Kernel rely on sampling its configuration space (e.g., debugging compilation errors, predicting configuration performance, finding the configuration that optimizes specific performance metrics, etc.). The Kernel can be sampled pragmatically, with its built-in tool conf, or idealistically, translating the Kconfig files into logic formulas. The pros of the idealistic approach are that it provides statistical guarantees for the sampled configurations, but the cons are that it sets out many challenging problems that have not been solved yet, such as scalability issues. This paper introduces a new version of conf called randconfig+, which incorporates a series of improvements that increase the randomness and correctness of pragmatic sampling and also help validate the Boolean translation required for the idealistic approach. randconfig+ has been tested on 20,000 configurations generated for 10 different Kernel versions from 2003 to the present day. The experimental results show that randconfig+ is compatible with all tested Kernel versions, guarantees the correctness of the generated configurations, and increases conf’s randomness for numeric and string options.},
+booktitle = {Proceedings of the 28th ACM International Systems and Software Product Line Conference},
+pages = {24–35},
+numpages = {12},
+keywords = {Kconfig, SAT, configurable systems, randconfig, random sampling, software product lines, variability modeling},
+location = {Dommeldange, Luxembourg},
+series = {SPLC '24}
+}
+
+@inproceedings{10.1145/2934466.2934472,
+author = {Temple, Paul and Galindo, Jos\'{e} A. and Acher, Mathieu and J\'{e}z\'{e}quel, Jean-Marc},
+title = {Using machine learning to infer constraints for product lines},
+year = {2016},
+isbn = {9781450340502},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2934466.2934472},
+doi = {10.1145/2934466.2934472},
+abstract = {Variability intensive systems may include several thousand features allowing for an enormous number of possible configurations, including wrong ones (e.g. the derived product does not compile). For years, engineers have been using constraints to a priori restrict the space of possible configurations, i.e. to exclude configurations that would violate these constraints. The challenge is to find the set of constraints that would be both precise (allow all correct configurations) and complete (never allow a wrong configuration with respect to some oracle). In this paper, we propose the use of a machine learning approach to infer such product-line constraints from an oracle that is able to assess whether a given product is correct. We propose to randomly generate products from the product line, keeping for each of them its resolution model. Then we classify these products according to the oracle, and use their resolution models to infer cross-tree constraints over the product-line. We validate our approach on a product-line video generator, using a simple computer vision algorithm as an oracle. We show that an interesting set of cross-tree constraint can be generated, with reasonable precision and recall.},
+booktitle = {Proceedings of the 20th International Systems and Software Product Line Conference},
+pages = {209–218},
+numpages = {10},
+keywords = {constraints and variability mining, machine learning, software product lines, software testing, variability modeling},
+location = {Beijing, China},
+series = {SPLC '16}
+}
+
+@article{10.1145/3572905,
+author = {Kotti, Zoe and Galanopoulou, Rafaila and Spinellis, Diomidis},
+title = {Machine Learning for Software Engineering: A Tertiary Study},
+year = {2023},
+issue_date = {December 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {55},
+number = {12},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3572905},
+doi = {10.1145/3572905},
+abstract = {Machine learning (ML) techniques increase the effectiveness of software engineering (SE) lifecycle activities. We systematically collected, quality-assessed, summarized, and categorized 83 reviews in ML for SE published between 2009 and 2022, covering 6,117 primary studies. The SE areas most tackled with ML are software quality and testing, while human-centered areas appear more challenging for ML. We propose a number of ML for SE research challenges and actions, including conducting further empirical validation and industrial studies on ML, reconsidering deficient SE methods, documenting and automating data collection and pipeline processes, reexamining how industrial practitioners distribute their proprietary data, and implementing incremental ML approaches.},
+journal = {ACM Comput. Surv.},
+month = mar,
+articleno = {256},
+numpages = {39},
+keywords = {Tertiary study, machine learning, software engineering, systematic literature review}
+}
+
+@inproceedings{10.1145/2364412.2364442,
+author = {Cavalcante, Everton and Almeida, Andr\'{e} and Batista, Thais and Cacho, N\'{e}lio and Lopes, Frederico and Delicato, Flavia C. and Sena, Thiago and Pires, Paulo F.},
+title = {Exploiting software product lines to develop cloud computing applications},
+year = {2012},
+isbn = {9781450310956},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2364412.2364442},
+doi = {10.1145/2364412.2364442},
+abstract = {With the advance of the Cloud Computing paradigm, new challenges in terms of models, tools, and techniques to support developers to design, build and deploy complex software systems that make full use of the cloud technology arise. In the heterogeneous scenario of this new paradigm, the development of applications using cloud services becomes hard, and the software product lines (SPL) approach is potentially promising for this context since specificities of the cloud platforms, such as services heterogeneity, pricing model, and other aspects can be catered as variabilities to core features. In this perspective, this paper (i) proposes a seamless adaptation of the SPL-based development to include important features of cloud-based applications, and (ii) reports the experience of developing HW-CSPL, a SPL for the Health Watcher (HW) System, which allows citizens to register complaints and consult information regarding the public health system of a city. Several functionalities of this system were implemented using different Cloud Computing platforms, and run time specificities of this application deployed on the cloud were analyzed, as well as other information such as change impact and pricing.},
+booktitle = {Proceedings of the 16th International Software Product Line Conference - Volume 2},
+pages = {179–187},
+numpages = {9},
+keywords = {cloud computing, cloud platforms, health watcher system, services, software product lines},
+location = {Salvador, Brazil},
+series = {SPLC '12}
+}
+
+@proceedings{10.1145/3650215,
+title = {ICMLCA '23: Proceedings of the 2023 4th International Conference on Machine Learning and Computer Application},
+year = {2023},
+isbn = {9798400709449},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hangzhou, China}
+}
+
+@proceedings{10.1145/3589883,
+title = {ICMLT '23: Proceedings of the 2023 8th International Conference on Machine Learning Technologies},
+year = {2023},
+isbn = {9781450398329},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Stockholm, Sweden}
+}
+
+@inproceedings{10.1145/2658761.2658768,
+author = {Ma, Lei and Artho, Cyrille and Zhang, Cheng and Sato, Hiroyuki},
+title = {Efficient testing of software product lines via centralization (short paper)},
+year = {2014},
+isbn = {9781450331616},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2658761.2658768},
+doi = {10.1145/2658761.2658768},
+abstract = {Software product line~(SPL) engineering manages families of software products that share common features. However, cost-effective test case generation for an SPL is challenging. Applying existing test case generation techniques to each product variant separately may test common code in a redundant way. Moreover, it is difficult to share the test results among multiple product variants. In this paper, we propose the use of centralization, which combines multiple product variants from the same SPL and generates test cases for the entire system. By taking into account all variants, our technique generally avoids generating redundant test cases for common software components. Our case study on three SPLs shows that compared with testing each variant independently, our technique is more efficient and achieves higher test coverage.},
+booktitle = {Proceedings of the 2014 International Conference on Generative Programming: Concepts and Experiences},
+pages = {49–52},
+numpages = {4},
+keywords = {Software Product Lines, automatic test generation, random testing},
+location = {V\"{a}ster\r{a}s, Sweden},
+series = {GPCE 2014}
+}
+
+@proceedings{10.1145/3587716,
+title = {ICMLC '23: Proceedings of the 2023 15th International Conference on Machine Learning and Computing},
+year = {2023},
+isbn = {9781450398411},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Zhuhai, China}
+}
+
+@inproceedings{10.1145/2499777.2499779,
+author = {Antkiewicz, Micha\l{} and B\k{a}k, Kacper and Murashkin, Alexandr and Olaechea, Rafael and Liang, Jia Hui (Jimmy) and Czarnecki, Krzysztof},
+title = {Clafer tools for product line engineering},
+year = {2013},
+isbn = {9781450323253},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2499777.2499779},
+doi = {10.1145/2499777.2499779},
+abstract = {Clafer is a lightweight yet expressive language for structural modeling: feature modeling and configuration, class and object modeling, and metamodeling. Clafer Tools is an integrated set of tools based on Clafer. In this paper, we describe some product-line variability modeling scenarios of Clafer Tools from the viewpoints of product-line owner, product-line engineer, and product engineer.},
+booktitle = {Proceedings of the 17th International Software Product Line Conference Co-Located Workshops},
+pages = {130–135},
+numpages = {6},
+keywords = {Clafer, ClaferIG, ClaferMOO, ClaferMOO visualizer, ClaferWiki, clafer configurator},
+location = {Tokyo, Japan},
+series = {SPLC '13 Workshops}
+}
+
+@inproceedings{10.1145/3461002.3473066,
+author = {Fortz, Sophie},
+title = {LIFTS: learning featured transition systems},
+year = {2021},
+isbn = {9781450384704},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3461002.3473066},
+doi = {10.1145/3461002.3473066},
+abstract = {This PhD project aims to automatically learn transition systems capturing the behaviour of a whole family of software-based systems. Reasoning at the family level yields important economies of scale and quality improvements for a broad range of systems such as software product lines, adaptive and configurable systems. Yet, to fully benefit from the above advantages, a model of the system family's behaviour is necessary. Such a model is often prohibitively expensive to create manually due to the number of variants. For large long-lived systems with outdated specifications or for systems that continuously adapt, the modelling cost is even higher. Therefore, this PhD proposes to automate the learning of such models from existing artefacts. To advance research at a fundamental level, our learning target are Featured Transition Systems (FTS), an abstract formalism that can be used to provide a pivot semantics to a range of variability-aware state-based modelling languages. The main research questions addressed by this PhD project are: (1) Can we learn variability-aware models efficiently? (2) Can we learn FTS in a black-box fashion? (i.e., with access to execution logs but not to source code); (3) Can we learn FTS in a white/grey-box testing fashion? (i.e., with access to source code); and (4) How do the proposed techniques scale in practice?},
+booktitle = {Proceedings of the 25th ACM International Systems and Software Product Line Conference - Volume B},
+pages = {1–6},
+numpages = {6},
+keywords = {active automata learning, featured transition systems, model learning, software product lines, variability mining},
+location = {Leicester, United Kindom},
+series = {SPLC '21}
+}
+
+@inproceedings{10.1145/3546932.3547014,
+author = {Tavassoli, Shaghayegh and Damasceno, Carlos Diego N. and Mousavi, Mohammad Reza and Khosravi, Ramtin},
+title = {A benchmark for active learning of variability-intensive systems},
+year = {2022},
+isbn = {9781450394437},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3546932.3547014},
+doi = {10.1145/3546932.3547014},
+abstract = {Behavioral models are the key enablers for behavioral analysis of Software Product Lines (SPL), including testing and model checking. Active model learning comes to the rescue when family behavioral models are non-existent or outdated. A key challenge on active model learning is to detect commonalities and variability efficiently and combine them into concise family models. Benchmarks and their associated metrics will play a key role in shaping the research agenda in this promising field and provide an effective means for comparing and identifying relative strengths and weaknesses in the forthcoming techniques. In this challenge, we seek benchmarks to evaluate the efficiency (e.g., learning time and memory footprint) and effectiveness (e.g., conciseness and accuracy of family models) of active model learning methods in the software product line context. These benchmark sets must contain the structural and behavioral variability models of at least one SPL. Each SPL in a benchmark must contain products that requires more than one round of model learning with respect to the basic active learning L* algorithm. Alternatively, tools supporting the synthesis of artificial benchmark models are also welcome.},
+booktitle = {Proceedings of the 26th ACM International Systems and Software Product Line Conference - Volume A},
+pages = {245–249},
+numpages = {5},
+keywords = {behavioral variability, benchmarking, featured finite state machines, model learning},
+location = {Graz, Austria},
+series = {SPLC '22}
+}
+
+@inproceedings{10.1145/3579027.3608971,
+author = {Eichhorn, Domenik and Pett, Tobias and Osborne, Tobias and Schaefer, Ina},
+title = {Quantum Computing for Feature Model Analysis: Potentials and Challenges},
+year = {2023},
+isbn = {9798400700910},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3579027.3608971},
+doi = {10.1145/3579027.3608971},
+abstract = {Feature modeling is a technique to model the variability of configurable systems. When working with feature models, it is possible to analyze them, for instance, by counting the number of valid configurations, searching feature model anomalies, or creating samples of configurations for testing. Classical feature model analysis techniques are based on solving algorithmic problems such as boolean satisfiability, satisfiability modulo theories, or integer linear programming. Existing analysis approaches provide satisfactory solutions for small and medium-sized problem instances, but scaling issues are observed for large-sized feature models. Quantum computers provide up to superpolynomial speedups for specific algorithmic problems and have the potential to solve those scaling issues. This paper analyzes the algorithmic techniques used in classical product line analysis and identifies potentials and challenges for quantum speedups. Our findings show that quantum algorithms like QAOA and Grover have the potential to speed up SAT and ILP-based feature model analysis techniques, but only after additional improvements in quantum hardware have been made.},
+booktitle = {Proceedings of the 27th ACM International Systems and Software Product Line Conference - Volume A},
+pages = {1–7},
+numpages = {7},
+keywords = {feature model analysis, quantum algorithms, quantum computing},
+location = {Tokyo, Japan},
+series = {SPLC '23}
+}
+
+@inproceedings{10.1145/3307630.3342413,
+author = {Arcaini, Paolo and Gargantini, Angelo and Radavelli, Marco},
+title = {A Process for Fault-Driven Repair of Constraints Among Features},
+year = {2019},
+isbn = {9781450366687},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3307630.3342413},
+doi = {10.1145/3307630.3342413},
+abstract = {The variability of a Software Product Line is usually both described in the problem space (by using a variability model) and in the solution space (i.e., the system implementation). If the two spaces are not aligned, wrong decisions can be done regarding the system configuration. In this work, we consider the case in which the variability model is not aligned with the solution space, and we propose an approach to automatically repair (possibly) faulty constraints in variability models. The approach takes as input a variability model and a set of combinations of features that trigger conformance faults between the model and the real system, and produces the repaired set of constraints as output. The approach consists of three major phases. First, it generates a test suite and identifies the condition triggering the faults. Then, it modifies the constraints of the variability model according to the type of faults. Lastly, it uses a logic minimization method to simplify the modified constraints. We evaluate the process on variability models of 7 applications of various sizes. An empirical analysis on these models shows that our approach can effectively repair constraints among features in an automated way.},
+booktitle = {Proceedings of the 23rd International Systems and Software Product Line Conference - Volume B},
+pages = {73–81},
+numpages = {9},
+keywords = {automatic repair, fault, system evolution, variability model},
+location = {Paris, France},
+series = {SPLC '19}
+}
+
+@inproceedings{10.1145/3233027.3233031,
+author = {Kaindl, Hermann and Kramer, Stefan and Hoch, Ralph},
+title = {An inductive learning perspective on automated generation of feature models from given product specifications},
+year = {2018},
+isbn = {9781450364645},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3233027.3233031},
+doi = {10.1145/3233027.3233031},
+abstract = {For explicit representation of commonality and variability of a product line, a feature model is mostly used. An open question is how a feature model can be inductively learned in an automated way from a limited number of given product specifications in terms of features.We propose to address this problem through machine learning, more precisely inductive generalization from examples. However, no counter-examples are assumed to exist. Basically, a feature model needs to be complete with respect to all the given example specifications. First results indicate the feasibility of this approach, even for generating hierarchies, but many open challenges remain.},
+booktitle = {Proceedings of the 22nd International Systems and Software Product Line Conference - Volume 1},
+pages = {25–30},
+numpages = {6},
+keywords = {generating feature models, inductive generalization from examples, machine learning},
+location = {Gothenburg, Sweden},
+series = {SPLC '18}
+}
+
+@inproceedings{10.1145/3646548.3672588,
+author = {Burgstaller, Tamim and Garber, Damian and Le, Viet-Man and Felfernig, Alexander},
+title = {Optimization Space Learning: A Lightweight, Noniterative Technique for Compiler Autotuning},
+year = {2024},
+isbn = {9798400705939},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3646548.3672588},
+doi = {10.1145/3646548.3672588},
+abstract = {Compilers are highly configurable systems. One can influence the performance of a compiled program by activating and deactivating selected compiler optimizations. However, automatically finding well-performing configurations is a challenging task. We consider expensive iteration, paired with recompilation of the program to optimize, as one of the main shortcomings of state-of-the-art approaches. Therefore, we propose Optimization Space Learning, a lightweight and noniterative technique. It exploits concepts known from configuration space learning and recommender systems to discover well-performing compiler configurations. This reduces the overhead induced by the approach significantly, compared to existing approaches. The process of finding a well-performing configuration is 800k times faster than with the state-of-the-art techniques.},
+booktitle = {Proceedings of the 28th ACM International Systems and Software Product Line Conference},
+pages = {36–46},
+numpages = {11},
+keywords = {Collaborative Filtering, Compiler, Compiler Autotuning, Configuration, Configuration Space Learning, Performance Optimization},
+location = {Dommeldange, Luxembourg},
+series = {SPLC '24}
+}
+
+@inproceedings{10.1145/3382025.3414960,
+author = {Str\"{u}der, Stefan and Mukelabai, Mukelabai and Str\"{u}ber, Daniel and Berger, Thorsten},
+title = {Feature-oriented defect prediction},
+year = {2020},
+isbn = {9781450375696},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3382025.3414960},
+doi = {10.1145/3382025.3414960},
+abstract = {Software errors are a major nuisance in software development and can lead not only to reputation damages, but also to considerable financial losses for companies. Therefore, numerous techniques for predicting software defects, largely based on machine learning methods, have been developed over the past decades. These techniques usually rely on code and process metrics in order to predict defects at the granularity of typical software assets, such as subsystems, components, and files. In this paper, we present the first systematic investigation of feature-oriented defect prediction: the prediction of defects at the granularity of features---domain-oriented entities abstractly representing (and often cross-cutting) typical software assets. Feature-oriented prediction can be beneficial, since: (i) particular features might be more error-prone than others, (ii) characteristics of features known as defective might be useful to predict other error-prone features, (iii) feature-specific code might be especially prone to faults arising from feature interactions. We present a dataset derived from 12 software projects and introduce two metric sets for feature-oriented defect prediction. We evaluated seven machine learning classifiers with three different attribute sets each, using our two new metric sets as well as an existing metric set from the literature. We observe precision and recall values of around 85% and better robustness when more diverse metrics sets with richer feature information are used.},
+booktitle = {Proceedings of the 24th ACM Conference on Systems and Software Product Line: Volume A - Volume A},
+articleno = {21},
+numpages = {12},
+keywords = {classification, defect, feature, prediction},
+location = {Montreal, Quebec, Canada},
+series = {SPLC '20}
+}
+
+@inproceedings{10.1145/3634713.3634715,
+author = {B\"{o}hm, Sabrina and Krieter, Sebastian and He\ss{}, Tobias and Th\"{u}m, Thomas and Lochau, Malte},
+title = {Incremental Identification of T-Wise Feature Interactions},
+year = {2024},
+isbn = {9798400708770},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3634713.3634715},
+doi = {10.1145/3634713.3634715},
+abstract = {Developers of configurable software use the concept of selecting and deselecting features to create different variants of a software product. In this context, one of the most challenging aspects is to identify unwanted interactions between those features. Due to the combinatorial explosion of the number of potentially interacting features, it is currently an open question how to systematically identify a particular feature interaction that causes a specific fault in a set of software products. In this paper, we propose an incremental approach to identify such t-wise feature interactions based on testing additional configurations in a black-box setting. We present the algorithm Inciident, which generates and selects new configurations based on a divide-and-conquer strategy to efficiently identify the feature interaction with a preferably minimal number of configurations. We evaluate our approach by considering simulated and real interactions of different sizes for 48 real-world feature models. Our results show that on average, Inciident requires 80&nbsp;% less configurations to identify an interaction than using randomly selected configurations.},
+booktitle = {Proceedings of the 18th International Working Conference on Variability Modelling of Software-Intensive Systems},
+pages = {27–36},
+numpages = {10},
+keywords = {Configurable Systems, Feature Interaction, Feature-Model Analysis, Software Product Lines},
+location = {Bern, Switzerland},
+series = {VaMoS '24}
+}
+
+@inproceedings{10.1007/978-3-642-33666-9_46,
+author = {Ali, Shaukat and Yue, Tao and Briand, Lionel and Walawege, Suneth},
+title = {A product line modeling and configuration methodology to support model-based testing: an industrial case study},
+year = {2012},
+isbn = {9783642336652},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-642-33666-9_46},
+doi = {10.1007/978-3-642-33666-9_46},
+abstract = {Product Line Engineering (PLE) is expected to enhance quality and productivity, speed up time-to-market and decrease development effort, through reuse—the key mechanism of PLE. In addition, one can also apply PLE to support systematic testing and more specifically model-based testing (MBT) of product lines—the original motivation behind this work. MBT has shown to be cost-effective in many industry sectors but at the expense of building models of the system under test (SUT). However, the modeling effort to support MBT can significantly be reduced if an adequate product line modeling and configuration methodology is followed, which is the main motivation of this paper. The initial motivation for this work emerged while working with MBT for a Video Conferencing product line at Cisco Systems, Norway. In this paper, we report on our experience in modeling product family models and various types of behavioral variability in the Saturn product line. We focus on behavioral variability in UML state machines since the Video Conferencing Systems (VCSs) exhibit strong state-based behavior and these models are the main drivers for MBT; however, the approach can be also tailored to other UML diagrams. We also provide a mechanism to specify and configure various types of variability using stereotypes and Aspect-Oriented Modeling (AOM). Results of applying our methodology to the Saturn product line modeling and configuration process show that the effort required for modeling and configuring products of the product line family can be significantly reduced.},
+booktitle = {Proceedings of the 15th International Conference on Model Driven Engineering Languages and Systems},
+pages = {726–742},
+numpages = {17},
+keywords = {UML state machine, aspect-oriented modeling, behavioral variability, model-based testing, product line engineering},
+location = {Innsbruck, Austria},
+series = {MODELS'12}
+}
+
+@inproceedings{10.1145/3106195.3106206,
+author = {Arcaini, Paolo and Gargantini, Angelo and Vavassori, Paolo},
+title = {Automated Repairing of Variability Models},
+year = {2017},
+isbn = {9781450352215},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3106195.3106206},
+doi = {10.1145/3106195.3106206},
+abstract = {Variability models are a common means for describing the commonalities and differences in Software Product Lines (SPL); configurations of the SPL that respect the constraints imposed by the variability model define the problem space. The same variability is usually also captured in the final implementation through implementation constraints, defined in terms of preprocessor directives, build files, build-time errors, etc. Configurations satisfying the implementation constraints and producing correct (compilable) programs define the solution space. Since sometimes the variability model is defined after the implementation exists, it could wrongly assess the validity of some system configurations, i.e., it could consider acceptable some configurations (not belonging to the solution space) that do not permit to obtain a correct program. We here propose an approach that automatically repairs variability models such that the configurations they consider valid are also part of the solution space. Experiments show that some existing variability models are indeed faulty and can be repaired by our approach.},
+booktitle = {Proceedings of the 21st International Systems and Software Product Line Conference - Volume A},
+pages = {9–18},
+numpages = {10},
+location = {Sevilla, Spain},
+series = {SPLC '17}
+}
+
+@inproceedings{10.1145/3109729.3109734,
+author = {Marc\'{e}n, Ana C. and Font, Jaime and Pastor, \'{O}scar and Cetina, Carlos},
+title = {Towards Feature Location in Models through a Learning to Rank Approach},
+year = {2017},
+isbn = {9781450351195},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3109729.3109734},
+doi = {10.1145/3109729.3109734},
+abstract = {In this work, we propose a feature location approach to discover software artifacts that implement the feature functionality in a model. Given a model and a feature description, model fragments extracted from the model and the feature description are encoded based on a domain ontology. Then, a Learning to Rank algorithm is used to train a classifier that is based on the model fragments and feature description encoded. Finally, the classifier assesses the similarity between a population of model fragments and the target feature being located to find the set of most suitable feature realizations. We have evaluated the approach with an industrial case study, locating features with mean precision and recall values of around 73.75% and 73.31%, respectively (the sanity check obtains less than 35%).},
+booktitle = {Proceedings of the 21st International Systems and Software Product Line Conference - Volume B},
+pages = {57–64},
+numpages = {8},
+location = {Sevilla, Spain},
+series = {SPLC '17}
+}
+
+@article{10.1145/3626710,
+author = {Haynes, Brandon and Alotaibi, Rana and Pavlenko, Anna and Leeka, Jyoti and Jindal, Alekh and Tian, Yuanyuan},
+title = {GEqO: ML-Accelerated Semantic Equivalence Detection},
+year = {2023},
+issue_date = {December 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {1},
+number = {4},
+url = {https://doi.org/10.1145/3626710},
+doi = {10.1145/3626710},
+abstract = {Large scale analytics engines have become a core dependency for modern data-driven enterprises to derive business insights and drive actions. These engines support a large number of analytic jobs processing huge volumes of data on a daily basis, and workloads are often inundated with overlapping computations across multiple jobs. Reusing common computation is crucial for efficient cluster resource utilization and reducing job execution time. Detecting common computation is the first and key step for reducing this computational redundancy. However, detecting equivalence on large-scale analytics engines requires efficient and scalable solutions that are fully automated. In addition, to maximize computation reuse, equivalence needs to be detected at the semantic level instead of just the syntactic level (i.e., the ability to detect semantic equivalence of seemingly different-looking queries). Unfortunately, existing solutions fall short of satisfying these requirements.In this paper, we take a major step towards filling this gap by proposing GEqO, a portable and lightweight machine-learning-based framework for efficiently identifying semantically equivalent computations at scale. GEqO introduces two machine-learning-based filters that quickly prune out nonequivalent subexpressions and employs a semi-supervised learning feedback loop to iteratively improve its model with an intelligent sampling mechanism. Further, with its novel database-agnostic featurization method, GEqO can transfer the learning from one workload and database to another. Our extensive empirical evaluation shows that, on TPC-DS-like queries, GEqO yields significant performance gains-up to 200x faster than automated verifiers-and finds up to 2x more equivalences than optimizer and signature-based equivalence detection approaches.},
+journal = {Proc. ACM Manag. Data},
+month = dec,
+articleno = {223},
+numpages = {25},
+keywords = {machine learning, semantic query optimization}
+}
+
+@inproceedings{10.1145/2934466.2934469,
+author = {Zhang, Yi and Guo, Jianmei and Blais, Eric and Czarnecki, Krzysztof and Yu, Huiqun},
+title = {A mathematical model of performance-relevant feature interactions},
+year = {2016},
+isbn = {9781450340502},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2934466.2934469},
+doi = {10.1145/2934466.2934469},
+abstract = {Modern software systems have grown significantly in their size and complexity, therefore understanding how software systems behave when there are many configuration options, also called features, is no longer a trivial task. This is primarily due to the potentially complex interactions among the features. In this paper, we propose a novel mathematical model for performance-relevant, or quantitative in general, feature interactions, based on the theory of Boolean functions. Moreover, we provide two algorithms for detecting all such interactions with little measurement effort and potentially guaranteed accuracy and confidence level. Empirical results on real-world configurable systems demonstrated the feasibility and effectiveness of our approach.},
+booktitle = {Proceedings of the 20th International Systems and Software Product Line Conference},
+pages = {25–34},
+numpages = {10},
+keywords = {boolean functions, feature interactions, fourier transform, performance},
+location = {Beijing, China},
+series = {SPLC '16}
+}
+
+@inproceedings{10.5555/1753235.1753267,
+author = {Mendonca, Marcilio and W\k{a}sowski, Andrzej and Czarnecki, Krzysztof},
+title = {SAT-based analysis of feature models is easy},
+year = {2009},
+publisher = {Carnegie Mellon University},
+address = {USA},
+abstract = {Feature models are a popular variability modeling notation used in product line engineering. Automated analyses of feature models, such as consistency checking and interactive or offline product selection, often rely on translating models to propositional logic and using satisfiability (SAT) solvers.Efficiency of individual satisfiability-based analyses has been reported previously. We generalize and quantify these studies with a series of independent experiments. We show that previously reported efficiency is not incidental. Unlike with the general SAT instances, which fall into easy and hard classes, the instances induced by feature modeling are easy throughout the spectrum of realistic models. In particular, the phenomenon of phase transition is not observed for realistic feature models.Our main practical conclusion is a general encouragement for researchers to continued development of SAT-based methods to further exploit this efficiency in future.},
+booktitle = {Proceedings of the 13th International Software Product Line Conference},
+pages = {231–240},
+numpages = {10},
+location = {San Francisco, California, USA},
+series = {SPLC '09}
+}
+
+@inproceedings{10.1145/3338906.3342508,
+author = {Radavelli, Marco},
+title = {Using software testing to repair models},
+year = {2019},
+isbn = {9781450355728},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3338906.3342508},
+doi = {10.1145/3338906.3342508},
+abstract = {Software testing is an important phase in the software development process, aiming at locating faults in artifacts, and achieve some confidence that the software behaves according to specification. There exists many software testing techniques applied to debugging, fault-localization, and repair of code, however, to the best of our knowledge, the application of software testing to locating faults in models and automatically repair them, is still an open issue. We present a project that investigates the use of software testing methods to automatically repair model artifacts, to support engineers in maintaining them consistent with the implementation and specification. We describe the research approach, the structure of the devised test-driven repair processes, present results in the cases of combinatorial models and feature models, and finally discuss future work of applying testing to repair models for other scenarios, such as timed automata.},
+booktitle = {Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {1253–1255},
+numpages = {3},
+keywords = {CIT, model repair, mutation, search-based software engineering, software product lines, software testing, timed automata},
+location = {Tallinn, Estonia},
+series = {ESEC/FSE 2019}
+}
+
+@inproceedings{10.1145/3302333.3302338,
+author = {Amand, Benoit and Cordy, Maxime and Heymans, Patrick and Acher, Mathieu and Temple, Paul and J\'{e}z\'{e}quel, Jean-Marc},
+title = {Towards Learning-Aided Configuration in 3D Printing: Feasibility Study and Application to Defect Prediction},
+year = {2019},
+isbn = {9781450366489},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3302333.3302338},
+doi = {10.1145/3302333.3302338},
+abstract = {Configurators rely on logical constraints over parameters to aid users and determine the validity of a configuration. However, for some domains, capturing such configuration knowledge is hard, if not infeasible. This is the case in the 3D printing industry, where parametric 3D object models contain the list of parameters and their value domains, but no explicit constraints. This calls for a complementary approach that learns what configurations are valid based on previous experiences. In this paper, we report on preliminary experiments showing the capability of state-of-the-art classification algorithms to assist the configuration process. While machine learning holds its promises when it comes to evaluation scores, an in-depth analysis reveals the opportunity to combine the classifiers with constraint solvers.},
+booktitle = {Proceedings of the 13th International Workshop on Variability Modelling of Software-Intensive Systems},
+articleno = {7},
+numpages = {9},
+keywords = {3D printing, Configuration, Machine Learning, Sampling},
+location = {Leuven, Belgium},
+series = {VaMoS '19}
+}
+
+@article{10.1145/3313789,
+author = {Reuling, Dennis and Kelter, Udo and B\"{u}rdek, Johannes and Lochau, Malte},
+title = {Automated N-way Program Merging for Facilitating Family-based Analyses of Variant-rich Software},
+year = {2019},
+issue_date = {July 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {28},
+number = {3},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3313789},
+doi = {10.1145/3313789},
+abstract = {Nowadays software tends to come in many different, yet similar variants, often derived from a common code base via clone-and-own. Family-based-analysis strategies have recently shown very promising potential for improving efficiency in applying quality-assurance techniques to such variant-rich programs, as compared to variant-by-variant approaches. Unfortunately, these strategies require a single program representation superimposing all program variants in a syntactically well-formed, semantically sound, and variant-preserving manner, which is usually not available and manually hard to obtain in practice. In this article, we present a novel methodology, called SiMPOSE, for automatically generating superimpositions of existing program variants to facilitate family-based analyses of variant-rich software. To this end, we propose a novel N-way model-merging methodology to integrate the control-flow automaton (CFA) representations of N given variants of a C program into one unified CFA representation. CFA constitute a unified program abstraction used by many recent software-analysis tools for automated quality assurance. To cope with the inherent complexity of N-way model-merging, our approach (1) utilizes principles of similarity-propagation to reduce the number of potential N-way matches, and (2) enables us to decompose a set of N variants into arbitrary subsets and to incrementally derive an N-way superimposition from partial superimpositions. We apply our tool implementation of SiMPOSE to a selection of realistic C programs, frequently considered for experimental evaluation of program-analysis techniques. In particular, we investigate applicability and efficiency/effectiveness trade-offs of our approach by applying SiMPOSE in the context of family-based unit-test generation as well as model-checking as sample program-analysis techniques. Our experimental results reveal very impressive efficiency improvements by an average factor of up to 2.6 for test-generation and up to 2.4 for model-checking under stable effectiveness, as compared to variant-by-variant approaches, thus amortizing the additional effort required for merging. In addition, our results show that merging all N variants at once produces, in almost all cases, clearly more precise results than incremental step-wise 2-way merging. Finally, our comparison with major existing N-way merging techniques shows that SiMPOSE constitutes, in most cases, the best efficiency/effectiveness trade-off.},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = jul,
+articleno = {13},
+numpages = {59},
+keywords = {Program merging, control flow automata, model matching, quality assurance, variability encoding}
+}
+
+@article{10.1145/3528100,
+author = {Cheng, Jiezhu and Gao, Cuiyun and Zheng, Zibin},
+title = {HINNPerf: Hierarchical Interaction Neural Network for Performance Prediction of Configurable Systems},
+year = {2023},
+issue_date = {March 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {32},
+number = {2},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3528100},
+doi = {10.1145/3528100},
+abstract = {Modern software systems are usually highly configurable, providing users with customized functionality through various configuration options. Understanding how system performance varies with different option combinations is important to determine optimal configurations that meet specific requirements. Due to the complex interactions among multiple options and the high cost of performance measurement under a huge configuration space, it is challenging to study how different configurations influence the system performance. To address these challenges, we propose HINNPerf, a novel hierarchical interaction neural network for performance prediction of configurable systems. HINNPerf employs the embedding method and hierarchic network blocks to model the complicated interplay between configuration options, which improves the prediction accuracy of the method. In addition, we devise a hierarchical regularization strategy to enhance the model robustness. Empirical results on 10 real-world configurable systems show that our method statistically significantly outperforms state-of-the-art approaches by achieving average 22.67% improvement in prediction accuracy. In addition, combined with the Integrated Gradients method, the designed hierarchical architecture provides some insights about the interaction complexity and the significance of configuration options, which might help users and developers better understand how the configurable system works and efficiently identify significant options affecting the performance.},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = mar,
+articleno = {46},
+numpages = {30},
+keywords = {Software performance prediction, highly configurable systems, deep neural network, machine learning}
+}
+
+@inproceedings{10.1145/3447545.3451177,
+author = {Canales, Felipe and Hecht, Geoffrey and Bergel, Alexandre},
+title = {Optimization of Java Virtual Machine Flags using Feature Model and Genetic Algorithm},
+year = {2021},
+isbn = {9781450383318},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447545.3451177},
+doi = {10.1145/3447545.3451177},
+abstract = {Optimizing the Java Virtual Machine (JVM) options in order to get the best performance out of a program for production is a challenging and time-consuming task. HotSpot, the Oracle's open-source Java VM implementation offers more than 500 options, called flags, that can be used to tune the JVM's compiler, garbage collector (GC), heap size and much more. In addition to being numerous, these flags are sometimes poorly documented and create a need of benchmarking to ensure that the flags and their associated values deliver the best performance and stability for a particular program to execute.Auto-tuning approaches have already been proposed in order to mitigate this burden. However, in spite of increasingly sophisticated search techniques allowing for powerful optimizations, these approaches take little account of the underlying complexities of JVM flags. Indeed, dependencies and incompatibilities between flags are non-trivial to express, which if not taken into account may lead to invalid or spurious flag configurations that should not be considered by the auto-tuner.In this paper, we propose a novel model, inspired by the feature model used in Software Product Line, which takes the complexity of JVM's flags into account. We then demonstrate the usefulness of this model, using it as an input of a Genetic Algorithm (GA) to optimize the execution times of DaCapo Benchmarks.},
+booktitle = {Companion of the ACM/SPEC International Conference on Performance Engineering},
+pages = {183–186},
+numpages = {4},
+keywords = {auto-tuning, feature model, genetic algorithm, java virtual machine, optimization},
+location = {Virtual Event, France},
+series = {ICPE '21}
+}
+
+@book{10.1145/3674127,
+editor = {Alonso, Omar and Baeza-Yates, Ricardo},
+title = {Information Retrieval: Advanced Topics and Techniques},
+year = {2024},
+isbn = {9798400710506},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+edition = {1},
+volume = {60},
+abstract = {In the last decade, deep learning and word embeddings have made significant impacts on information retrieval (IR) by adding techniques based in neural networks and language models. At the same time, certain search modalities such as neural IR and conversational search have become more popular. This book, written by international academic and industry experts, brings the field up to date with detailed discussions of these new approaches and techniques. The book is organized in three sections: Foundations, Adaptations and Concerns, and Verticals.Under Foundations, we address topics that form the basic structure of any modern IR system, including recommender systems. These new techniques are developed to augment indexing, retrieval, and ranking. Neural IR, recommender systems, evaluation, query-driven functionality, and knowledge graphs are covered in this section.IR systems need to adapt to specific user characteristics and preferences, and techniques that were considered too niche a few years ago are now a matter of system design consideration. The Adaptations and Concerns section covers the following topics: conversational search, cross-language retrieval, temporal extraction and retrieval, bias in retrieval systems, and privacy in search.While web search engines are the most popular information access point, there are cases where specific verticals provide a better experience in terms of content and relevance. The Verticals section describes eCommerce, professional search, personal collections, music retrieval, and biomedicine as examples.}
+}
+
+@proceedings{10.1145/3717664,
+title = {EDAI '24: Proceedings of the 2024 International Conference on Economic Data Analytics and Artificial Intelligence},
+year = {2024},
+isbn = {9798400713255},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@inproceedings{10.1145/2070821.2070824,
+author = {Menzies, Tim and Bird, Christian and Zimmermann, Thomas and Schulte, Wolfram and Kocaganeli, Ekrem},
+title = {The inductive software engineering manifesto: principles for industrial data mining},
+year = {2011},
+isbn = {9781450310222},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2070821.2070824},
+doi = {10.1145/2070821.2070824},
+abstract = {The practices of industrial and academic data mining are very different. These differences have significant implications for (a) how we manage industrial data mining projects; (b) the direction of academic studies in data mining; and (c) training programs for engineers who seek to use data miners in an industrial setting.},
+booktitle = {Proceedings of the International Workshop on Machine Learning Technologies in Software Engineering},
+pages = {19–26},
+numpages = {8},
+keywords = {industry, inductive engineering},
+location = {Lawrence, Kansas, USA},
+series = {MALETS '11}
+}
+
+@article{10.1145/3609333,
+author = {Li, Zhong and Zhu, Yuxuan and Van Leeuwen, Matthijs},
+title = {A Survey on Explainable Anomaly Detection},
+year = {2023},
+issue_date = {January 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {18},
+number = {1},
+issn = {1556-4681},
+url = {https://doi.org/10.1145/3609333},
+doi = {10.1145/3609333},
+abstract = {In the past two decades, most research on anomaly detection has focused on improving the accuracy of the detection, while largely ignoring the explainability of the corresponding methods and thus leaving the explanation of outcomes to practitioners. As anomaly detection algorithms are increasingly used in safety-critical domains, providing explanations for the high-stakes decisions made in those domains has become an ethical and regulatory requirement. Therefore, this work provides a comprehensive and structured survey on state-of-the-art explainable anomaly detection techniques. We propose a taxonomy based on the main aspects that characterise each explainable anomaly detection technique, aiming to help practitioners and researchers find the explainable anomaly detection method that best suits their needs.},
+journal = {ACM Trans. Knowl. Discov. Data},
+month = sep,
+articleno = {23},
+numpages = {54},
+keywords = {explainable artificial intelligence, explainable machine learning, outlier detection, anomaly detection, anomaly explanation, interpretable anomaly detection, Explainable anomaly detection}
+}
+
+@article{10.1145/3715111,
+author = {Abrah\~{a}o, Silvia and Grundy, John and Pezz\`{e}, Mauro and Storey, Margaret-Anne and Andrew Tamburri, Damian},
+title = {Software Engineering by and for Humans in an AI Era},
+year = {2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3715111},
+doi = {10.1145/3715111},
+abstract = {The landscape of software engineering is undergoing a transformative shift driven by advancements in machine learning, artificial intelligence (AI), and autonomous systems. This roadmap paper explores how these technologies are reshaping the field, positioning humans not only as end users but also as critical components within expansive software ecosystems. We examine the challenges and opportunities arising from this human-centered paradigm, including ethical considerations, fairness, and the intricate interplay between technical and human factors. By recognizing humans at the heart of the software lifecycle —spanning professional engineers, end users, and end-user developers —we emphasize the importance of inclusivity, human-aligned workflows, and the seamless integration of AI-augmented socio-technical systems. As software systems evolve to become more intelligent and human-centric, software engineering practices must adapt to this new reality. This paper provides a comprehensive examination of this transformation, outlining current trends, key challenges, and opportunities that define the emerging research and practice landscape, and envisioning a future where software engineering and AI work synergistically to place humans at the core of the ecosystem.},
+note = {Just Accepted},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = feb
+}
+
+@article{10.1145/3507907,
+author = {Rust, Pierre and Picard, Gauthier and Ramparany, Fano},
+title = {Resilient Distributed Constraint Reasoning to Autonomously Configure and Adapt IoT Environments},
+year = {2022},
+issue_date = {November 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {22},
+number = {4},
+issn = {1533-5399},
+url = {https://doi.org/10.1145/3507907},
+doi = {10.1145/3507907},
+abstract = {In this article, we investigate multi-agent techniques to install autonomy and adaptation in IoT-based smart environment settings, like smart home scenarios. We particularly make use of the smart environment configuration problem (SECP) framework, and map it to a distributed optimization problem (DCOP). This consists in enabling smart objects to coordinate and self-configure as to meet both user-defined requirements and energy efficiency, by operating a distributed constraint reasoning process over a computation graph. As to cope with the dynamics of the environment and infrastructure (e.g., by adding or removing devices), we also specify the k-resilient distribution of graph-structured computations supporting agent decisions, over dynamic and physical multi-agent systems. We implement a self-organizing distributed repair method, based on a distributed constraint optimization algorithm to adapt the distribution as to ensure the system still performs collective decisions and remains resilient to upcoming changes. We provide a full stack of mechanisms to install resilience in operating stateless DCOP solution methods, which results in a robust approach using a fast DCOP algorithm to repair any stateless DCOP solution methods at runtime. We experimentally evaluate the performances of these techniques when operating stateless DCOP algorithms to solve SECP instances.},
+journal = {ACM Trans. Internet Technol.},
+month = nov,
+articleno = {100},
+numpages = {31},
+keywords = {adaptation, resilience, DCOP, smart home, IoT}
+}
+
+@proceedings{10.1145/3589132,
+title = {SIGSPATIAL '23: Proceedings of the 31st ACM International Conference on Advances in Geographic Information Systems},
+year = {2023},
+isbn = {9798400701689},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {The conference started as a series of workshops and symposia back in 1993 with the aim of promoting interdisciplinary discussions among researchers, developers, users, and practitioners and fostering research in all aspects of geographic information systems, especially in relation to novel systems based on geospatial data and knowledge. It continues to provide a forum for original research contributions covering all conceptual, design and implementation aspects of geospatial data ranging from applications, user interfaces and visualization, to data storage, query processing, indexing, machine learning and data mining. The conference is the premier annual event of the ACM Special Interest Group on Spatial Information (ACM SIGSPATIAL).},
+location = {Hamburg, Germany}
+}
+
+@article{10.1145/3708527,
+author = {Assun\c{c}\~{a}o, Wesley K. G. and Marchezan, Luciano and Arkoh, Lawrence and Egyed, Alexander and Ramler, Rudolf},
+title = {Contemporary Software Modernization: Strategies, Driving Forces, and Research Opportunities},
+year = {2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3708527},
+doi = {10.1145/3708527},
+abstract = {Software modernization is a common activity in software engineering, since technologies advance, requirements change, and business models evolve. Differently from conventional software evolution (e.g., adding new features, enhancing performance, or adapting to new requirements), software modernization involves re-engineering entire legacy systems (e.g., changing the technology stack, migrating to a new architecture style, or programming paradigms). Given the pervasive nature of software today, modernizing legacy systems is paramount to provide customers with competitive and innovative products and services, while keeping companies profitable. Despite the prevalent discussion of software modernization in gray literature, and the many papers in the literature, there is no work presenting a “big picture” of contemporary software modernization, describing challenges, and providing a well-defined research agenda. The goal of this work is to describe the state of the art in software modernization in the past 10 years. We collect the state of the art by performing a rapid review (searching five digital libraries), identifying potential 3,460 studies, leading to a final set of 127. We analyzed these studies to understand which strategies are employed, the driving forces that lead organizations to modernize their systems, and the challenges that need to be addressed. The results show that studies in the last 10 years have explored eight strategies for modernizing legacy systems, namely cloudification, architecture redesign, moving to a new programming language, targeting reuse optimization, software modernization for new hardware integration, practices to leverage automation, database modernization, and digital transformation. Modernization is triggered by 14 driving forces, with the most common ones being reducing operational costs, improving performance and scalability, and reducing complexity. In addition, based on the analysis of existing literature, we present a detailed discussion of research opportunities in this field. The main challenges are providing tooling support, followed by defining a modernization process and considering better evaluation metrics. The main contribution of our work is to equip practitioners and researchers with knowledge of the current state of contemporary software modernization so that they are aware of practices and challenges to be addressed when deciding to modernize legacy systems.},
+note = {Just Accepted},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = dec,
+keywords = {Software Evolution, Software Migration, Re-designing, Re-engineering}
+}
+
+@proceedings{10.1145/3634713,
+title = {VaMoS '24: Proceedings of the 18th International Working Conference on Variability Modelling of Software-Intensive Systems},
+year = {2024},
+isbn = {9798400708770},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bern, Switzerland}
+}
+
+@inproceedings{10.1145/1595696.1595716,
+author = {Bird, Christian and Bachmann, Adrian and Aune, Eirik and Duffy, John and Bernstein, Abraham and Filkov, Vladimir and Devanbu, Premkumar},
+title = {Fair and balanced? bias in bug-fix datasets},
+year = {2009},
+isbn = {9781605580012},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1595696.1595716},
+doi = {10.1145/1595696.1595716},
+abstract = {Software engineering researchers have long been interested in where and why bugs occur in code, and in predicting where they might turn up next. Historical bug-occurence data has been key to this research. Bug tracking systems, and code version histories, record when, how and by whom bugs were fixed; from these sources, datasets that relate file changes to bug fixes can be extracted. These historical datasets can be used to test hypotheses concerning processes of bug introduction, and also to build statistical bug prediction models. Unfortunately, processes and humans are imperfect, and only a fraction of bug fixes are actually labelled in source code version histories, and thus become available for study in the extracted datasets. The question naturally arises, are the bug fixes recorded in these historical datasets a fair representation of the full population of bug fixes? In this paper, we investigate historical data from several software projects, and find strong evidence of systematic bias. We then investigate the potential effects of "unfair, imbalanced" datasets on the performance of prediction techniques. We draw the lesson that bias is a critical problem that threatens both the effectiveness of processes that rely on biased datasets to build prediction models and the generalizability of hypotheses tested on biased data.},
+booktitle = {Proceedings of the 7th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on The Foundations of Software Engineering},
+pages = {121–130},
+numpages = {10},
+keywords = {bias},
+location = {Amsterdam, The Netherlands},
+series = {ESEC/FSE '09}
+}
+
+@inproceedings{10.1145/3387940.3392089,
+author = {Ahlgren, John and Berezin, Maria Eugenia and Bojarczuk, Kinga and Dulskyte, Elena and Dvortsova, Inna and George, Johann and Gucevska, Natalija and Harman, Mark and L\"{a}mmel, Ralf and Meijer, Erik and Sapora, Silvia and Spahr-Summers, Justin},
+title = {WES: Agent-based User Interaction Simulation on Real Infrastructure},
+year = {2020},
+isbn = {9781450379632},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3387940.3392089},
+doi = {10.1145/3387940.3392089},
+abstract = {We introduce the Web-Enabled Simulation (WES) research agenda, and describe FACEBOOK's WW system. We describe the application of WW to reliability, integrity and privacy at FACEBOOK1, where it is used to simulate social media interactions on an infrastructure consisting of hundreds of millions of lines of code. The WES agenda draws on research from many areas of study, including Search Based Software Engineering, Machine Learning, Programming Languages, Multi Agent Systems, Graph Theory, Game AI, and AI Assisted Game Play. We conclude with a set of open problems and research challenges to motivate wider investigation.},
+booktitle = {Proceedings of the IEEE/ACM 42nd International Conference on Software Engineering Workshops},
+pages = {276–284},
+numpages = {9},
+location = {Seoul, Republic of Korea},
+series = {ICSEW'20}
+}
+
+@proceedings{10.1145/3571788,
+title = {VaMoS '23: Proceedings of the 17th International Working Conference on Variability Modelling of Software-Intensive Systems},
+year = {2023},
+isbn = {9798400700019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Odense, Denmark}
+}
+
+@proceedings{10.1145/3663529,
+title = {FSE 2024: Companion Proceedings of the 32nd ACM International Conference on the Foundations of Software Engineering},
+year = {2024},
+isbn = {9798400706585},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {We are pleased to welcome all delegates to FSE 2024, the ACM International Conference on the Foundations of Software Engineering (FSE) 2024. The conference now has a shorter name! FSE is an internationally renowned forum for researchers, practitioners, and educators to present and discuss the most recent innovations, trends, experiences, and challenges in the field of software engineering. FSE brings together experts from academia and industry to exchange the latest research results and trends as well as their practical application in all areas of software engineering.},
+location = {Porto de Galinhas, Brazil}
+}
+
+@proceedings{10.1145/3643667,
+title = {Q-SE 2024: Proceedings of the 5th ACM/IEEE International Workshop on Quantum Software Engineering},
+year = {2024},
+isbn = {9798400705700},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {The 5th International Workshop on Quantum Software Engineering (Q-SE 2024), co-located with ICSE 2024, provides a platform for researchers and practitioners to discuss challenges in developing quantum software in high-level quantum languages, novel solutions to build correct methods for testing quantum programs, executing quantum software, developing best practices, and creating a research roadmap of quantum software engineering.},
+location = {Lisbon, Portugal}
+}
+
+@inproceedings{10.1145/3663529.3663859,
+author = {Wang, Xinyi and Ali, Shaukat and Arrieta, Aitor and Arcaini, Paolo and Arratibel, Maite},
+title = {Application of Quantum Extreme Learning Machines for QoS Prediction of Elevators’ Software in an Industrial Context},
+year = {2024},
+isbn = {9798400706585},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3663529.3663859},
+doi = {10.1145/3663529.3663859},
+abstract = {Quantum Extreme Learning Machine (QELM) is an emerging technique that utilizes quantum dynamics and an easy-training strategy to solve problems such as classification and regression efficiently. Although QELM has many potential benefits, its real-world applications remain limited. To this end, we present QELM’s industrial application in the context of elevators, by proposing an approach called QUELL. In QUELL, we use QELM for the waiting time prediction related to the scheduling software of elevators, with applications for software regression testing, elevator digital twins, and real-time performance prediction. The scheduling software is a classical software implemented by our industrial partner Orona, a globally recognized leader in elevator technology. We assess the performance of with four days of operational data of a real elevator installation with various feature sets and demonstrate that QUELL can efficiently predict waiting times, with prediction quality significantly better than that of classical ML models employed in a state-of-the-practice approach. Moreover, we show that the prediction quality of QUELL does not degrade when using fewer features. Based on our industrial application, we further provide insights into using QELM in other applications in Orona, and discuss how QELM could be applied to other industrial applications.},
+booktitle = {Companion Proceedings of the 32nd ACM International Conference on the Foundations of Software Engineering},
+pages = {399–410},
+numpages = {12},
+keywords = {Quantum computing, industrial elevators, quantum extreme learning machines, quantum reservoir computing, regression testing},
+location = {Porto de Galinhas, Brazil},
+series = {FSE 2024}
+}
+
+@article{10.1145/3712004,
+author = {Casadei, Roberto and Aguzzi, Gianluca and Audrito, Giorgio and Damiani, Ferruccio and Pianini, Danilo and Scarso, Giordano and Torta, Gianluca and Viroli, Mirko},
+title = {Software Engineering for Collective Cyber-Physical Ecosystems},
+year = {2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3712004},
+doi = {10.1145/3712004},
+abstract = {Today's distributed and pervasive computing addresses large-scale cyber-physical ecosystems, characterised by dense and large networks of devices capable of computation, communication and interaction with the environment and people. While most research focuses on treating these systems as “composites” (i.e., heterogeneous functional complexes), recent developments in fields such as self-organising systems and swarm robotics have opened up a complementary perspective: treating systems as “collectives” (i.e., uniform, collaborative, and self-organising groups of entities). This article explores the motivations, state of the art, and implications of this “collective computing paradigm” in software engineering. In particular, it discusses its peculiar challenges, implied by characteristics like distribution, situatedness, large scale, and cooperative nature. These challenges outline significant directions for future research in software engineering, touching on aspects such as macro-programming, collective intelligence, self-adaptive middleware, learning/synthesis of collective behaviour, human involvement, safety and security in collective cyber-physical ecosystems.},
+note = {Just Accepted},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = jan,
+keywords = {cyber-physical ecosystems, collective adaptive systems, swarm intelligence, macro-programming, edge-cloud continuum, multi-agent systems, distributed artificial intelligence}
+}
+
+@proceedings{10.1145/3640310,
+title = {MODELS '24: Proceedings of the ACM/IEEE 27th International Conference on Model Driven Engineering Languages and Systems},
+year = {2024},
+isbn = {9798400705045},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Linz, Austria}
+}
+
+@proceedings{10.1145/3624007,
+title = {GPCE 2023: Proceedings of the 22nd ACM SIGPLAN International Conference on Generative Programming: Concepts and Experiences},
+year = {2023},
+isbn = {9798400704062},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 22nd ACM SIGPLAN International Conference on Generative Programming: Concepts &amp; Experiences (GPCE’23). GPCE is the premiere venue for researchers and practitioners interested in techniques that use program generation to increase programmer productivity, improve software quality, and shorten the time-to-market of software products. In addition to exploring cutting-edge techniques of generative software, GPCE seeks to foster cross-fertilization between the programming languages research communities.},
+location = {Cascais, Portugal}
+}
+
+@proceedings{10.1145/3559712,
+title = {SBCARS '22: Proceedings of the 16th Brazilian Symposium on Software Components, Architectures, and Reuse},
+year = {2022},
+isbn = {9781450397452},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Uberlandia, Brazil}
+}
+
+@article{10.1145/3702231,
+author = {ter Beek, Maurice and Broy, Manfred and Dongol, Brijesh},
+title = {The Role of Formal Methods in Computer Science Education},
+year = {2024},
+issue_date = {December 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {15},
+number = {4},
+issn = {2153-2184},
+url = {https://doi.org/10.1145/3702231},
+doi = {10.1145/3702231},
+journal = {ACM Inroads},
+month = nov,
+pages = {58–66},
+numpages = {9}
+}
+
+@proceedings{10.1145/3674805,
+title = {ESEM '24: Proceedings of the 18th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement},
+year = {2024},
+isbn = {9798400710476},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Barcelona, Spain}
+}
+
+@inproceedings{10.1145/3597926.3605232,
+author = {Mordahl, Austin},
+title = {Automatic Testing and Benchmarking for Configurable Static Analysis Tools},
+year = {2023},
+isbn = {9798400702211},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3597926.3605232},
+doi = {10.1145/3597926.3605232},
+abstract = {Static analysis is an important tool for detecting bugs in real-world software. The advent of numerous analysis algorithms with their own tradeoffs has led to the proliferation of configurable static analysis tools, but their complex, undertested configuration spaces are obstacles to their widespread adoption. To improve the reliability of these tools, my research focuses on developing new approaches to automatically test and debug them. First, I describe an empirical study that helps to understand the performance and behavior of configurable taint analysis tools for Android. The findings of this study motivate the development of ECSTATIC, a framework for testing and debugging that goes beyond taint analysis to test any configurable static analysis tool. The next steps for this research involve the automatic creation of real-world benchmarks for static analysis with associated ground truths and analysis features.},
+booktitle = {Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis},
+pages = {1532–1536},
+numpages = {5},
+keywords = {benchmarking, configurable static analysis, debugging, testing},
+location = {Seattle, WA, USA},
+series = {ISSTA 2023}
+}
+
+@article{10.1145/3143561,
+author = {Chen, Tsong Yueh and Kuo, Fei-Ching and Liu, Huai and Poon, Pak-Lok and Towey, Dave and Tse, T. H. and Zhou, Zhi Quan},
+title = {Metamorphic Testing: A Review of Challenges and Opportunities},
+year = {2018},
+issue_date = {January 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {51},
+number = {1},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3143561},
+doi = {10.1145/3143561},
+abstract = {Metamorphic testing is an approach to both test case generation and test result verification. A central element is a set of metamorphic relations, which are necessary properties of the target function or algorithm in relation to multiple inputs and their expected outputs. Since its first publication, we have witnessed a rapidly increasing body of work examining metamorphic testing from various perspectives, including metamorphic relation identification, test case generation, integration with other software engineering techniques, and the validation and evaluation of software systems. In this article, we review the current research of metamorphic testing and discuss the challenges yet to be addressed. We also present visions for further improvement of metamorphic testing and highlight opportunities for new research.},
+journal = {ACM Comput. Surv.},
+month = jan,
+articleno = {4},
+numpages = {27},
+keywords = {test case generation, oracle problem, metamorphic relation, Metamorphic testing}
+}
+
+@proceedings{10.1145/3639478,
+title = {ICSE-Companion '24: Proceedings of the 2024 IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings},
+year = {2024},
+isbn = {9798400705021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {ICSE is the leading and, by far, the largest conference in Software Engineering, attracting researchers, practitioners, and students worldwide. ICSE2024 is co-located with 11 conferences and symposia this year, many long-established and prestigious venues in their own right.},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3603287,
+title = {ACMSE '24: Proceedings of the 2024 ACM Southeast Conference},
+year = {2024},
+isbn = {9798400702372},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {We are pleased to welcome you to the 2024 ACM Southeast Conference (ACMSE 2024) sponsored by ACM and the College of Computing and Software Engineering (CCSE) at Kennesaw State University, Marietta, Georgia, USA. ACMSE 2024 continues the ACM Southeast Conference tradition of participation in all areas of computing disciplines. We hope this conference will be an excellent opportunity to share current and future hot research trends amongst researchers from around the world.},
+location = {Marietta, GA, USA}
+}
+
+@proceedings{10.1145/3600046,
+title = {DEC '23: Proceedings of the Second ACM Data Economy Workshop},
+year = {2023},
+isbn = {9798400708466},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Seattle, WA, USA}
+}
+
+@proceedings{10.1145/3540250,
+title = {ESEC/FSE 2022: Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+year = {2022},
+isbn = {9781450394130},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {On behalf of all members of the organizing committee, we are delighted to welcome everyone to the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2022. The event continues the long, distinguished ESEC/FSE tradition of presenting the most innovative research, and facilitating interactions between scientists and engineers who are passionate about advancing the theory and practice of software engineering.},
+location = {Singapore, Singapore}
+}
+
+@article{10.1145/3105906,
+author = {Monperrus, Martin},
+title = {Automatic Software Repair: A Bibliography},
+year = {2018},
+issue_date = {January 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {51},
+number = {1},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3105906},
+doi = {10.1145/3105906},
+abstract = {This article presents a survey on automatic software repair. Automatic software repair consists of automatically finding a solution to software bugs without human intervention. This article considers all kinds of repairs. First, it discusses behavioral repair where test suites, contracts, models, and crashing inputs are taken as oracle. Second, it discusses state repair, also known as runtime repair or runtime recovery, with techniques such as checkpoint and restart, reconfiguration, and invariant restoration. The uniqueness of this article is that it spans the research communities that contribute to this body of knowledge: software engineering, dependability, operating systems, programming languages, and security. It provides a novel and structured overview of the diversity of bug oracles and repair operators used in the literature.},
+journal = {ACM Comput. Surv.},
+month = jan,
+articleno = {17},
+numpages = {24},
+keywords = {self-healing software, Program repair}
+}
+
+@article{10.1145/3542945,
+author = {Araujo, Hugo and Mousavi, Mohammad Reza and Varshosaz, Mahsa},
+title = {Testing, Validation, and Verification of Robotic and Autonomous Systems: A Systematic Review},
+year = {2023},
+issue_date = {March 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {32},
+number = {2},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3542945},
+doi = {10.1145/3542945},
+abstract = {We perform a systematic literature review on testing, validation, and verification of robotic and autonomous systems (RAS). The scope of this review covers peer-reviewed research papers proposing, improving, or evaluating testing techniques, processes, or tools that address the system-level qualities of RAS. Our survey is performed based on a rigorous methodology structured in three phases. First, we made use of a set of 26 seed papers (selected by domain experts) and the SERP-TEST taxonomy to design our search query and (domain-specific) taxonomy. Second, we conducted a search in three academic search engines and applied our inclusion and exclusion criteria to the results. Respectively, we made use of related work and domain specialists (50 academics and 15 industry experts) to validate and refine the search query. As a result, we encountered 10,735 studies, out of which 195 were included, reviewed, and coded. Our objective is to answer four research questions, pertaining to (1) the type of models, (2) measures for system performance and testing adequacy, (3) tools and their availability, and (4) evidence of applicability, particularly in industrial contexts. We analyse the results of our coding to identify strengths and gaps in the domain and present recommendations to researchers and practitioners. Our findings show that variants of temporal logics are most widely used for modelling requirements and properties, while variants of state-machines and transition systems are used widely for modelling system behaviour. Other common models concern epistemic logics for specifying requirements and belief-desire-intention models for specifying system behaviour. Apart from time and epistemics, other aspects captured in models concern probabilities (e.g., for modelling uncertainty) and continuous trajectories (e.g., for modelling vehicle dynamics and kinematics). Many papers lack any rigorous measure of efficiency, effectiveness, or adequacy for their proposed techniques, processes, or tools. Among those that provide a measure of efficiency, effectiveness, or adequacy, the majority use domain-agnostic generic measures such as number of failures, size of state-space, or verification time were most used. There is a trend in addressing the research gap in this respect by developing domain-specific notions of performance and adequacy. Defining widely accepted rigorous measures of performance and adequacy for each domain is an identified research gap. In terms of tools, the most widely used tools are well-established model-checkers such as Prism and Uppaal, as well as simulation tools such as Gazebo; Matlab/Simulink is another widely used toolset in this domain. Overall, there is very limited evidence of industrial applicability in the papers published in this domain. There is even a gap considering consolidated benchmarks for various types of autonomous systems.},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = mar,
+articleno = {51},
+numpages = {61},
+keywords = {literature survey, testing, autonomous systems, robotics, Verification and validation}
+}
+
+@proceedings{10.1145/3677052,
+title = {ICAIF '24: Proceedings of the 5th ACM International Conference on AI in Finance},
+year = {2024},
+isbn = {9798400710810},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Brooklyn, NY, USA}
+}
+
+@proceedings{10.1145/3570353,
+title = {COP '22: Proceedings of the 14th ACM International Workshop on Context-Oriented Programming and Advanced Modularity},
+year = {2022},
+isbn = {9781450399869},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Berlin, Germany}
+}
+
+@proceedings{10.1145/3564719,
+title = {GPCE 2022: Proceedings of the 21st ACM SIGPLAN International Conference on Generative Programming: Concepts and Experiences},
+year = {2022},
+isbn = {9781450399203},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 21st ACM SIGPLAN International Conference on Generative Programming: Concept &amp; Experiences (GPCE 2022) held on December 6th and 7th, 2022 in Auckland, New Zealand. GPCE is the premiere venue for researchers and practitioners interested in techniques that use program generation, domain-specific languages, and component deployment to increase programmer productivity, improve software quality, and shorten the time-to-market of software products. In addition to exploring cutting-edge techniques of generative software, GPCE seeks to foster cross-fertilization between software engineering and programming language.},
+location = {Auckland, New Zealand}
+}
+
+@book{10.1145/3664191,
+author = {Kumar, Amruth N. and Raj, Rajendra K. and Aly, Sherif G. and Anderson, Monica D. and Becker, Brett A. and Blumenthal, Richard L. and Eaton, Eric and Epstein, Susan L. and Goldweber, Michael and Jalote, Pankaj and Lea, Douglas and Oudshoorn, Michael and Pias, Marcelo and Reiser, Susan and Servin, Christian and Simha, Rahul and Winters, Titus and Xiang, Qiao},
+title = {Computer Science Curricula 2023},
+year = {2024},
+isbn = {9798400710339},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA}
+}
+
+@proceedings{10.1145/3643991,
+title = {MSR '24: Proceedings of the 21st International Conference on Mining Software Repositories},
+year = {2024},
+isbn = {9798400705878},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {MSR is a thriving research community that organizes a yearly conference with a solid reputation amongst software engineering researchers.},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3716895,
+title = {ICAICE '24: Proceedings of the 5th International Conference on Artificial Intelligence and Computer Engineering},
+year = {2024},
+isbn = {9798400718007},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@proceedings{10.1145/3639476,
+title = {ICSE-NIER'24: Proceedings of the 2024 ACM/IEEE 44th International Conference on Software Engineering: New Ideas and Emerging Results},
+year = {2024},
+isbn = {9798400705007},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3607947,
+title = {IC3-2023: Proceedings of the 2023 Fifteenth International Conference on Contemporary Computing},
+year = {2023},
+isbn = {9798400700224},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Noida, India}
+}
+
+@proceedings{10.1145/3641399,
+title = {ISEC '24: Proceedings of the 17th Innovations in Software Engineering Conference},
+year = {2024},
+isbn = {9798400717673},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bangalore, India}
+}
+
+@proceedings{10.1145/3583740,
+title = {SEC '23: Proceedings of the Eighth ACM/IEEE Symposium on Edge Computing},
+year = {2023},
+isbn = {9798400701238},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {SEC is a premier forum for top researchers and practitioners to come together to discuss the opportunities and challenges of edge computing.},
+location = {Wilmington, DE, USA}
+}
+
+@proceedings{10.1145/3524494,
+title = {GAS '22: Proceedings of the 6th International ICSE Workshop on Games and Software Engineering: Engineering Fun, Inspiration, and Motivation},
+year = {2022},
+isbn = {9781450392938},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {GAS explores how the growing adoption of gameful elements in various contexts can make the design and development of new technology increasingly complex, and provides a forum to explore these issues that crosscut the software engineering and games development communities. The goal of this one day workshop is to bring together interdisciplinary researchers and practitioners to discuss emerging and new research trends, challenges, costs, and benefits for entertainment games, serious games, and the gamification of traditional (non-game) applications and activities.},
+location = {Pittsburgh, Pennsylvania}
+}
+
+@proceedings{10.1145/3639477,
+title = {ICSE-SEIP '24: Proceedings of the 46th International Conference on Software Engineering: Software Engineering in Practice},
+year = {2024},
+isbn = {9798400705014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3689484,
+title = {GPCE '24: Proceedings of the 23rd ACM SIGPLAN International Conference on Generative Programming: Concepts and Experiences},
+year = {2024},
+isbn = {9798400712111},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 23rd ACM SIGPLAN International Conference on Generative Programming: Concepts &amp; Experiences (GPCE’24). GPCE is the premiere venue for researchers and practitioners interested in techniques that use program generation to increase programmer productivity, improve software quality, and shorten the time-to-market of software products. In addition to exploring cutting-edge techniques of generative software, GPCE seeks to foster cross-fertilization between the programming language and software engineering research communities.},
+location = {Pasadena, CA, USA}
+}
+
+@article{10.1145/3659098,
+author = {Maciel, Rita Suzana Pitangueira and Valle, Pedro Henrique Dias and Santos, K\'{e}cia Souza and Nakagawa, Elisa Yumi},
+title = {Systems Interoperability Types: A Tertiary Study},
+year = {2024},
+issue_date = {October 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {56},
+number = {10},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3659098},
+doi = {10.1145/3659098},
+abstract = {Interoperability has been a focus of attention over at least four decades, with the emergence of several interoperability types (or levels), diverse models, frameworks, and solutions, also as a result of a continuous effort from different domains. The current heterogeneity in technologies such as blockchain, IoT and new application domains such as Industry 4.0 brings not only new interaction possibilities but also challenges for interoperability. Moreover, confusion and ambiguity in the current understanding of interoperability types exist, hampering stakeholders’ communication and decision-making. This work presents an updated panorama of software-intensive systems interoperability with particular attention to its types. For this, we conducted a tertiary study that scrutinized 37 secondary studies published from 2012 to 2023, from which we found 36 interoperability types associated with 117 different definitions, besides 13 interoperability models and six frameworks in various domains. This panorama reveals that the concern with interoperability has migrated from technical to social-technical issues going beyond the software systems’ boundary and still requiring solving many open issues. We also address the urgent actions and also potential research opportunities to leverage interoperability as a multidisciplinary research field to achieve low-coupled, cost-effective, and interoperable systems.},
+journal = {ACM Comput. Surv.},
+month = jun,
+articleno = {254},
+numpages = {37},
+keywords = {Interoperability type, interoperability model, interoperability framework, tertiary study}
+}
+
+@proceedings{10.1145/3593434,
+title = {EASE '23: Proceedings of the 27th International Conference on Evaluation and Assessment in Software Engineering},
+year = {2023},
+isbn = {9798400700446},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Oulu, Finland}
+}
+
+@inproceedings{10.1145/3540250.3549144,
+author = {Martin-Lopez, Alberto and Segura, Sergio and Ruiz-Cort\'{e}s, Antonio},
+title = {Online testing of RESTful APIs: promises and challenges},
+year = {2022},
+isbn = {9781450394130},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3540250.3549144},
+doi = {10.1145/3540250.3549144},
+abstract = {Online testing of web APIs—testing APIs in production—is gaining traction in industry. Platforms such as RapidAPI and Sauce Labs provide online testing and monitoring services of web APIs 24/7, typically by re-executing manually designed test cases on the target APIs on a regular basis. In parallel, research on the automated generation of test cases for RESTful APIs has seen significant advances in recent years. However, despite their promising results in the lab, it is unclear whether research tools would scale to industrial-size settings and, more importantly, how they would perform in an online testing setup, increasingly common in practice. In this paper, we report the results of an empirical study on the use of automated test case generation methods for online testing of RESTful APIs. Specifically, we used the RESTest framework to automatically generate and execute test cases in 13 industrial APIs for 15 days non-stop, resulting in over one million test cases. To scale at this level, we had to transition from a monolithic tool approach to a multi-bot architecture with over 200 bots working cooperatively in tasks like test generation and reporting. As a result, we uncovered about 390K failures, which we conservatively triaged into 254 bugs, 65 of which have been acknowledged or fixed by developers to date. Among others, we identified confirmed faults in the APIs of Amadeus, Foursquare, Yelp, and YouTube, accessed by millions of applications worldwide. More importantly, our reports have guided developers on improving their APIs, including bug fixes and documentation updates in the APIs of Amadeus and YouTube. Our results show the potential of online testing of RESTful APIs as the next must-have feature in industry, but also some of the key challenges to overcome for its full adoption in practice.},
+booktitle = {Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {408–420},
+numpages = {13},
+keywords = {web API, online testing, bot, black-box testing, REST},
+location = {Singapore, Singapore},
+series = {ESEC/FSE 2022}
+}
+
+@proceedings{10.1145/3698038,
+title = {SoCC '24: Proceedings of the 2024 ACM Symposium on Cloud Computing},
+year = {2024},
+isbn = {9798400712869},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Redmond, WA, USA}
+}
+
+@proceedings{10.1145/3677182,
+title = {ASENS '24: Proceedings of the International Conference on Algorithms, Software Engineering, and Network Security},
+year = {2024},
+isbn = {9798400709784},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Nanchang, China}
+}
+
+@proceedings{10.5555/3643142,
+title = {WSC '23: Proceedings of the Winter Simulation Conference},
+year = {2023},
+isbn = {9798350369663},
+publisher = {IEEE Press},
+location = {San Antonio, Texas, USA}
+}
+
+@inproceedings{10.5555/2663546.2663573,
+author = {Fredericks, Erik M. and Ramirez, Andres J. and Cheng, Betty H. C.},
+title = {Towards run-time testing of dynamic adaptive systems},
+year = {2013},
+isbn = {9781467344012},
+publisher = {IEEE Press},
+abstract = {It is challenging to design, develop, and validate a dynamically adaptive system (DAS) that satisfies requirements, particularly when requirements can change at run time. Testing at design time can help verify and validate that a DAS satisfies its specified requirements and constraints. While offline tests may demonstrate that a DAS is capable of satisfying its requirements before deployment, a DAS may encounter unanticipated system and environmental conditions that can prevent it from achieving its objectives. In working towards a requirements-aware DAS, this paper proposes run-time monitoring and adaptation of tests as another technique for evaluating whether a DAS satisfies, or is even capable of satisfying, its requirements given its current execution context. To this end, this paper motivates the need and identifies challenges for adaptively testing a DAS at run time, as well as suggests possible methods for leveraging offline testing techniques for verifying run-time behavior.},
+booktitle = {Proceedings of the 8th International Symposium on Software Engineering for Adaptive and Self-Managing Systems},
+pages = {169–174},
+numpages = {6},
+location = {San Francisco, California},
+series = {SEAMS '13}
+}
+
+@proceedings{10.1145/3578527,
+title = {ISEC '23: Proceedings of the 16th Innovations in Software Engineering Conference},
+year = {2023},
+isbn = {9798400700644},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Allahabad, India}
+}
+
+@proceedings{10.1145/3658271,
+title = {SBSI '24: Proceedings of the 20th Brazilian Symposium on Information Systems},
+year = {2024},
+isbn = {9798400709968},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Juiz de Fora, Brazil}
+}
+
+@article{10.1145/3494519,
+author = {Marijan, Dusica and Sen, Sagar},
+title = {Industry–Academia Research Collaboration and Knowledge Co-creation: Patterns and Anti-patterns},
+year = {2022},
+issue_date = {July 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {31},
+number = {3},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3494519},
+doi = {10.1145/3494519},
+abstract = {Increasing the impact of software engineering research in the software industry and the society at large has long been a concern of high priority for the software engineering community. The problem of two cultures, research conducted in a vacuum (disconnected from the real world), or misaligned time horizons are just some of the many complex challenges standing in the way of successful industry–academia collaborations. This article reports on the experience of research collaboration and knowledge co-creation between industry and academia in software engineering as a way to bridge the research–practice collaboration gap. Our experience spans 14 years of collaboration between researchers in software engineering and the European and Norwegian software and IT industry. Using the participant observation and interview methods, we have collected and afterwards analyzed an extensive record of qualitative data. Drawing upon the findings made and the experience gained, we provide a set of 14 patterns and 14 anti-patterns for industry–academia collaborations, aimed to support other researchers and practitioners in establishing and running research collaboration projects in software engineering.},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = mar,
+articleno = {45},
+numpages = {52},
+keywords = {anti-patterns, patterns, collaboration model, collaboration gap, knowledge transfer, technology transfer, software engineering, research co-creation, research collaboration, Industry-academia collaboration}
+}
+
+@proceedings{10.1145/3640457,
+title = {RecSys '24: Proceedings of the 18th ACM Conference on Recommender Systems},
+year = {2024},
+isbn = {9798400705052},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Bari, Italy}
+}
+
+@proceedings{10.1145/3677333,
+title = {ICPP Workshops '24: Workshop Proceedings of the 53rd International Conference on Parallel Processing},
+year = {2024},
+isbn = {9798400718021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Gotland, Sweden}
+}
+
+@proceedings{10.1145/3670105,
+title = {CNIOT '24: Proceedings of the 2024 5th International Conference on Computing, Networks and Internet of Things},
+year = {2024},
+isbn = {9798400716751},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Tokyo, Japan}
+}
+
+@proceedings{10.1145/3592813,
+title = {SBSI '23: Proceedings of the XIX Brazilian Symposium on Information Systems},
+year = {2023},
+isbn = {9798400707599},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Macei\'{o}, Brazil}
+}
+
+@proceedings{10.1145/3623652,
+title = {HASP '23: Proceedings of the 12th International Workshop on Hardware and Architectural Support for Security and Privacy},
+year = {2023},
+isbn = {9798400716232},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Toronto, Canada}
+}
+
+@inproceedings{10.4108/ICST.VALUETOOLS2009.7547,
+author = {Chan, Carri W. and Bambos, Nick},
+title = {Throughput loss in task scheduling due to server state uncertainty},
+year = {2009},
+isbn = {9789639799707},
+publisher = {ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering)},
+address = {Brussels, BEL},
+url = {https://doi.org/10.4108/ICST.VALUETOOLS2009.7547},
+doi = {10.4108/ICST.VALUETOOLS2009.7547},
+abstract = {We consider a dynamic scheduling system where a single controller selects 'tasks' to service over U 'servers' of fluctuating quality/speed. The quality/speed of each server determines the likelihood of successful service should a task be assigned to that server. The goal is to maximize the total expected number of tasks successfully served over a fixed time horizon (aggregate throughput) given only one server can be used in each time slot. However, the state of the servers are not known to the scheduler with certainty; at best, only statistical distributions (estimates) of the realized server states are available. We consider how the uncertainty of server state information compromises the expected aggregate throughput compared to a 'clairvoyant' scheduler which has instantaneous, perfect information about the realized server states.The issue of operating in uncertain environments arises in a number of scheduling applications of interest from wireless applications to computing networks to revenue management systems. The results presented in this paper provide a framework for gauging the loss due to uncertainty in such scheduling systems.First, it is shown that opportunistic scheduling (on the server of current expected best state) is throughput optimal, under uncertain (unknown) server states. Then, the throughput of the 'clairvoyant' scheduler is found to be upper-bounded (in general) by U times the throughput under uncertain server states; this bound is tight. Third, for bimodal and uniform server qualities/speeds better bounds are obtained--down to a factor of 2. Of course, actual throughput loss due to server state uncertainty depends on the server state distributions which are available as partial information to the scheduler. Finally, via numerical experiments we evaluate the throughput loss in various operational scenarios for wireless packet scheduling applications.},
+booktitle = {Proceedings of the Fourth International ICST Conference on Performance Evaluation Methodologies and Tools},
+articleno = {40},
+numpages = {10},
+location = {Pisa, Italy},
+series = {VALUETOOLS '09}
+}
+
+@inproceedings{10.1109/SE4Science.2019.00010,
+author = {Vogel, Thomas and Druskat, Stephan and Scheidgen, Markus and Draxl, Claudia and Grunske, Lars},
+title = {Challenges for verifying and validating scientific software in computational materials science},
+year = {2019},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/SE4Science.2019.00010},
+doi = {10.1109/SE4Science.2019.00010},
+abstract = {Many fields of science rely on software systems to answer different research questions. For valid results researchers need to trust the results scientific software produces, and consequently quality assurance is of utmost importance. In this paper we are investigating the impact of quality assurance in the domain of computational materials science (CMS). Based on our experience in this domain we formulate challenges for validation and verification of scientific software and their results. Furthermore, we describe directions for future research that can potentially help dealing with these challenges.},
+booktitle = {Proceedings of the 14th International Workshop on Software Engineering for Science},
+pages = {25–32},
+numpages = {8},
+keywords = {computational materials science, scientific software, verification and validation},
+location = {Montreal, Quebec, Canada},
+series = {SE4Science '19}
+}
+
+@proceedings{10.1145/3583133,
+title = {GECCO '23 Companion: Proceedings of the Companion Conference on Genetic and Evolutionary Computation},
+year = {2023},
+isbn = {9798400701207},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {GECCO is the largest peer-reviewed conference in the field of Evolutionary Computation, and the main conference of the Special Interest Group on Genetic and Evolutionary Computation (SIGEVO) of the Association for Computing Machinery (ACM).},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3555776,
+title = {SAC '23: Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing},
+year = {2023},
+isbn = {9781450395175},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Tallinn, Estonia}
+}
+
+@inproceedings{10.5555/2772879.2772886,
+author = {Bard, Nolan and Nicholas, Deon and Szepesva\'{a}ri, Csaba and Bowling, Michael},
+title = {Decision-theoretic Clustering of Strategies},
+year = {2015},
+isbn = {9781450334136},
+publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+address = {Richland, SC},
+abstract = {Clustering agents by their behaviour can be crucial for building effective agent models. Traditional clustering typically aims to group entities together based on a distance metric, where a desirable clustering is one where the entities in a cluster are spatially close together. Instead, one may desire to cluster based on actionability, or the capacity for the clusters to suggest how an agent should respond to maximize their utility with respect to the entities. Segmentation problems examine this decision-theoretic clustering task. Although finding optimal solutions to these problems is computationally hard, greedy-based approximation algorithms exist. However, in settings where the agent has a combinatorially large number of candidate responses whose utilities must be considered, these algorithms are often intractable. In this work, we show that in many cases the utility function can be factored to allow for an efficient greedy algorithm even when there are exponentially large response spaces. We evaluate our technique theoretically, proving approximation bounds, and empirically using extensive-form games by clustering opponent strategies in toy poker games. Our results demonstrate that these techniques yield dramatically improved clusterings compared to a traditional distance-based clustering approach in terms of both subjective quality and utility obtained by responding to the clusters.},
+booktitle = {Proceedings of the 2015 International Conference on Autonomous Agents and Multiagent Systems},
+pages = {17–25},
+numpages = {9},
+keywords = {agent modelling, clustering, decision-theory, extensive-form games, maximum cover, opponent modelling, poker},
+location = {Istanbul, Turkey},
+series = {AAMAS '15}
+}
+
+@proceedings{10.1145/3597926,
+title = {ISSTA 2023: Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis},
+year = {2023},
+isbn = {9798400702211},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to ISSTA 2023, the 32nd edition of the International Symposium on Software Testing and Analysis, to be held on July 18–20, 2023 in Seattle, USA. The symposium has become a premier scientific event in the expanding area of software testing and analysis, with a strong appeal to researchers from all continents.},
+location = {Seattle, WA, USA}
+}
+
+@proceedings{10.1145/3551349,
+title = {ASE '22: Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering},
+year = {2022},
+isbn = {9781450394758},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Rochester, MI, USA}
+}
+
+@proceedings{10.1109/3655039,
+title = {ASPDAC '24: Proceedings of the 29th Asia and South Pacific Design Automation Conference},
+year = {2024},
+isbn = {9798350393545},
+publisher = {IEEE Press},
+abstract = {ASP-DAC is a high-quality and premium conference on Electronic Design Automation (EDA) area like other sister conferences such as Design Automation Conference (DAC), Design, Automation &amp; Test in Europe (DATE), International Conference on Computer-Aided Design (ICCAD), and Embedded Systems Week (ESWEEK). ASP-DAC started in 1995 and has continuously offered opportunity to know the recent advanced technologies on LSI design and design automation areas, and to communicate each other for researchers and designers around Asia and South Pacific regions.},
+location = {Incheon, Republic of Korea}
+}
+
+@proceedings{10.1145/3626232,
+title = {CODASPY '24: Proceedings of the Fourteenth ACM Conference on Data and Application Security and Privacy},
+year = {2024},
+isbn = {9798400704215},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to the fourteenth edition of the ACM Conference on Data and Application Security and Privacy (CODASPY 2024), for the first time held outside United States of America. This conference series has been founded to foster novel and exciting research in the data and application security and privacy arena and to help generate new directions for further research and development. The initial concept was established by the two co-founders, Elisa Bertino and Ravi Sandhu, and sharpened by subsequent discussions with several fellow data security and privacy researchers. Their enthusiastic encouragement persuaded the co-founders to move ahead with the always daunting task of creating a high-quality conference. CODASPY has become a leading forum for presentation of research results and experience reports on hardware and software security. The conference gives researchers and practitioners a unique opportunity to share their perspectives with others interested in the various aspects of data and applications security and privacy.},
+location = {Porto, Portugal}
+}
+
+@proceedings{10.1145/3701625,
+title = {SBQS '24: Proceedings of the XXIII Brazilian Symposium on Software Quality},
+year = {2024},
+isbn = {9798400717772},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {
+}
+}
+
+@article{10.1145/3571854,
+author = {Zampetti, Fiorella and Tamburri, Damian and Panichella, Sebastiano and Panichella, Annibale and Canfora, Gerardo and Di Penta, Massimiliano},
+title = {Continuous Integration and Delivery Practices for Cyber-Physical Systems: An Interview-Based Study},
+year = {2023},
+issue_date = {May 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {32},
+number = {3},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3571854},
+doi = {10.1145/3571854},
+abstract = {Continuous Integration and Delivery (CI/CD) practices have shown several benefits for software development and operations, such as faster release cycles and early discovery of defects. For Cyber-Physical System (CPS) development, CI/CD can help achieving required goals, such as high dependability, yet it may be challenging to apply. This article empirically investigates challenges, barriers, and their mitigation occurring when applying CI/CD practices to develop CPSs in 10 organizations working in eight different domains. The study has been conducted through semi-structured interviews, by applying an open card sorting procedure together with a member-checking survey within the same organizations, and by validating the results through a further survey involving 55 professional developers. The study reveals several peculiarities in the application of CI/CD to CPSs. These include the need for (i) combining continuous and periodic builds while balancing the use of Hardware-in-the-Loop and simulators, (ii) coping with difficulties in software deployment (iii) accounting for simulators and Hardware-in-the-Loop differing in their behavior, and (vi) combining hardware/software expertise in the development team. Our findings open the road toward recommenders aimed at supporting the setting and evolution of CI/CD pipelines, as well as university curricula requiring interdisciplinarity, such as knowledge about hardware, software, and their interplay.},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = apr,
+articleno = {73},
+numpages = {44},
+keywords = {empirical software engineering, Cyber-Physical Systems, Continuous Integration and Delivery}
+}
+
+@proceedings{10.1145/3569966,
+title = {CSSE '22: Proceedings of the 5th International Conference on Computer Science and Software Engineering},
+year = {2022},
+isbn = {9781450397780},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Guilin, China}
+}
+
+@proceedings{10.1145/3563357,
+title = {BuildSys '22: Proceedings of the 9th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation},
+year = {2022},
+isbn = {9781450398909},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Over the past thirteen years, BuildSys has been an interdisciplinary conference that brings together various stakeholders, including researchers, practitioners, and policymakers from different disciplines, including civil engineering, mechanical engineering, environmental science, electrical and computer engineering, computer science, system management and control, and many others. This year is no exception, with papers and attendees from all these disciplines and regions worldwide. The conference's focus extends beyond building systems to the built environment more generally.},
+location = {Boston, Massachusetts}
+}
+
+@proceedings{10.1145/3545729,
+title = {ICMHI '22: Proceedings of the 6th International Conference on Medical and Health Informatics},
+year = {2022},
+isbn = {9781450396301},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Virtual Event, Japan}
+}
+
+@proceedings{10.1145/2993236,
+title = {GPCE 2016: Proceedings of the 2016 ACM SIGPLAN International Conference on Generative Programming: Concepts and Experiences},
+year = {2016},
+isbn = {9781450344463},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Amsterdam, Netherlands}
+}
+
+@proceedings{10.1145/3604915,
+title = {RecSys '23: Proceedings of the 17th ACM Conference on Recommender Systems},
+year = {2023},
+isbn = {9798400702419},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Singapore, Singapore}
+}
+
+@proceedings{10.5555/3623293,
+title = {ICSE-SEIP '23: Proceedings of the 45th International Conference on Software Engineering: Software Engineering in Practice},
+year = {2023},
+isbn = {9798350300376},
+publisher = {IEEE Press},
+location = {Melbourne, Australia}
+}
+
+@inproceedings{10.1145/3510466.3510474,
+author = {Birkemeyer, Lukas and Pett, Tobias and Vogelsang, Andreas and Seidl, Christoph and Schaefer, Ina},
+title = {Feature-Interaction Sampling for Scenario-based Testing of Advanced Driver Assistance Systems✱},
+year = {2022},
+isbn = {9781450396042},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3510466.3510474},
+doi = {10.1145/3510466.3510474},
+abstract = {Scenario-based testing is considered state-of-the-art to verify and validate Advanced Driver Assistance Systems. However, two essential unsolved challenges prevent the practical application of scenario-based testing according to the SOTIF-standard: (1)&nbsp;how to select a set of representative test scenarios, and (2)&nbsp;how to assess the effectiveness of a test scenario suite. In this paper, we leverage variability modelling techniques to select scenarios from a scenario space and assess the resulting scenario suites with a mutation score as metric. We capture the scenario space in a feature model and generate representative subsets with feature-interaction coverage sampling. The mutation score assesses the failure-finding effectiveness of these samples. We evaluate our concepts by sampling scenario suites for two independent Autonomous Emergency Braking function implementations and executing them on an industrial-strength simulator. Our results show that the feature model captures a scenario space that is relevant to identify all mutants. We show that sampling based on interaction coverage reduces the testing effort significantly while maintaining effectiveness in terms of mutation scores. Our results underline the potential of feature model sampling for testing in the automotive industry.},
+booktitle = {Proceedings of the 16th International Working Conference on Variability Modelling of Software-Intensive Systems},
+articleno = {5},
+numpages = {10},
+keywords = {Scenario-based testing, Sampling Strategies, SOTIF, ADAS},
+location = {Florence, Italy},
+series = {VaMoS '22}
+}
+
+@proceedings{10.1145/3613372,
+title = {SBES '23: Proceedings of the XXXVII Brazilian Symposium on Software Engineering},
+year = {2023},
+isbn = {9798400707872},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Campo Grande, Brazil}
+}
+
+@proceedings{10.1145/3675417,
+title = {DEAI '24: Proceedings of the 2024 Guangdong-Hong Kong-Macao Greater Bay Area International Conference on Digital Economy and Artificial Intelligence},
+year = {2024},
+isbn = {9798400717147},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hongkong, China}
+}
+
+@proceedings{10.5555/3606010,
+title = {ICSE '23: Proceedings of the 45th International Conference on Software Engineering},
+year = {2023},
+isbn = {9781665457019},
+publisher = {IEEE Press},
+abstract = {ICSE is the leading and by far the largest conference in Software Engineering, attracting researchers, practitioners and students from around the world. ICSE2023 is co-located with 10 conferences and symposia this year, many long-established and prestigious venues in their own right.},
+location = {Melbourne, Victoria, Australia}
+}
+
+@proceedings{10.1145/3538969,
+title = {ARES '22: Proceedings of the 17th International Conference on Availability, Reliability and Security},
+year = {2022},
+isbn = {9781450396707},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Vienna, Austria}
+}
+
+@proceedings{10.1145/3624062,
+title = {SC-W '23: Proceedings of the SC '23 Workshops of the International Conference on High Performance Computing, Network, Storage, and Analysis},
+year = {2023},
+isbn = {9798400707858},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Denver, CO, USA}
+}
+
+@proceedings{10.1145/3660829,
+title = {Programming '24: Companion Proceedings of the 8th International Conference on the Art, Science, and Engineering of Programming},
+year = {2024},
+isbn = {9798400706349},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Lund, Sweden}
+}
+
+@proceedings{10.1145/3607199,
+title = {RAID '23: Proceedings of the 26th International Symposium on Research in Attacks, Intrusions and Defenses},
+year = {2023},
+isbn = {9798400707650},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Hong Kong, China}
+}
+
+@inproceedings{10.1145/3238147.3238192,
+author = {Abdessalem, Raja Ben and Panichella, Annibale and Nejati, Shiva and Briand, Lionel C. and Stifter, Thomas},
+title = {Testing autonomous cars for feature interaction failures using many-objective search},
+year = {2018},
+isbn = {9781450359375},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3238147.3238192},
+doi = {10.1145/3238147.3238192},
+abstract = {Complex systems such as autonomous cars are typically built as a composition of features that are independent units of functionality. Features tend to interact and impact one another's behavior in unknown ways. A challenge is to detect and manage feature interactions, in particular, those that violate system requirements, hence leading to failures. In this paper, we propose a technique to detect feature interaction failures by casting this problem into a search-based test generation problem. We define a set of hybrid test objectives (distance functions) that combine traditional coverage-based heuristics with new heuristics specifically aimed at revealing feature interaction failures. We develop a new search-based test generation algorithm, called FITEST, that is guided by our hybrid test objectives. FITEST extends recently proposed many-objective evolutionary algorithms to reduce the time required to compute fitness values. We evaluate our approach using two versions of an industrial self-driving system. Our results show that our hybrid test objectives are able to identify more than twice as many feature interaction failures as two baseline test objectives used in the software testing literature (i.e., coverage-based and failure-based test objectives). Further, the feedback from domain experts indicates that the detected feature interaction failures represent real faults in their systems that were not previously identified based on analysis of the system features and their requirements.},
+booktitle = {Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering},
+pages = {143–154},
+numpages = {12},
+keywords = {Search-based Software Testing, Many-Objective Optimization, Feature Interaction Problem, Automotive Systems},
+location = {Montpellier, France},
+series = {ASE '18}
+}
+
+@proceedings{10.1145/3573428,
+title = {EITCE '22: Proceedings of the 2022 6th International Conference on Electronic Information Technology and Computer Engineering},
+year = {2022},
+isbn = {9781450397148},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Xiamen, China}
+}
+
+@inproceedings{10.1145/2593882.2593885,
+author = {Orso, Alessandro and Rothermel, Gregg},
+title = {Software testing: a research travelogue (2000–2014)},
+year = {2014},
+isbn = {9781450328654},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2593882.2593885},
+doi = {10.1145/2593882.2593885},
+abstract = {Despite decades of work by researchers and practitioners on numerous software quality assurance techniques, testing remains one of the most widely practiced and studied approaches for assessing and improving software quality. Our goal, in this paper, is to provide an accounting of some of the most successful research performed in software testing since the year 2000, and to present what appear to be some of the most significant challenges and opportunities in this area. To be more inclusive in this effort, and to go beyond our own personal opinions and biases, we began by contacting over 50 of our colleagues who are active in the testing research area, and asked them what they believed were (1) the most significant contributions to software testing since 2000 and (2) the greatest open challenges and opportunities for future research in this area. While our colleagues’ input (consisting of about 30 responses) helped guide our choice of topics to cover and ultimately the writing of this paper, we by no means claim that our paper represents all the relevant and noteworthy research performed in the area of software testing in the time period considered—a task that would require far more space and time than we have available. Nevertheless, we hope that the approach we followed helps this paper better reflect not only our views, but also those of the software testing community in general.},
+booktitle = {Future of Software Engineering Proceedings},
+pages = {117–132},
+numpages = {16},
+keywords = {Software testing},
+location = {Hyderabad, India},
+series = {FOSE 2014}
+}
+
+@inproceedings{10.1145/2896825.2896834,
+author = {Klein, John and Buglak, Ross and Blockow, David and Wuttke, Troy and Cooper, Brenton},
+title = {A reference architecture for big data systems in the national security domain},
+year = {2016},
+isbn = {9781450341523},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2896825.2896834},
+doi = {10.1145/2896825.2896834},
+abstract = {Acquirers, system builders, and other stakeholders of big data systems need to define requirements, develop and evaluate solutions, and integrate systems together. A reference architecture enables these software engineering activities by standardizing nomenclature, defining key solution elements and their relationships, collecting relevant solution patterns, and classifying existing technologies. Within the national security domain, existing reference architectures for big data systems have not been useful because they are too general or are not vendor-neutral. We present a reference architecture for big data systems that is focused on addressing typical national defence requirements and that is vendor-neutral, and we demonstrate how to use this reference architecture to define solutions in one mission area.},
+booktitle = {Proceedings of the 2nd International Workshop on BIG Data Software Engineering},
+pages = {51–57},
+numpages = {7},
+keywords = {big data, reference architecture},
+location = {Austin, Texas},
+series = {BIGDSE '16}
+}
+
+@proceedings{10.1145/3626252,
+title = {SIGCSE 2024: Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 1},
+year = {2024},
+isbn = {9798400704239},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 55th annual SIGCSE Technical Symposium on Computer Science Education (SIGCSE TS 2024)! This year, we have returned to Portland, Oregon. We hope that, like us, you are looking forward to a highly productive and engaging symposium that provides ample opportunity to renew old relationships, build new connections, and learn about the latest advances in our field. While we are sure that there will be a few surprises along the way, we hope and expect that we won't experience anything nearly as disruptive as the opening days of the pandemic, which occurred when we last tried to gather here in 2020.Our theme for this year's symposium is "Blazing New Trails in CS Education." This broad theme captures the exceptional work being performed by this community to enhance our teaching, improve our assessments, attract diverse students, and all of the other laudable projects, initiatives, and undertakings that affect positive change. The breadth of the program is substantial - there truly should be something for everyone. In fact, your biggest challenge may be deciding which session to attend in each time slot because there is so much going on! We know that many of you want to attend as many sessions as possible while you are here in Portland, but we encourage you to also find a little bit of time for yourself so that you leave Portland refreshed, renewed and encouraged, rather than exhausted or burnt out.},
+location = {Portland, OR, USA}
+}
+
+@proceedings{10.1145/3508352,
+title = {ICCAD '22: Proceedings of the 41st IEEE/ACM International Conference on Computer-Aided Design},
+year = {2022},
+isbn = {9781450392174},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Jointly sponsored by ACM and IEEE, ICCAD is the premier forum to explore new challenges, present leading-edge innovative solutions, and identify emerging technologies in the Electronic Design Automation (EDA) research areas. ICCAD covers the full range of Computer-Aided Design (CAD) topics - from device and circuit-level up through system-level, as well as post-CMOS design.},
+location = {San Diego, California}
+}
+
+@proceedings{10.1145/3607505,
+title = {CSET '23: Proceedings of the 16th Cyber Security Experimentation and Test Workshop},
+year = {2023},
+isbn = {9798400707889},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Marina del Rey, CA, USA}
+}
+
+@proceedings{10.1145/3613905,
+title = {CHI EA '24: Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
+year = {2024},
+isbn = {9798400703317},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Honolulu, HI, USA}
+}
+
+@proceedings{10.1145/3567512,
+title = {SLE 2022: Proceedings of the 15th ACM SIGPLAN International Conference on Software Language Engineering},
+year = {2022},
+isbn = {9781450399197},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 15th ACM SIGPLAN International Conference on Software Language Engineering (SLE), co-located with the ACM SIGPLAN conference on Systems, Programming, Languages, and Applications (SPLASH) in Auckland, a vibrant port city in northern New Zealand, from December 5th to December 10th 2022. Like its predecessors, the this edition of the SLE conference, SLE 2022, is devoted to the principles of software languages: their design, their implementation, and their evolution. As such, SLE brings together researchers united by their common interest in the creation, capture, and tooling of software languages.},
+location = {Auckland, New Zealand}
+}
+
+@proceedings{10.1145/3600006,
+title = {SOSP '23: Proceedings of the 29th Symposium on Operating Systems Principles},
+year = {2023},
+isbn = {9798400702297},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the Proceedings of the 29th ACM Symposium on Operating Systems Principles (SOSP 2023). This year's program includes 43 papers that reflect today's broad range of topics that comprise modern computer systems research. The program committee carefully reviewed submitted papers and worked closely with the authors of selected papers to produce the collection of high-quality, readable papers presented here. We hope that you enjoy the program!},
+location = {Koblenz, Germany}
+}
+
+@inproceedings{10.1145/3377811.3380927,
+author = {Alrajeh, Dalal and Cailliau, Antoine and van Lamsweerde, Axel},
+title = {Adapting requirements models to varying environments},
+year = {2020},
+isbn = {9781450371216},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3377811.3380927},
+doi = {10.1145/3377811.3380927},
+abstract = {The engineering of high-quality software requirements generally relies on properties and assumptions about the environment in which the software-to-be has to operate. Such properties and assumptions, referred to as environment conditions in this paper, are highly subject to change over time or from one software variant to another. As a consequence, the requirements engineered for a specific set of environment conditions may no longer be adequate, complete and consistent for another set.The paper addresses this problem through a tool-supported requirements adaptation technique. A goal-oriented requirements modelling framework is considered to make requirements' refinements and dependencies on environment conditions explicit. When environment conditions change, an adapted goal model is computed that is correct with respect to the new environment conditions. The space of possible adaptations is not fixed a priori; the required changes are expected to meet one or more environment-independent goal(s) to be satisfied in any version of the system. The adapted goal model is generated using a new counterexample-guided learning procedure that ensures the correctness of the updated goal model, and prefers more local adaptations and more similar goal models.},
+booktitle = {Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering},
+pages = {50–61},
+numpages = {12},
+keywords = {context-dependent requirements, formal verification, logic-based learning, requirements adaptation, requirements evolution},
+location = {Seoul, South Korea},
+series = {ICSE '20}
+}
+
+@proceedings{10.1145/3555228,
+title = {SBES '22: Proceedings of the XXXVI Brazilian Symposium on Software Engineering},
+year = {2022},
+isbn = {9781450397353},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Virtual Event, Brazil}
+}
+
+@proceedings{10.1145/3689492,
+title = {Onward! '24: Proceedings of the 2024 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},
+year = {2024},
+isbn = {9798400712159},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 2024 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward! 2024), the premier multidisciplinary conference focused on everything to do with programming and software, including processes, methods, languages, communities and applications. Onward! is more radical, more visionary and more open than other conferences to ideas that are well-argued but not yet proven. We welcome different ways of thinking about, approaching, and reporting on programming language and software engineering research.},
+location = {Pasadena, CA, USA}
+}
+
+@article{10.1145/1988997.1989001,
+author = {Doernhoefer, Mark},
+title = {Surfing the net for software engineering notes},
+year = {2011},
+issue_date = {July 2011},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {36},
+number = {4},
+issn = {0163-5948},
+url = {https://doi.org/10.1145/1988997.1989001},
+doi = {10.1145/1988997.1989001},
+journal = {SIGSOFT Softw. Eng. Notes},
+month = aug,
+pages = {8–16},
+numpages = {9}
+}
+
+@article{10.1145/221296.221308,
+author = {Meyer, Andr\'{e}},
+title = {Pen computing: a technology overview and a vision},
+year = {1995},
+issue_date = {July 1995},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {27},
+number = {3},
+issn = {0736-6906},
+url = {https://doi.org/10.1145/221296.221308},
+doi = {10.1145/221296.221308},
+abstract = {This work gives an overview of a new technology that is attracting growing interest in public as well as in the computer industry itself. The visible difference from other technologies is in the use of a pen or pencil as the primary means of interaction between a user and a machine, picking up the familiar pen and paper interface metaphor. From this follows a set of consequences that will be analyzed and put into context with other emerging technologies and visions.Starting with a short historical background and the technical advances that begin making Pen Computing a reality, the new paradigms created by Pen Computing will be explained and discussed. Handwriting recognition, mobility and global information access are other central topics. This is followed by a categorization and an overview of current and future systems using pens as their primary user interface component.},
+journal = {SIGCHI Bull.},
+month = jul,
+pages = {46–90},
+numpages = {45}
+}
+
+@article{10.1145/3084225,
+author = {Storer, Tim},
+title = {Bridging the Chasm: A Survey of Software Engineering Practice in Scientific Programming},
+year = {2017},
+issue_date = {July 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {50},
+number = {4},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3084225},
+doi = {10.1145/3084225},
+abstract = {The use of software is pervasive in all fields of science. Associated software development efforts may be very large, long lived, and complex, requiring the commitment of significant resources. However, several authors have argued that the “gap” or “chasm” between software engineering and scientific programming is a serious risk to the production of reliable scientific results, as demonstrated in a number of case studies. This article reviews the research that addresses the gap, exploring how both software engineering and research practice may need to evolve to accommodate the use of software in science.},
+journal = {ACM Comput. Surv.},
+month = aug,
+articleno = {47},
+numpages = {32},
+keywords = {scientific programming, Software engineering}
+}
+
+@article{10.1145/3386331,
+author = {Moler, Cleve and Little, Jack},
+title = {A history of MATLAB},
+year = {2020},
+issue_date = {June 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {4},
+number = {HOPL},
+url = {https://doi.org/10.1145/3386331},
+doi = {10.1145/3386331},
+abstract = {The first MATLAB (the name is short for “Matrix Laboratory”) was not a programming language. Written in Fortran in the late 1970s, it was a simple interactive matrix calculator built on top of about a dozen subroutines from the LINPACK and EISPACK matrix software libraries. There were only 71 reserved words and built-in functions. It could be extended only by modifying the Fortran source code and recompiling it. The programming language appeared in 1984 when MATLAB became a commercial product. The calculator was reimplemented in C and significantly enhanced with the addition of user functions, toolboxes, and graphics. It was available initially on the IBM PC and clones; versions for Unix workstations and the Apple Macintosh soon followed. In addition to the matrix functions from the calculator, the 1984 MATLAB included fast Fourier transforms (FFT). The Control System Toolbox appeared in 1985 and the Signal Processing Toolbox in 1987. Built-in support for the numerical solution of ordinary differential equations also appeared in 1987. The first significant new data structure, the sparse matrix, was introduced in 1992. The Image Processing Toolbox and the Symbolic Math Toolbox were both introduced in 1993. Several new data types and data structures, including single precision floating point, various integer and logical types, cell arrays, structures, and objects were introduced in the late 1990s. Enhancements to the MATLAB computing environment have dominated development in recent years. Included are extensions to the desktop, major enhancements to the object and graphics systems, support for parallel computing and GPUs, and the “Live Editor”, which combines programs, descriptive text, output and graphics into a single interactive, formatted document. Today there are over 60 Toolboxes, many programmed in the MATLAB language, providing extended capabilities in specialized technical fields.},
+journal = {Proc. ACM Program. Lang.},
+month = jun,
+articleno = {81},
+numpages = {67},
+keywords = {matrix computation, linear algebra, MATLAB}
+}
+
+@inproceedings{10.5555/2337223.2337243,
+author = {Siegmund, Norbert and Kolesnikov, Sergiy S. and K\"{a}stner, Christian and Apel, Sven and Batory, Don and Rosenm\"{u}ller, Marko and Saake, Gunter},
+title = {Predicting performance via automated feature-interaction detection},
+year = {2012},
+isbn = {9781467310673},
+publisher = {IEEE Press},
+abstract = {Customizable programs and program families provide user-selectable features to allow users to tailor a program to an application scenario. Knowing in advance which feature selection yields the best performance is difficult because a direct measurement of all possible feature combinations is infeasible. Our work aims at predicting program performance based on selected features. However, when features interact, accurate predictions are challenging. An interaction occurs when a particular feature combination has an unexpected influence on performance. We present a method that automatically detects performance-relevant feature interactions to improve prediction accuracy. To this end, we propose three heuristics to reduce the number of measurements required to detect interactions. Our evaluation consists of six real-world case studies from varying domains (e.g., databases, encoding libraries, and web servers) using different configuration techniques (e.g., configuration files and preprocessor flags). Results show an average prediction accuracy of 95%.},
+booktitle = {Proceedings of the 34th International Conference on Software Engineering},
+pages = {167–177},
+numpages = {11},
+location = {Zurich, Switzerland},
+series = {ICSE '12}
+}
+
+@inproceedings{10.1145/2884781.2884853,
+author = {Mirzaei, Nariman and Garcia, Joshua and Bagheri, Hamid and Sadeghi, Alireza and Malek, Sam},
+title = {Reducing combinatorics in GUI testing of android applications},
+year = {2016},
+isbn = {9781450339001},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2884781.2884853},
+doi = {10.1145/2884781.2884853},
+abstract = {The rising popularity of Android and the GUI-driven nature of its apps have motivated the need for applicable automated GUI testing techniques. Although exhaustive testing of all possible combinations is the ideal upper bound in combinatorial testing, it is often infeasible, due to the combinatorial explosion of test cases. This paper presents TrimDroid, a framework for GUI testing of Android apps that uses a novel strategy to generate tests in a combinatorial, yet scalable, fashion. It is backed with automated program analysis and formally rigorous test generation engines. TrimDroid relies on program analysis to extract formal specifications. These specifications express the app's behavior (i.e., control flow between the various app screens) as well as the GUI elements and their dependencies. The dependencies among the GUI elements comprising the app are used to reduce the number of combinations with the help of a solver. Our experiments have corroborated TrimDroid's ability to achieve a comparable coverage as that possible under exhaustive GUI testing using significantly fewer test cases.},
+booktitle = {Proceedings of the 38th International Conference on Software Engineering},
+pages = {559–570},
+numpages = {12},
+keywords = {software testing, input generation, android},
+location = {Austin, Texas},
+series = {ICSE '16}
+}
+
+@proceedings{10.1145/3579370,
+title = {SYSTOR '23: Proceedings of the 16th ACM International Conference on Systems and Storage},
+year = {2023},
+isbn = {9781450399623},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Haifa, Israel}
+}
+
+@proceedings{10.1145/3576841,
+title = {ICCPS '23: Proceedings of the ACM/IEEE 14th International Conference on Cyber-Physical Systems (with CPS-IoT Week 2023)},
+year = {2023},
+isbn = {9798400700361},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {San Antonio, TX, USA}
+}
+
+@inproceedings{10.1145/2950290.2950311,
+author = {Nguyen, ThanhVu and Koc, Ugur and Cheng, Javran and Foster, Jeffrey S. and Porter, Adam A.},
+title = {iGen: dynamic interaction inference for configurable software},
+year = {2016},
+isbn = {9781450342186},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2950290.2950311},
+doi = {10.1145/2950290.2950311},
+abstract = {To develop, analyze, and evolve today's highly configurable software systems, developers need deep knowledge of a system's configuration options, e.g., how options need to be set to reach certain locations, what configurations to use for testing, etc. Today, acquiring this detailed information requires manual effort that is difficult, expensive, and error prone. In this paper, we propose iGen, a novel, lightweight dynamic analysis technique that automatically discovers a program's interactions---expressive logical formulae that give developers rich and detailed information about how a system's configuration option settings map to particular code coverage. iGen employs an iterative algorithm that runs a system under a small set of configurations, capturing coverage data; processes the coverage data to infer potential interactions; and then generates new configurations to further refine interactions in the next iteration. We evaluated iGen on 29 programs spanning five languages; the breadth of this study would be unachievable using prior interaction inference tools. Our results show that iGen finds precise interactions based on a very small fraction of the number of possible configurations. Moreover, iGen's results confirm several earlier hypotheses about typical interaction distributions and structures.},
+booktitle = {Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering},
+pages = {655–665},
+numpages = {11},
+keywords = {software testing, dynamic analysis, configurable systems, Program analysis},
+location = {Seattle, WA, USA},
+series = {FSE 2016}
+}
+
+@proceedings{10.1145/3580507,
+title = {EC '23: Proceedings of the 24th ACM Conference on Economics and Computation},
+year = {2023},
+isbn = {9798400701047},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Over the course of two decades, EC has established itself as one of the few truly successful interdisciplinary conferences, attracting papers and participants with a broad range of interests in economics and computer science, and fostering work in the intersection.},
+location = {London, United Kingdom}
+}
+
+@proceedings{10.1145/3308560,
+title = {WWW '19: Companion Proceedings of The 2019 World Wide Web Conference},
+year = {2019},
+isbn = {9781450366755},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {It is our great pleasure to welcome you to &lt;I&gt;The Web Conference 2019&lt;/I&gt;. The Web Conference is the premier venue focused on understanding the current state and the evolution of the Web through the lens of computer science, computational social science, economics, policy, and many other disciplines. The 2019 edition of the conference is a reflection point as we celebrate the 30th anniversary of the Web.},
+location = {San Francisco, USA}
+}
+
+@proceedings{10.1145/3627508,
+title = {CHIIR '24: Proceedings of the 2024 Conference on Human Information Interaction and Retrieval},
+year = {2024},
+isbn = {9798400704345},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Sheffield, United Kingdom}
+}
+
+@article{10.1109/TASLP.2018.2867947,
+author = {Elshamy, Samy and Madhu, Nilesh and Tirry, Wouter and Fingscheidt, Tim},
+title = {DNN-Supported Speech Enhancement With Cepstral Estimation of Both Excitation and Envelope},
+year = {2018},
+issue_date = {December 2018},
+publisher = {IEEE Press},
+volume = {26},
+number = {12},
+issn = {2329-9290},
+url = {https://doi.org/10.1109/TASLP.2018.2867947},
+doi = {10.1109/TASLP.2018.2867947},
+abstract = {In this paper, we propose and compare various techniques for the estimation of clean spectral envelopes in noisy conditions. The source-filter model of human speech production is employed in combination with a hidden Markov model and/or a deep neural network approach to estimate clean envelope-representing coefficients in the cepstral domain. The cepstral estimators for speech spectral envelope-based noise reduction are both evaluated alone and also in combination with the recently introduced cepstral excitation manipulation CEM technique for a priori SNR estimation in a noise reduction framework. Relative to the classical MMSE short time spectral amplitude estimator, we obtain more than 2&nbsp;dB higher noise attenuation, and relative to our recent CEM technique still 0.5&nbsp;dB more, in both cases maintaining the quality of the speech component and obtaining considerable SNR improvement.},
+journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+month = dec,
+pages = {2460–2474},
+numpages = {15}
+}
+
+@inproceedings{10.1109/ICSE43902.2021.00142,
+author = {Nguyen, KimHao and Nguyen, ThanhVu},
+title = {GenTree: Using Decision Trees to Learn Interactions for Configurable Software},
+year = {2021},
+isbn = {9781450390859},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ICSE43902.2021.00142},
+doi = {10.1109/ICSE43902.2021.00142},
+abstract = {Modern software systems are increasingly designed to be highly configurable, which increases flexibility but can make programs harder to develop, test, and analyze, e.g., how configuration options are set to reach certain locations, what characterizes the configuration space of an interesting or buggy program behavior? We introduce GenTree, a new dynamic analysis that automatically learns a program's interactions---logical formulae that describe how configuration option settings map to code coverage. GenTree uses an iterative refinement approach that runs the program under a small sample of configurations to obtain coverage data; uses a custom classifying algorithm on these data to build decision trees representing interaction candidates; and then analyzes the trees to generate new configurations to further refine the trees and interactions in the next iteration. Our experiments on 17 configurable systems spanning 4 languages show that GenTree efficiently finds precise interactions using a tiny fraction of the configuration space.},
+booktitle = {Proceedings of the 43rd International Conference on Software Engineering},
+pages = {1598–1609},
+numpages = {12},
+location = {Madrid, Spain},
+series = {ICSE '21}
+}
+
+@article{10.1109/TASLP.2018.2886743,
+author = {Dietzen, Thomas and Spriet, Ann and Tirry, Wouter and Doclo, Simon and Moonen, Marc and van Waterschoot, Toon},
+title = {Comparative Analysis of Generalized Sidelobe Cancellation and Multi-Channel Linear Prediction for Speech Dereverberation and Noise Reduction},
+year = {2019},
+issue_date = {March 2019},
+publisher = {IEEE Press},
+volume = {27},
+number = {3},
+issn = {2329-9290},
+url = {https://doi.org/10.1109/TASLP.2018.2886743},
+doi = {10.1109/TASLP.2018.2886743},
+abstract = {For blind speech dereverberation, two frameworks are commonly used: on the one hand, the multi-channel linear prediction MCLP framework, and on the other hand, data-dependent beamforming, e.g., the generalized sidelobe canceler GSC framework. The MCLP framework is designed to perform deconvolution and hence has gained increased prominence in blind speech dereverberation. The GSC framework is commonly used for noise reduction, but may be applied for dereverberation as well. In previous work, we have shown that for the noiseless case, MCLP and the GSC yield in theory mathematically equivalent results in terms of dereverberation. In this paper, we assume additional coherent as well as incoherent-noise components and formally analyze and compare both frameworks in terms of dereverberation and noise reduction performance. Both the theoretical analysis and time domain simulation results demonstrate that unlike the GSC, MCLP expectably shows limited performance in terms of noise reduction, while both perform equally well in terms of dereverberation, provided that the GSC blocking matrix achieves complete blocking of the early reverberant-speech component and sufficiently many microphones are available. In case of incomplete blocking, however, the GSC performs inferior to MCLP in terms of dereverberation, as shown in short-time Fourier transform domain simulations.},
+journal = {IEEE/ACM Trans. Audio, Speech and Lang. Proc.},
+month = mar,
+pages = {544–558},
+numpages = {15}
+}
+
+@proceedings{10.1145/2970276,
+title = {ASE '16: Proceedings of the 31st IEEE/ACM International Conference on Automated Software Engineering},
+year = {2016},
+isbn = {9781450338455},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Singapore, Singapore}
+}
+
+@book{10.1145/3382097,
+author = {Allemang, Dean and Hendler, Jim and Gandon, Fabien},
+title = {Semantic Web for the Working Ontologist: Effective Modeling for Linked Data, RDFS, and OWL},
+year = {2020},
+isbn = {9781450376174},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+edition = {3},
+volume = {33},
+abstract = {Enterprises have made amazing advances by taking advantage of data about their business to provide predictions and understanding of their customers, markets, and products. But as the world of business becomes more interconnected and global, enterprise data is no long a monolith; it is just a part of a vast web of data. Managing data on a world-wide scale is a key capability for any business today.The Semantic Web treats data as a distributed resource on the scale of the World Wide Web, and incorporates features to address the challenges of massive data distribution as part of its basic design. The aim of the first two editions was to motivate the Semantic Web technology stack from end-to-end; to describe not only what the Semantic Web standards are and how they work, but also what their goals are and why they were designed as they are. It tells a coherent story from beginning to end of how the standards work to manage a world-wide distributed web of knowledge in a meaningful way.The third edition builds on this foundation to bring Semantic Web practice to enterprise. Fabien Gandon joins Dean Allemang and Jim Hendler, bringing with him years of experience in global linked data, to open up the story to a modern view of global linked data. While the overall story is the same, the examples have been brought up to date and applied in a modern setting, where enterprise and global data come together as a living, linked network of data. Also included with the third edition, all of the data sets and queries are available online for study and experimentation at data.world/swwo.}
+}
+
+@inproceedings{10.1145/2642937.2643002,
+author = {Campos, Jos\'{e} and Arcuri, Andrea and Fraser, Gordon and Abreu, Rui},
+title = {Continuous test generation: enhancing continuous integration with automated test generation},
+year = {2014},
+isbn = {9781450330138},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2642937.2643002},
+doi = {10.1145/2642937.2643002},
+abstract = {In object oriented software development, automated unit test generation tools typically target one class at a time. A class, however, is usually part of a software project consisting of more than one class, and these are subject to changes over time. This context of a class offers significant potential to improve test generation for individual classes. In this paper, we introduce Continuous Test Generation (CTG), which includes automated unit test generation during continuous integration (i.e., infrastructure that regularly builds and tests software projects). CTG offers several benefits: First, it answers the question of how much time to spend on each class in a project. Second, it helps to decide in which order to test them. Finally, it answers the question of which classes should be subjected to test generation in the first place. We have implemented CTG using the EvoSuite unit test generation tool, and performed experiments using eight of the most popular open source projects available on GitHub, ten randomly selected projects from the SF100 corpus, and five industrial projects. Our experiments demonstrate improvements of up to +58% for branch coverage and up to +69% for thrown undeclared exceptions, while reducing the time spent on test generation by up to +83%.},
+booktitle = {Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering},
+pages = {55–66},
+numpages = {12},
+keywords = {unit testing, continuous testing, continuous integration, automated test generation},
+location = {Vasteras, Sweden},
+series = {ASE '14}
+}
+
+@proceedings{10.1145/3639474,
+title = {ICSE-SEET '24: Proceedings of the 46th International Conference on Software Engineering: Software Engineering Education and Training},
+year = {2024},
+isbn = {9798400704987},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Lisbon, Portugal}
+}
+
+@proceedings{10.1145/3623476,
+title = {SLE 2023: Proceedings of the 16th ACM SIGPLAN International Conference on Software Language Engineering},
+year = {2023},
+isbn = {9798400703966},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to the 16th ACM SIGPLAN International Conference on Software Language Engineering (SLE) held in October 2023 as part of SPLASH 2023. Software Language Engineering (SLE) is a thriving research discipline targeted at establishing an engineering approach to the development, use, and maintenance of software languages, that is, of languages for the specification, modeling and tooling of software. Key topics of interest for SLE include approaches, methodologies and tools for language design and implementation with a focus on techniques for static and behavioral semantics, generative or interpretative approaches (including transformation languages and code generation) as well as meta-languages and tools (including language workbenches). Techniques enabling the testing, simulation or formal verification for language validation purposes are also of particular interest. SLE also accommodates empirical evaluation and experience reports of language engineering tools, such as user studies evaluating usability, performance benchmarks or industrial applications.},
+location = {Cascais, Portugal}
+}
+
+@book{10.1145/3502372,
+author = {Pelkey, James L. and Russell, Andrew L. and Robbins, Loring G.},
+title = {Circuits, Packets, and Protocols: Entrepreneurs and Computer Communications, 1968–1988},
+year = {2022},
+isbn = {9781450397261},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+edition = {1},
+volume = {40},
+abstract = {As recently as 1968, computer scientists were uncertain how best to interconnect even two computers. The notion that within a few decades the challenge would be how to interconnect millions of computers around the globe was too far-fetched to contemplate. Yet, by 1988, that is precisely what was happening. The products and devices developed in the intervening years—such as modems, multiplexers, local area networks, and routers—became the linchpins of the global digital society. How did such revolutionary innovation occur? This book tells the story of the entrepreneurs who were able to harness and join two factors: the energy of computer science researchers supported by governments and universities, and the tremendous commercial demand for Internetworking computers. The centerpiece of this history comes from unpublished interviews from the late 1980s with over 80 computing industry pioneers, including Paul Baran, J.C.R. Licklider, Vint Cerf, Robert Kahn, Larry Roberts, and Robert Metcalfe. These individuals give us unique insights into the creation of multi-billion dollar markets for computer-communications equipment, and they reveal how entrepreneurs struggled with failure, uncertainty, and the limits of knowledge.“The key technologies that brought us our modern networked society—routers, packet switching, multiplexers, Internet protocols—were all invented by people in the short period between 1968 and 1988. James Pelkey interviewed these people at that time and recorded their stories. This book is the result: a detailed and up-close personal history of a world being born. Fascinating.” - W. Brian Arthur, Author of The Nature of Technology: What It Is and How It Evolves“Circuits, Packets, and Protocols is full of revelations for me even though I was there. Never had it explained so clearly how my distributed computing strategy was the wrong one for 3Com in the 1980s.” - Bob Metcalfe, Internet Pioneer, Ethernet inventor, 3Com founder; University of Texas at Austin Professor of Innovation}
+}
+
+@inproceedings{10.1007/978-3-642-33666-9_41,
+author = {Iqbal, Muhammad Zohaib and Ali, Shaukat and Yue, Tao and Briand, Lionel},
+title = {Experiences of applying UML/MARTE on three industrial projects},
+year = {2012},
+isbn = {9783642336652},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-642-33666-9_41},
+doi = {10.1007/978-3-642-33666-9_41},
+abstract = {MARTE (Modeling and Analysis of Real-Time and Embedded Systems) is a UML profile, which has been developed to model concepts specific to Real-Time and Embedded Systems (RTES). In previous years, we have applied UML/MARTE to three distinct industrial problems in various industry sectors: architecture modeling and configuration of large-scale and highly configurable integrated control systems, model-based robustness testing of communication-intensive systems, and model-based environment simulator generation of large-scale RTES for testing. In this paper, we report on our experiences of solving these problems by applying UML/MARTE on four industrial case studies. Based on our common experiences, we derive a framework to help practitioners for future applications of UML/MARTE. The framework provides a set of detailed guidelines on how to apply MARTE in industrial contexts and will help reduce the gap between the modeling standards and industrial needs.},
+booktitle = {Proceedings of the 15th International Conference on Model Driven Engineering Languages and Systems},
+pages = {642–658},
+numpages = {17},
+keywords = {MARTE, UML, architecture modeling, model-based testing, real-time embedded systems},
+location = {Innsbruck, Austria},
+series = {MODELS'12}
+}
+
+@inproceedings{10.1145/1640206.1640207,
+author = {Tsai, Wei-Tek and Jin, Zhi and Bai, Xiaoying},
+title = {Internetware computing: issues and perspective},
+year = {2009},
+isbn = {9781605588728},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1640206.1640207},
+doi = {10.1145/1640206.1640207},
+abstract = {The Internetware is a new initiative to develop software on the web for web applications. The open and dynamic nature of Internet applications suggest new ways of thinking will be needed for this initiative. This paper discusses several important issues in Internetware and put forward to some relevant research directions. The relevant issues include lifecycle models, ontology and context systems, modeling and simulation, social networking, and adaptive control.},
+booktitle = {Proceedings of the First Asia-Pacific Symposium on Internetware},
+articleno = {1},
+numpages = {10},
+keywords = {Internetware, adaptive control, modeling and simulation, ontology, service-oriented computing, social networking, software engineering},
+location = {Beijing, China},
+series = {Internetware '09}
+}
+
+@article{10.1145/1218776.1218777,
+author = {ACM SIGSOFT Software Engineering Notes staff},
+title = {Frontmatter (TOC, Miscellaneous material)},
+year = {2006},
+issue_date = {November 2006},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {31},
+number = {6},
+issn = {0163-5948},
+url = {https://doi.org/10.1145/1218776.1218777},
+doi = {10.1145/1218776.1218777},
+journal = {SIGSOFT Softw. Eng. Notes},
+month = nov,
+pages = {0},
+numpages = {36}
+}
+
+@proceedings{10.1145/2950290,
+title = {FSE 2016: Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering},
+year = {2016},
+isbn = {9781450342186},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Seattle, WA, USA}
+}
+
+@book{10.1145/3477355,
+editor = {Jones, Cliff B. and Misra, Jayadev},
+title = {Theories of Programming: The Life and Works of Tony Hoare},
+year = {2021},
+isbn = {9781450387286},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+edition = {1},
+volume = {39},
+abstract = {Sir Tony Hoare has had an enormous influence on computer science, from the Quicksort algorithm to the science of software development, concurrency and program verification. His contributions have been widely recognised: He was awarded the ACM’s Turing Award in 1980, the Kyoto Prize from the Inamori Foundation in 2000, and was knighted for “services to education and computer science” by Queen Elizabeth II of England in 2000.This book presents the essence of his various works—the quest for effective abstractions—both in his own words as well as chapters written by leading experts in the field, including many of his research collaborators. In addition, this volume contains biographical material, his Turing award lecture, the transcript of an interview and some of his seminal papers.Hoare’s foundational paper “An Axiomatic Basis for Computer Programming”, presented his approach, commonly known as Hoare Logic, for proving the correctness of programs by using logical assertions. Hoare Logic and subsequent developments have formed the basis of a wide variety of software verification efforts. Hoare was instrumental in proposing the Verified Software Initiative, a cooperative international project directed at the scientific challenges of large-scale software verification, encompassing theories, tools and experiments.Tony Hoare’s contributions to the theory and practice of concurrent software systems are equally impressive. The process algebra called Communicating Sequential Processes (CSP) has been one of the fundamental paradigms, both as a mathematical theory to reason about concurrent computation as well as the basis for the programming language occam. CSP served as a framework for exploring several ideas in denotational semantics such as powerdomains, as well as notions of abstraction and refinement. It is the basis for a series of industrial-strength tools which have been employed in a wide range of applications.This book also presents Hoare’s work in the last few decades. These works include a rigorous approach to specifications in software engineering practice, including procedural and data abstractions, data refinement, and a modular theory of designs. More recently, he has worked with collaborators to develop Unifying Theories of Programming (UTP). Their goal is to identify the common algebraic theories that lie at the core of sequential, concurrent, reactive and cyber-physical computations. Theories of Programming: The Life and Works of Tony Hoare’ is available as a printed book (DOI: ) and an on-line version. In addition to the book itself, a number of on-line resources might be of interest to readers:
+A bibliography of Tony Hoare’s papers with clickable DOIs/URLs where available (ACM: INSERT URL)Appendix E of the book provides links to talks and interviews featuring Tony Hoare ()The Oxford archive of Hoare’s manuscripts:  
+Supplementary Material: Tony Hoare’ is a PDF of additional material (not included in the book) containing the following:
+Stories from a Life in Interesting Times (A transcription by Jayadev Misra of Tony Hoare’s acceptance speech for the 2000 Kyoto prize)Tony Hoare’s Heidelberg comments: (A transcription by Margaret Gray of Tony Hoare’s part in the 2020 Heidelberg event)Milestones in Tony’s Life and Work: A ‘cv’ of Tony Hoare prepared by Margaret GrayExtended version - ’Bernard Sufrin: Teaching at Belfast and Oxford’}
+}
+
+@proceedings{10.1145/2998392,
+title = {SCALA 2016: Proceedings of the 2016 7th ACM SIGPLAN Symposium on Scala},
+year = {2016},
+isbn = {9781450346481},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Amsterdam, Netherlands}
+}
+
+@book{10.1145/3544585,
+editor = {Apt, Krzysztof R. and Hoare, Tony},
+title = {Edsger Wybe Dijkstra: His Life,Work, and Legacy},
+year = {2022},
+isbn = {9781450397735},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+edition = {1},
+volume = {45},
+abstract = {Edsger Wybe Dijkstra (1930–2002) was one of the most influential researchers in the history of computer science, making fundamental contributions to both the theory and practice of computing. Early in his career, he proposed the single-source shortest path algorithm, now commonly referred to as Dijkstra’s algorithm. He wrote (with Jaap Zonneveld) the first ALGOL 60 compiler, and designed and implemented with his colleagues the influential THE operating system. Dijkstra invented the field of concurrent algorithms, with concepts such as mutual exclusion, deadlock detection, and synchronization. A prolific writer and forceful proponent of the concept of structured programming, he convincingly argued against the use of the Go To statement. In 1972 he was awarded the ACM Turing Award for ‘fundamental contributions to programming as a high, intellectual challenge; for eloquent insistence and practical demonstration that programs should be composed correctly, not just debugged into correctness; for illuminating perception of problems at the foundations of program design.’ Subsequently he invented the concept of self-stabilization relevant to fault-tolerant computing. He also devised an elegant language for nondeterministic programming and its weakest precondition semantics, featured in his influential 1976 book A Discipline of Programming in which he advocated the development of programs in concert with their correctness proofs. In the later stages of his life, he devoted much attention to the development and presentation of mathematical proofs, providing further support to his long-held view that the programming process should be viewed as a mathematical activity.In this unique new book, 31 computer scientists, including five recipients of the Turing Award, present and discuss Dijkstra’s numerous contributions to computing science and assess their impact. Several authors knew Dijkstra as a friend, teacher, lecturer, or colleague. Their biographical essays and tributes provide a fascinating multi-author picture of Dijkstra, from the early days of his career up to the end of his life}
+}
+
+@proceedings{10.1145/2984043,
+title = {SPLASH Companion 2016: Companion Proceedings of the 2016 ACM SIGPLAN International Conference on Systems, Programming, Languages and Applications: Software for Humanity},
+year = {2016},
+isbn = {9781450344371},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Amsterdam, Netherlands}
+}
+
+@proceedings{10.1145/2986012,
+title = {Onward! 2016: Proceedings of the 2016 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},
+year = {2016},
+isbn = {9781450340762},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Amsterdam, Netherlands}
+}
+
+@inproceedings{10.1145/1852786.1852810,
+author = {Falessi, Davide and Cantone, Giovanni and Canfora, Gerardo},
+title = {A comprehensive characterization of NLP techniques for identifying equivalent requirements},
+year = {2010},
+isbn = {9781450300391},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1852786.1852810},
+doi = {10.1145/1852786.1852810},
+abstract = {Though very important in software engineering, linking artifacts of the same type (clone detection) or of different types (traceability recovery) is extremely tedious, error-prone and requires significant effort. Past research focused on supporting analysts with mechanisms based on Natural Language Processing (NLP) to identify candidate links. Because a plethora of NLP techniques exists, and their performances vary among contexts, it is important to characterize them according to the provided level of support. The aim of this paper is to characterize a comprehensive set of NLP techniques according to the provided level of support to human analysts in detecting equivalent requirements. The characterization consists on a case study, featuring real requirements, in the context of an Italian company in the defense and aerospace domain. The major result from the case study is that simple NLP are more precise than complex ones.},
+booktitle = {Proceedings of the 2010 ACM-IEEE International Symposium on Empirical Software Engineering and Measurement},
+articleno = {18},
+numpages = {10},
+keywords = {case study, natural language processing, requirements},
+location = {Bolzano-Bozen, Italy},
+series = {ESEM '10}
+}
+
+@proceedings{10.1145/2997364,
+title = {SLE 2016: Proceedings of the 2016 ACM SIGPLAN International Conference on Software Language Engineering},
+year = {2016},
+isbn = {9781450344470},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+location = {Amsterdam, Netherlands}
+}
+
+@article{10.1145/3340108,
+author = {Lara, Juan De and Guerra, Esther and Ruscio, Davide Di and Rocco, Juri Di and Cuadrado, Jes\'{u}s S\'{a}nchez and Iovino, Ludovico and Pierantonio, Alfonso},
+title = {Automated Reuse of Model Transformations through Typing Requirements Models},
+year = {2019},
+issue_date = {October 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {28},
+number = {4},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3340108},
+doi = {10.1145/3340108},
+abstract = {Model transformations are key elements of model-driven engineering, where they are used to automate the manipulation of models. However, they are typed with respect to concrete source and target meta-models, making their reuse for other (even similar) meta-models challenging.To improve this situation, we propose capturing the typing requirements for reusing a transformation with other meta-models by the notion of a typing requirements model (TRM). A TRM describes the prerequisites that a model transformation imposes on the source and target meta-models to obtain a correct typing. The key observation is that any meta-model pair that satisfies the TRM is a valid reuse context for the transformation at hand.A TRM is made of two domain requirement models (DRMs) describing the requirements for the source and target meta-models, and a compatibility model expressing dependencies between them. We define a notion of refinement between DRMs and see meta-models as a special case of DRM. We provide a catalogue of valid refinements and describe how to automatically extract a TRM from an ATL transformation. The approach is supported by our tool TOTEM. We report on two experiments—based on transformations developed by third parties and meta-model mutation techniques—validating the correctness and completeness of our TRM extraction procedure and confirming the power of TRMs to encode variability and support flexible reuse.},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = sep,
+articleno = {21},
+numpages = {62},
+keywords = {refinement, model transformation reuse, meta-modelling, Model transformation, ATL}
+}
+
+@proceedings{10.1145/2998181,
+title = {CSCW '17: Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing},
+year = {2017},
+isbn = {9781450343350},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Welcome to CSCW 2017, the ACM 2017 Conference on Computer Supported Cooperative Work and Social Computing! We are excited to welcome the CSCW community back to Portland, Oregon, where the second CSCW conference was held in 1988. Both Portland and CSCW have matured a great deal during the intervening 29 years. We hope that you will find that Portland provides a stimulating environment for our conference.CSCW is the premier venue for presenting research in the design and use of technologies that affect groups, organizations, communities, and networks. Bringing together top researchers and practitioners from academia and industry, CSCW explores the technical, social, material, and theoretical challenges of designing technology to support collaborative work and life activities. CSCW welcomes a diverse range of topics and research methodologies. Studies often involve the development and application of novel technologies and/or ethnographic studies that inform design practice or theory. The mission of the conference is to share research that advances the state of human knowledge and improves both the design of systems and the ways they are used. The diversity of work in our conference program reflects the diversity of technology use in people's work, social, and civic lives as well as the geographic and cultural diversity of contributors.As many of you know, CSCW follows a rigorous "revise and resubmit" review process that uses peer review to improve submitted papers while maintaining a high-quality threshold for final acceptance. We also help prepare the next generation of reviewers with a mentorship program in which students review papers under the guidance of an experienced reviewer. This year we have the largest CSCW program ever. We had 530 submitted papers and 183 were accepted for presentation at the conference. The program also includes 4 papers published in ACM Transactions on Human- Computer Interaction (TOCHI). In addition, we will feature 14 workshops, 56 posters, 12 demos, and 3 panels.Lili Cheng of Microsoft Research will open the conference, speaking on "Conversational AI &amp; Lessons Learned." Our closing plenary will feature Jorge Cham, the creator of PhD Comics, who will talk about, "The Science Gap." We also welcome Paul Luff and Christian Heath from King's College as the recipients of this year's CSCW Lasting Impact award for their influential 1998 paper, "Mobility in Collaboration."},
+location = {Portland, Oregon, USA}
+}
+
+@book{10.1145/3368274,
+author = {Halvorson, Michael J.},
+title = {Code Nation: Personal Computing and the Learn to Program Movement in America},
+year = {2020},
+isbn = {9781450377584},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {32},
+abstract = {Code Nation explores the rise of software development as a social, cultural, and technical phenomenon in American history. The movement germinated in government and university labs during the 1950s, gained momentum through corporate and counterculture experiments in the 1960s and 1970s, and became a broad-based computer literacy movement in the 1980s. As personal computing came to the fore, learning to program was transformed by a groundswell of popular enthusiasm, exciting new platforms, and an array of commercial practices that have been further amplified by distributed computing and the Internet. The resulting society can be depicted as a “Code Nation”—a globally-connected world that is saturated with computer technology and enchanted by software and its creation.Code Nation is a new history of personal computing that emphasizes the technical and business challenges that software developers faced when building applications for CP/M, MS-DOS, UNIX, Microsoft Windows, the Apple Macintosh, and other emerging platforms. It is a popular history of computing that explores the experiences of novice computer users, tinkerers, hackers, and power users, as well as the ideals and aspirations of leading computer scientists, engineers, educators, and entrepreneurs. Computer book and magazine publishers also played important, if overlooked, roles in the diffusion of new technical skills, and this book highlights their creative work and influence.Code Nation offers a “behind-the-scenes” look at application and operating-system programming practices, the diversity of historic computer languages, the rise of user communities, early attempts to market PC software, and the origins of “enterprise” computing systems. Code samples and over 80 historic photographs support the text. The book concludes with an assessment of contemporary efforts to teach computational thinking to young people.}
+}
+
+@inproceedings{10.1109/MEMCOD.2005.1487884,
+author = {Halbwachs, N.},
+title = {A synchronous language at work: the story of Lustre},
+year = {2005},
+isbn = {0780392272},
+publisher = {IEEE Computer Society},
+address = {USA},
+url = {https://doi.org/10.1109/MEMCOD.2005.1487884},
+doi = {10.1109/MEMCOD.2005.1487884},
+abstract = {We recall the story of the development of the synchronous data-flow language Lustre and of its industrial transfer inside the toolset SCADE. We try to analyse the reasons of its success, and to report the main lessons we got from the transfer of an academic concept into real industrial world.},
+booktitle = {Proceedings of the 2nd ACM/IEEE International Conference on Formal Methods and Models for Co-Design},
+pages = {3–11},
+numpages = {9},
+keywords = {Lustre synchronous language, SCADE toolset, data-flow language},
+series = {MEMOCODE '05}
+}
+
+@article{10.1145/979743.979745,
+author = {ACM SIGSOFT Software Engineering Notes staff},
+title = {Back matter (abstracts and calendar)},
+year = {2004},
+issue_date = {March 2004},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {29},
+number = {2},
+issn = {0163-5948},
+url = {https://doi.org/10.1145/979743.979745},
+doi = {10.1145/979743.979745},
+journal = {SIGSOFT Softw. Eng. Notes},
+month = mar,
+pages = {27–62},
+numpages = {36}
+}
+
+@inproceedings{10.5555/782010.782022,
+author = {Kunz, Thomas and Seuren, Michiel F. H.},
+title = {Fast detection of communication patterns in distributed executions},
+year = {1997},
+publisher = {IBM Press},
+abstract = {Understanding distributed applications is a tedious and difficult task. Visualizations based on process-time diagrams are often used to obtain a better understanding of the execution of the application. The visualization tool we use is Poet, an event tracer developed at the University of Waterloo. However, these diagrams are often very complex and do not provide the user with the desired overview of the application. In our experience, such tools display repeated occurrences of non-trivial communication patterns, appearing throughout the trace data and cluttering the display space. This paper describes an event abstraction facility which tries to simplify the execution visualization shown by Poet by efficiently detecting and abstracting such patterns.A user can define patterns, subject to only very few constraints, and store them in a hierarchical pattern library. We also provide the user with the possibility to annotate the source code as a help in the abstraction process. We detect these communication patterns by employing an enhanced efficient multiple string matching algorithm. The results indicate that the matching process is indeed very fast. A user can experiment with multiple patterns at potentially different levels in the hierarchy, checking for their occurrence in the trace file, while trying to gain some understanding in a short period of time.},
+booktitle = {Proceedings of the 1997 Conference of the Centre for Advanced Studies on Collaborative Research},
+pages = {12},
+location = {Toronto, Ontario, Canada},
+series = {CASCON '97}
+}
+
+@book{10.1145/3548585,
+editor = {van Lente, Dick},
+title = {Prophets of Computing: Visions of Society Transformed by Computing},
+year = {2022},
+isbn = {9781450398176},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+edition = {1},
+volume = {50},
+abstract = {When electronic digital computers first appeared after World War II, they appeared as a revolutionary force. Business management, the world of work, administrative life, the nation state, and soon enough everyday life were expected to change dramatically with these machines’ use. Ever since, diverse prophecies of computing have continually emerged, through to the present day.As computing spread beyond the US and UK, such prophecies emerged from strikingly different economic, political, and cultural conditions. This volume explores how these expectations differed, assesses unexpected commonalities, and suggests ways to understand the divergences and convergences.This book examines thirteen countries, based on source material in ten different languages—the effort of an international team of scholars. In addition to analyses of debates, political changes, and popular speculations, we also show a wide range of pictorial representations of “the future with computers.”}
+}
+
