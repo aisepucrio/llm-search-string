@@ -1,0 +1,48 @@
+,modelo,prompt_name,Encontrados dos Selecionados da revisão,Selecionados/Total_revisao,F1 Score,Selecionados/Total_busca,Revisao/Total_busca,article
+0,gemma3:12b,prompt2,1,0.14286,0.08824,0.05882,0.17647,Cost-efficient sampling for performance prediction of configurable systems
+1,mistral-nemo:latest,prompt2,5,0.71429,0.07745,0.06024,0.10843,Cost-efficient sampling for performance prediction of configurable systems
+2,mistral-nemo:latest,prompt0,5,0.71429,0.05268,0.03731,0.08955,Cost-efficient sampling for performance prediction of configurable systems
+3,mistral-nemo:latest,prompt1,5,0.71429,0.05268,0.03731,0.08955,Cost-efficient sampling for performance prediction of configurable systems
+4,llama3.1:latest,prompt1,5,0.71429,0.04384,0.03106,0.07453,Cost-efficient sampling for performance prediction of configurable systems
+5,gemma3:12b,prompt0,4,0.57143,0.01884,0.01361,0.03061,Cost-efficient sampling for performance prediction of configurable systems
+6,gemma3:12b,prompt1,5,0.71429,0.01555,0.01131,0.02489,Cost-efficient sampling for performance prediction of configurable systems
+7,llama3.1:latest,prompt0,6,0.85714,0.00916,0.00654,0.01527,Cost-efficient sampling for performance prediction of configurable systems
+8,llama3.1:latest,prompt2,2,0.28571,0.00376,0.00235,0.0094,Cost-efficient sampling for performance prediction of configurable systems
+
+40,llama3.1:latest,prompt2,0,0.0,0.0,0.0,0.00219,Machine learning techniques to predict software defect
+38,llama3.1:latest,prompt1,0,0.0,0.0,0.0,0.00323,Machine learning techniques to predict software defect
+33,gemma3:12b,prompt0,0,0.0,0.0,0.0,0.00546,Machine learning techniques to predict software defect
+32,mistral-nemo:latest,prompt2,0,0.0,0.0,0.0,0.00629,Machine learning techniques to predict software defect
+28,llama3.1:latest,prompt0,0,0.0,0.0,0.0,0.00552,Machine learning techniques to predict software defect
+26,mistral-nemo:latest,prompt1,0,0.0,0.0,0.0,0.00331,Machine learning techniques to predict software defect
+24,mistral-nemo:latest,prompt0,0,0.0,0.0,0.0,0.00441,Machine learning techniques to predict software defect
+42,gemma3:12b,prompt1,0,0.0,0.0,0.0,0.00431,Machine learning techniques to predict software defect
+9,gemma3:12b,prompt2,1,0.14286,0.0023,0.00129,0.01035,Machine learning techniques to predict software defect
+
+17,mistral-nemo:latest,prompt2,1,0.14286,0.00191,0.00111,0.00669,Measuring non-functional properties in software product lines for product derivation
+37,llama3.1:latest,prompt1,0,0.0,0.0,0.0,0.00115,Measuring non-functional properties in software product lines for product derivation
+14,mistral-nemo:latest,prompt1,1,0.14286,0.00202,0.00114,0.00908,Measuring non-functional properties in software product lines for product derivation
+22,mistral-nemo:latest,prompt0,1,0.14286,0.00172,0.00108,0.00431,Measuring non-functional properties in software product lines for product derivation
+29,llama3.1:latest,prompt0,0,0.0,0.0,0.0,0.00507,Measuring non-functional properties in software product lines for product derivation
+21,gemma3:12b,prompt2,1,0.14286,0.00174,0.00109,0.00435,Measuring non-functional properties in software product lines for product derivation
+18,gemma3:12b,prompt0,1,0.14286,0.00189,0.00113,0.00566,Measuring non-functional properties in software product lines for product derivation
+20,gemma3:12b,prompt1,1,0.14286,0.00185,0.00111,0.00554,Measuring non-functional properties in software product lines for product derivation
+41,llama3.1:latest,prompt2,0,0.0,0.0,0.0,0.00318,Measuring non-functional properties in software product lines for product derivation
+
+25,gemma3:12b,prompt2,0,0.0,0.0,0.0,0.00858,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+39,llama3.1:latest,prompt2,0,0.0,0.0,0.0,0.00568,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+16,mistral-nemo:latest,prompt0,1,0.14286,0.00195,0.00111,0.0078,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+30,llama3.1:latest,prompt0,0,0.0,0.0,0.0,0.00321,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+36,llama3.1:latest,prompt1,0,0.0,0.0,0.0,0.00335,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+34,mistral-nemo:latest,prompt2,0,0.0,0.0,0.0,0.01869,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+35,mistral-nemo:latest,prompt1,0,0.0,0.0,0.0,0.00126,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+
+10,mistral-nemo:latest,prompt2,1,0.14286,0.00229,0.00127,0.01144,Using machine learning to infer constraints for product lines
+19,gemma3:12b,prompt2,1,0.14286,0.00186,0.00109,0.00651,Using machine learning to infer constraints for product lines
+23,mistral-nemo:latest,prompt0,0,0.0,0.0,0.0,0.00112,Using machine learning to infer constraints for product lines
+31,gemma3:12b,prompt0,0,0.0,0.0,0.0,0.00525,Using machine learning to infer constraints for product lines
+13,llama3.1:latest,prompt2,1,0.14286,0.00204,0.00117,0.00818,Using machine learning to infer constraints for product lines
+27,llama3.1:latest,prompt0,0,0.0,0.0,0.0,0.00115,Using machine learning to infer constraints for product lines
+15,gemma3:12b,prompt1,1,0.14286,0.00199,0.00114,0.00795,Using machine learning to infer constraints for product lines
+11,llama3.1:latest,prompt1,1,0.14286,0.00214,0.0012,0.00962,Using machine learning to infer constraints for product lines
+12,mistral-nemo:latest,prompt1,1,0.14286,0.0021,0.00118,0.00943,Using machine learning to infer constraints for product lines

@@ -1,6 +1,6 @@
 import json
 
-with open('resultados_llm.json', 'r', encoding='utf-8') as f:
+with open('resultados_llm_acm.json', 'r', encoding='utf-8') as f:
     resultados_refinados = json.load(f)
 
 

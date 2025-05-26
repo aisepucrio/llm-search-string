@@ -5,7 +5,7 @@ import os
 import bibtexparser
 
 # Caminho para os arquivos .bib
-folder_path = 'results2/results2_acm'  # MUDAR
+folder_path = 'results2/results2_acm_new'  # MUDAR
 
 # Lê o gabarito
 gabarito_path = 'results1/results1_ocm/primary-studies_Papers_ACM.csv' # Pode manter
@@ -54,7 +54,7 @@ for nome_arquivo, i, j, total in resultados:
     data.append((nome_arquivo, i, j, total))
 
 df_result = pd.DataFrame(data, columns=["arquivo", "Encontrados dos Selecionados da revisão", "Encontrados do Total da revisão", "Total da pesquisa"])
-output_path = "results2/resultados2_acm.csv"
+output_path = "results2/resultados2_acm_new.csv"
 df_result.to_csv(output_path, index=False)
 
 df_result.head()

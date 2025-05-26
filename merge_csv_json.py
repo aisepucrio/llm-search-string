@@ -3,8 +3,8 @@ import json, re
 
 # Caminhos dos arquivos # MUDAR 
 json_path = 'results2/resultados_llm.json'
-csv_path = 'results2/resultados_metricas2_acm.csv'
-saida_path = 'results2/tabela_completa2_acm.csv'
+csv_path = 'results2/resultados_metricas2_scopus.csv'
+saida_path = 'results2/tabela_completa2_scopus.csv'
 
 # Carregar JSON
 with open(json_path, 'r', encoding='utf-8') as f:

@@ -61,7 +61,7 @@ def main(models):
         resultados[model] = []
 
         for prompt_name, prompt_content in prompts.items():
-            for article in new_articles:
+            for article in articles_acm:
                 inicio = time.time()
                 answer = run_llm(model, prompt_content, article)
                 fim = time.time()
@@ -80,7 +80,7 @@ def main(models):
                 resultados[model].append(resultado)
                 i = i + 1
 
-    salvar_em_txt("results2/resultados_llm.json", resultados) # mudar
+    salvar_em_txt("resultados_llm_acm_new.json", resultados) # mudar
             
 
     print("Classification completed.")
