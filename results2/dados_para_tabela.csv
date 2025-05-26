@@ -1,0 +1,34 @@
+base,modelo,prompt_name,Relative_Precision,F1_Score,Precision,Coverage,article
+
+acm,mistral-nemo:latest,prompt2,0.71429,0.07745,0.06024,0.10843,Cost-efficient sampling for performance prediction of configurable systems
+scopus,gemma3:12b,prompt1,0.14815,0.28571,0.28571,0.28571,Cost-efficient sampling for performance prediction of configurable systems
+
+acm,gemma3:12b,prompt2,0.14286,0.0023,0.00129,0.01035,Machine learning techniques to predict software defect
+scopus,llama3.1:latest,prompt0,0.11111,0.00347,0.00197,0.01445,Machine learning techniques to predict software defect
+
+acm,mistral-nemo:latest,prompt1,0.14286,0.00202,0.00114,0.00908,Measuring non-functional properties in software product lines for product derivation
+scopus,mistral-nemo:latest,prompt1,0.2963,0.01871,0.01559,0.02339,Measuring non-functional properties in software product lines for product derivation
+
+acm,mistral-nemo:latest,prompt0,0.14286,0.00195,0.00111,0.0078,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+scopus,mistral-nemo:latest,prompt2,0.07407,0.48,0.4,0.6,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+
+acm,mistral-nemo:latest,prompt2,0.14286,0.00229,0.00127,0.01144,Using machine learning to infer constraints for product lines
+scopus,mistral-nemo:latest,prompt1,0.25926,0.02716,0.02414,0.03103,Using machine learning to infer constraints for product lines
+
+
+acm,mistral-nemo:latest,prompt2,0.71429,7.745,0.06024,0.10843,Cost-efficient sampling for performance prediction of configurable systems
+scopus,gemma3:12b,prompt1,0.14815,28.571,0.28571,0.28571,Cost-efficient sampling for performance prediction of configurable systems
+
+acm,gemma3:12b,prompt2,0.14286,0.23,0.00129,0.01035,Machine learning techniques to predict software defect
+scopus,llama3.1:latest,prompt0,0.11111,0.347,0.00197,0.01445,Machine learning techniques to predict software defect
+
+acm,mistral-nemo:latest,prompt1,0.14286,0.202,0.00114,0.00908,Measuring non-functional properties in software product lines for product derivation
+scopus,mistral-nemo:latest,prompt1,0.2963,1.871,0.01559,0.02339,Measuring non-functional properties in software product lines for product derivation
+
+acm,mistral-nemo:latest,prompt0,0.14286,0.195,0.00111,0.0078,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+scopus,mistral-nemo:latest,prompt2,0.07407,48.,0.4,0.6,SPL Conqueror: Toward optimization of non-functional properties in software product lines
+
+acm,mistral-nemo:latest,prompt2,0.14286,0.229,0.00127,0.01144,Using machine learning to infer constraints for product lines
+scopus,mistral-nemo:latest,prompt1,0.25926,2.716,0.02414,0.03103,Using machine learning to infer constraints for product lines
+
+
