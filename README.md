@@ -7,15 +7,14 @@ The purpose of this file is to explain the project structure and how to reproduc
 ---
 
 ## 📁 Project Structure
-
+```
 ├── pdf_reader/ # Scripts for reading and extracting content from PDF seed articles
-├── results1/ # Results from initial experiments using simpler prompts
 ├── results2/ # Results explicitly referenced in the article’s main table
 │ ├── results_acm/ # Articles retrieved from ACM using LLM-generated search strings
 │ ├── results_scopus/ # Raw results from Scopus, manually processed for the article’s final table (tabela.csv)
 │ ├── metrics_acm/ # Processed ACM results for final table (dados_para_tabela.csv)
 │ ├── metrics_scopus/ # Processed Scopus results for final table (dados_para_tabela.csv)
-├── .gitignore
+│
 ├── calculate_metrics.py # Script for computing evaluation metrics
 ├── extract_results_acm.py # Extracts results from 'results_acm/' folder
 ├── extract_results_Scopus.py# Extracts results from 'results_scopus/' folder
@@ -23,25 +22,28 @@ The purpose of this file is to explain the project structure and how to reproduc
 ├── merge_csv_json.py # Merges evaluation metrics with corresponding LLM metadata
 ├── plotMetrics.ipynb # Notebook to generate visual plots from the results
 ├── prompts.py # Contains all prompts (from both results1 and results2) and metadata of the articles used
-├── README.md
 ├── run_llm.py # Runs LLMs using the prompts and seed articles defined in 'prompts.py'
+```
 
 ---
 
 ## ▶️ How to Reproduce
 
-1. **Run `run_llm.py`**  
+1. **Run `pip install -r requirements.txt`
+
+2. **Run `run_llm.py`**  
    This generates the file `resultados_llm.json`.
+   
+3. **Run `limpa_strings.py`**  
+   It cleans and formats the LLM outputs from  `limpa_strings.py` into `resultados_llm_limpos.txt`, with each generated search string on a separate line. This makes the next manual step easier.
 
-2. **Run `limpa_strings.py`**  
-   It cleans and formats the LLM outputs into `resultados_llm_limpos.txt`, with each generated search string on a separate line.
-
-3. **Manually run the search queries**  
+5. **Manually run the search queries**  
    Use the cleaned strings to manually query academic databases (ACM, Scopus). Save the resulting articles in:
    - `results_acm/`
    - `results_scopus/`
+   You can export the results from a querry in those academic databases.
 
-4. **Extract search results**  
+6. **Extract search results**  
    Run:
    `python extract_results_acm.py`
    `python extract_results_Scopus.py`
@@ -49,7 +51,8 @@ The purpose of this file is to explain the project structure and how to reproduc
 These generate:
     - `resultados2_acm.csv`
     - `resultados2_scopus.csv`
-
+from the `results_acm/` and `results_scopus/`
+   
 5. **Compute evaluation metrics**
 Run:
 `python calculate_metrics.py`
@@ -57,6 +60,7 @@ Run:
 This produces:
     - `resultados_metricas2_acm.csv`
     - `resultados_metricas2_scopus.csv`
+from  `resultados2_acm.csv` and `resultados2_scopus.csv`
 
 6. **Merge with LLM metadata for final table**
 Run:
