@@ -79,11 +79,6 @@ This outputs the final completed results:
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as permitted under the terms of this license.
 
-Citation
-Comparing LLMs and Proposing an ML-Based Approach for Search String Generation in Systematic Literature Reviews
-Authors anonymized
-SBES-IIER 2025
-
 **BibTeX:**
 ```bibtex
 @misc{marassi2025searchstring,
