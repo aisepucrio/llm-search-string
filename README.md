@@ -11,7 +11,7 @@ Access the full paper: [Comparing LLMs and Proposing an ML Based Approach for Se
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 ├── pdf_reader/ # Scripts for reading and extracting content from PDF seed articles
 ├── results2/ # Results explicitly referenced in the article’s main table
@@ -32,7 +32,7 @@ Access the full paper: [Comparing LLMs and Proposing an ML Based Approach for Se
 
 ---
 
-## ▶️ How to Reproduce
+## ▶How to Reproduce
 
 1. **Run `pip install -r requirements.txt`
 
@@ -75,7 +75,23 @@ This outputs the final completed results:
     - `tabela_completa2_acm.csv`
     - `tabela_completa2_scopus.csv`
 
-📎 Citation
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as permitted under the terms of this license.
+
+Citation
 Comparing LLMs and Proposing an ML-Based Approach for Search String Generation in Systematic Literature Reviews
 Authors anonymized
 SBES-IIER 2025
+
+**BibTeX:**
+```bibtex
+@misc{marassi2025searchstring,
+  author    = {Marassi, Diogo Adário and Pereira, Juliana Alves and Felizardo, Katia Romero},
+  title     = {Comparing LLMs and Proposing an ML-Based Approach for Search String Generation in Systematic Literature Reviews},
+  year      = {2025},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.15984173},
+  url       = {https://doi.org/10.5281/zenodo.15984173}
+}
+```
