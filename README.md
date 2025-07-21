@@ -87,8 +87,5 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
   author    = {Marassi, Diogo Adário and Pereira, Juliana Alves and Felizardo, Katia Romero},
   title     = {Comparing LLMs and Proposing an ML-Based Approach for Search String Generation in Systematic Literature Reviews},
   year      = {2025},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.15984173},
-  url       = {https://doi.org/10.5281/zenodo.15984173}
 }
 ```
