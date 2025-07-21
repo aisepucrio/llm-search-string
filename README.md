@@ -74,3 +74,5 @@ This outputs the final completed results:
 Comparing LLMs and Proposing an ML-Based Approach for Search String Generation in Systematic Literature Reviews
 Authors anonymized
 SBES-IIER 2025
+
+This artifact is available on Zenodo at the following link: https://zenodo.org/records/15984173.
