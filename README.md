@@ -4,6 +4,8 @@ This repository contains the scripts, data, and notebooks used as supplementary 
 
 The purpose of this file is to explain the project structure and how to reproduce the study. It is important to note that the implementation was developed in stages, so the scripts must be executed in a specific sequence. Additionally, file names in the code may need to be adjusted to match your context. The proper execution order is described in the **How to Reproduce** section.
 
+Access the full paper [here]([Comparing LLMs and Proposing an ML Based Approach for Search String Generation in Systematic Literature Reviews.pdf](https://github.com/user-attachments/files/21347421/Comparing.LLMs.and.Proposing.an.ML.Based.Approach.for.Search.String.Generation.in.Systematic.Literature.Reviews.pdf)
+)
 ---
 
 ## 📁 Project Structure
