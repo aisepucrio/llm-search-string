@@ -6,7 +6,7 @@ The purpose of this file is to explain the project structure and how to reproduc
 
 This artifact is available on Zenodo [here](https://zenodo.org/records/15984173)
 
-Access the full paper [here]([Comparing LLMs and Proposing an ML Based Approach for Search String Generation in Systematic Literature Reviews.pdf](https://github.com/user-attachments/files/21347421/Comparing.LLMs.and.Proposing.an.ML.Based.Approach.for.Search.String.Generation.in.Systematic.Literature.Reviews.pdf)
+Access the full paper: [Comparing LLMs and Proposing an ML Based Approach for Search String Generation in Systematic Literature Reviews.pdf](https://github.com/user-attachments/files/21347421/Comparing.LLMs.and.Proposing.an.ML.Based.Approach.for.Search.String.Generation.in.Systematic.Literature.Reviews.pdf)
 )
 
 ---
