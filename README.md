@@ -32,7 +32,7 @@ Access the full paper: [Comparing LLMs and Proposing an ML Based Approach for Se
 
 ---
 
-## ▶How to Reproduce
+## How to Reproduce
 
 1. **Run `pip install -r requirements.txt`
 
