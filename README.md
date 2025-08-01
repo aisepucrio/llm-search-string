@@ -83,9 +83,12 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 
 **BibTeX:**
 ```bibtex
-@misc{marassi2025searchstring,
-  author    = {Marassi, Diogo Adário and Pereira, Juliana Alves and Felizardo, Katia Romero},
+@Inproceedings{marassi:SBES2025,
+  author = {Marassi, Diogo Adário and Pereira, Juliana Alves and Felizardo, Katia Romero},
   title     = {Comparing LLMs and Proposing an ML-Based Approach for Search String Generation in Systematic Literature Reviews},
   year      = {2025},
+  pages     = {1–7},
+  booktitle = {Brazilian Symposium on Software Engineering, Insightful Ideas and Emerging Results Track (SBES IIER)},  
+  publisher = {SOL}
 }
 ```
