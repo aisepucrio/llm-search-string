@@ -57,6 +57,6 @@ df_resultados = pd.DataFrame(resultados, columns=[
 
 # 5️. Salvar resultado final
 os.makedirs("results2", exist_ok=True)
-output_path = "results2/resultados2_scopus.csv"
+output_path = "results2/results2_scopus.csv"
 df_resultados.to_csv(output_path, index=False)
 print(f"\n[INFO] Resultados consolidados salvos em: {output_path}")

@@ -17,13 +17,13 @@ Access the full paper: [Comparing LLMs and Proposing an ML Based Approach for Se
 ├── results2/ # Results explicitly referenced in the article’s main table
 │ ├── results_acm/ # Articles retrieved from ACM using LLM-generated search strings
 │ ├── results_scopus/ # Raw results from Scopus, manually processed for the article’s final table (tabela.csv)
-│ ├── metrics_acm/ # Processed ACM results for final table (dados_para_tabela.csv)
-│ ├── metrics_scopus/ # Processed Scopus results for final table (dados_para_tabela.csv)
+│ ├── metrics_acm/ # Processed ACM results for final table (data_to_table.csv)
+│ ├── metrics_scopus/ # Processed Scopus results for final table (data_to_table.csv)
 │
 ├── calculate_metrics.py # Script for computing evaluation metrics
 ├── extract_results_acm.py # Extracts results from 'results_acm/' folder
 ├── extract_results_Scopus.py# Extracts results from 'results_scopus/' folder
-├── limpa_strings.py # Cleans LLM outputs and writes each search string line-by-line in a .txt file
+├── clear_strings.py # Cleans LLM outputs and writes each search string line-by-line in a .txt file
 ├── merge_csv_json.py # Merges evaluation metrics with corresponding LLM metadata
 ├── plotMetrics.ipynb # Notebook to generate visual plots from the results
 ├── prompts.py # Contains all prompts (from both results1 and results2) and metadata of the articles used
@@ -47,10 +47,10 @@ To install all the dependences in venv
 Obs.: The pywin32==310 package is Windows-only and it's not necessary on macOS, so you can simply remove that line from requirements.txt.
 
 3. **Run `run_llm.py`**  
-   This generates the file `results2/resultados_llm.json`.
+   This generates the file `results2/results_llm.json`.
    
-4. **Run `limpa_strings.py`**  
-   It cleans and formats the LLM outputs from  `limpa_strings.py` into `results2/resultados_llm_limpos.txt`, with each generated search string on a separate line. This makes the next manual step easier.
+4. **Run `clear_strings.py`**  
+   It cleans and formats the LLM outputs from  `clear_strings.py` into `results2/results_llm_clear.txt`, with each generated search string on a separate line. This makes the next manual step easier.
    For this part it is necessary to download ollama and, through the terminal, run the models Llama-8B, Gemma12B, and Mistral-Nemo-12B
    
 5. **Manually run the search queries**  
@@ -65,8 +65,8 @@ Obs.: The pywin32==310 package is Windows-only and it's not necessary on macOS, 
    `python extract_results_Scopus.py`
 
 These generate:
-    - `results2/resultados2_acm.csv`
-    - `results2/resultados2_scopus.csv`
+    - `results2/results2_acm.csv`
+    - `results2/results2_scopus.csv`
 from the `results_acm/` and `results_scopus/`
    
 7. **Compute evaluation metrics**
@@ -74,17 +74,17 @@ Run:
 `python calculate_metrics.py`
 
 This produces:
-    - `results2/resultados_metricas2_acm.csv`
-    - `results2/resultados_metricas2_scopus.csv`
-from  `results2/resultados2_acm.csv` and `results2/resultados2_scopus.csv`
+    - `results2/results_metrics2_acm.csv`
+    - `results2/results_metrics2_scopus.csv`
+from  `results2/results2_acm.csv` and `results2/results2_scopus.csv`
 
 8. **Merge with LLM metadata for final table**
 Run:
     - `python merge_csv_json.py`
 
 This outputs the final completed results:
-    - `results2/tabela_completa2_acm.csv`
-    - `results2/tabela_completa2_scopus.csv`
+    - `results2/table_complete2_acm.csv`
+    - `results2/table_complete2_scopus.csv`
 
 ## License
 

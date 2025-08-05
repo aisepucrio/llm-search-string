@@ -80,7 +80,7 @@ def main(models):
                 resultados[model].append(resultado)
                 i = i + 1
 
-    salvar_em_txt("resultados_llm.json", resultados) # mudar
+    salvar_em_txt("results_llm.json", resultados) # mudar
             
 
     print("Classification completed.")

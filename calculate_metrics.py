@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Caminhos dos arquivos
-bib_path = 'results2/resultados2_acm.csv' # MUDAR
-scopus_path = 'results2/resultados2_scopus.csv' # MUDAR
+bib_path = 'results2/results2_acm.csv' # MUDAR
+scopus_path = 'results2/results2_scopus.csv' # MUDAR
 
 # Carregar os dados
 df_bib = pd.read_csv(bib_path)
@@ -34,5 +34,5 @@ df_scopus = calcular_metricas(df_scopus, total_acm, selcionados_scopus)
 df_scopus = df_scopus.round(5)
 
 # Salvar resultados atualizados
-df_bib.to_csv("results2/resultados_metricas2_acm.csv", index=False)
-df_scopus.to_csv("results2/resultados_metricas2_scopus.csv", index=False)
+df_bib.to_csv("results2/results_metrics2_acm.csv", index=False)
+df_scopus.to_csv("results2/results_metrics2_scopus.csv", index=False)
