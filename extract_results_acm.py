@@ -5,12 +5,15 @@ import os
 import bibtexparser
 
 # Caminho para os arquivos .bib
-folder_path = 'results2/results2_acm_new'  # MUDAR
+folder_path = 'results2/results_acm'  # MUDAR SE NECESSÁRIO (É onde serão colocado as extrações manuais)
 
 # Lê o gabarito
-gabarito_path = 'results1/results1_ocm/primary-studies_Papers_ACM.csv' # Pode manter
-df_primary_studies = pd.read_csv(gabarito_path)
-df_primary_studies = df_primary_studies[['doi', 'title', 'Selected']]
+try:
+    gabarito_path = 'primary-studies-Papers_ACM.csv' # Pode manter
+    df_primary_studies = pd.read_csv(gabarito_path)
+    df_primary_studies = df_primary_studies[['doi', 'title', 'Selected']]
+except Exception as e:
+    raise RuntimeError(f"Erro ao carregar 'primary-studies-Papers_ACM.csv': {e}")
 
 # Seleciona apenas os artigos marcados como "YES"
 selected_articles = []
@@ -54,7 +57,7 @@ for nome_arquivo, i, j, total in resultados:
     data.append((nome_arquivo, i, j, total))
 
 df_result = pd.DataFrame(data, columns=["arquivo", "Encontrados dos Selecionados da revisão", "Encontrados do Total da revisão", "Total da pesquisa"])
-output_path = "results2/resultados2_acm_new.csv"
+output_path = "results2/resultados2_acm.csv"
 df_result.to_csv(output_path, index=False)
 
 df_result.head()

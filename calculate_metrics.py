@@ -1,11 +1,11 @@
 import pandas as pd
 
 # Caminhos dos arquivos
-bib_path = 'results2/resultados2_acm_new.csv' # MUDAR
+bib_path = 'results2/resultados2_acm.csv' # MUDAR
 scopus_path = 'results2/resultados2_scopus.csv' # MUDAR
 
 # Carregar os dados
-#df_bib = pd.read_csv(bib_path)
+df_bib = pd.read_csv(bib_path)
 df_scopus = pd.read_csv(scopus_path)
 
 total_scopus = 886
@@ -25,7 +25,7 @@ def calcular_metricas(df, total, selecionados):
     
     return df
 
-#df_bib = calcular_metricas(df_bib, total_acm, selcionados_acm)
+df_bib = calcular_metricas(df_bib, total_acm, selcionados_acm)
 df_scopus = calcular_metricas(df_scopus, total_acm, selcionados_scopus)
 
 # Arredondar para 2 casas decimais
@@ -34,5 +34,5 @@ df_scopus = calcular_metricas(df_scopus, total_acm, selcionados_scopus)
 df_scopus = df_scopus.round(5)
 
 # Salvar resultados atualizados
-#df_bib.to_csv("results2/resultados_metricas2_acm_new.csv", index=False)
+df_bib.to_csv("results2/resultados_metricas2_acm.csv", index=False)
 df_scopus.to_csv("results2/resultados_metricas2_scopus.csv", index=False)
